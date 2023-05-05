@@ -1,0 +1,1454 @@
+body {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+/* .prueba {
+    background-color: #039BE5;
+} */
+
+#mainNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 47px;
+    padding: 5px 28px 5px 20px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+    padding: 0px 0px;
+    /* Modifica la apariencia del toggle btn */
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav {
+    text-align: end;
+}
+
+#mainNavbar .nav-link {
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(228, 143, 42, 1);
+}
+
+/* COMPANY NAME */
+#mainNavbar .navbar-brand {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 18px;
+    color: white;
+}
+
+/* -----------------------------------------CLASES EMERGENTES ------------------------------------------- */
+
+/* Afecta a .preloaderVideo */
+.hide-preloader {
+    visibility: hidden;
+}
+
+/* Afecta a .switchVideo */
+.slide .switchVideo {
+    left: 50%;
+}
+
+/* Afecta a #mainNavbar */
+#mainNavbar.newPadding {
+    padding: 5px 28px 800px 20px;
+    backdrop-filter: blur(5px);
+    transition: background 500ms;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Afecta a .navbar */
+.navbar.scrolled {
+    backdrop-filter: blur(5px);
+    transition: background 500ms;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Afecta a .mainDivVideo */
+.mainDivVideo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* Afecta a .textIntro */
+.linkHideTextIntro {
+    margin-top: 40px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+/* Afecta a .mainExplainVideo*/
+.linkHideCard {
+    margin-top: 70px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Afecta a .textIntro y .mainExplainVideo */
+.linkShow {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+/* Afecta a .nameIntro */
+@keyframes bajar-texto {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.addMarginTop {
+    position: absolute;
+    left: 0%;
+    padding: 0px 30px;
+    animation-name: bajar-texto;
+    animation-duration: 350ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* -------------------------- */
+
+/* Afecta a .nameIntro */
+@keyframes subir-texto {
+    100% {
+        transform: translateY(-0px);
+    }
+
+    0% {
+        transform: translateY(20px);
+    }
+}
+
+.removeMarginTop {
+    animation-name: subir-texto;
+    animation-duration: 350ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* -------------------------- */
+
+/* Afecta a .mainPlayPauseSection */
+.addMargin {
+    margin-top: 1px;
+}
+
+/* --------------------------------------------- SECTIONS ------------------------------------------- */
+
+.sectionPrimera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: 2;
+}
+
+.sectionSegunda {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    background-color: rgb(68, 68, 68);
+}
+
+.sectionTercera,
+.sectionCuarta {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/*------------------------------------------------- INTRO ------------------------------------------- */
+
+/* CONTIENE LOS DOS PRIMEROS PARRAFOS */
+.mainDivIntro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 76px;
+    padding-left: 36px;
+    padding-right: 36px;
+    color: white;
+}
+
+/* CARD CON TITULO - EXPLICACION Y LOGOS */
+.mainExplainVideo {
+    display: flex;
+    flex-direction: column;
+    width: 281px;
+    margin-top: 69px;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* PRIMER PARRAFO */
+.nameIntro {
+    margin-bottom: 5px;
+}
+
+/* SPAN JORGE S. */
+.nameBold {
+    font-weight: 600;
+}
+
+/* TITULO DE LA CARD */
+.videoProject {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+/* PARRAFO DESCRIPCIÓN DEL PROYECTO  */
+.descExplain {
+    width: 237px;
+    height: 93px;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    overflow-y: scroll;
+    color: white;
+}
+
+
+
+/* SCROLL INTERNO */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* PARA EL THUMB*/
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* PARA EL TRACK */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+/*------------------------------------------------ EXPLAIN ------------------------------------------- */
+
+/* VIDEO PROJECT + PARRAFO DESCRIPCIÓN PROYECTO */
+.explainBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* LOGOS DE LENGUAJES */
+.logosDivExplainVideo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.logosImgVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+/* EN CUARENTENA --------------------------------- */
+.logosDivExplain {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+/* ------------------------------------------------ */
+
+/*------------------------------------------------- VIDEO ------------------------------------------- */
+
+/* CONTENEDOR DEL VIDEO */
+.containerVideo {
+    position: absolute;
+    width: 100%;
+    /* Hace mas grande el height del video */
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* El video cubre todo el fondo */
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* FONDO DEL PRELOADER */
+.preloaderVideo {
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.gifPreloader {
+    height: 100vh;
+    background-color: white;
+}
+
+/* CONTIENE EL SWITCH Y LOS BOTONES PLAY - PAUSE */
+.mainBtnSwith {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FONDO DE LOS BOTONES LA PARTE GRIS*/
+.btnSwitchVideo {
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    margin-top: 48px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+/* ELEMENTO MOVIL SWITCH LA PARTE NARANJA */
+.switchVideo {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    background-color: rgb(228, 143, 42);
+}
+
+/* CONTIENE LOS BOTONES PLAY-PAUSE LAS FIGURAS */
+.PlayPauseDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 110px;
+    height: 35px;
+    margin-top: 49.5px;
+    font-size: 25px;
+    color: white;
+    z-index: 1;
+}
+
+/* ----------------------------------------------- REVIEW -------------------------------------------- */
+
+/* ---------------------------- CARACTERISTICAS DE DIV MAIN CHANGES MODES ------------------------ */
+
+/* CONTIENE EL BOTON ES LA MEDIDA MAIN */
+.mainDivDarkMode {
+    width: 242px;
+    height: 55px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #EEEEEE;
+}
+
+/* BOTON QUE CONTIENE LAS PALABRA DARK / LIGHT */
+.darkBtn {
+    margin-top: 13px;
+    border: none;
+    padding: 0px;
+    background-color: none;
+    background-color: #EEEEEE;
+}
+
+/* PALABRA DARK  */
+.spanDark {
+    color: black;
+    text-decoration: underline;
+}
+
+/* PALABRA LIGHT */
+.spanLigth {
+    color: white;
+    text-decoration: underline;
+    padding: 0px;
+    display: none;
+}
+
+/* --------------------------------- CHANGES DARK/LIGTH MODE ------------------------------------- */
+
+/* OCULTA UNA DE LAS PALABRAS */
+.btnHide {
+    display: none;
+}
+
+.btnShow {
+    display: block;
+}
+
+/* BACKGROUND GENERAL DE LA SECTION REVIEW */
+.darkBackG {
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.darkBgCard {
+    background-color: rgba(68, 68, 68, 1);
+}
+
+.fontReview {
+    color: rgba(238, 238, 238, 1);
+}
+
+.fontExplainProject {
+    color: rgba(68, 68, 68, 1);
+}
+
+/* --------------------------------------------------------------------- */
+
+.mainReview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(238, 238, 238);
+}
+
+.secondReview,
+.thirdReview {
+    margin-left: 65px;
+    overflow: hidden;
+}
+
+.overVisible {
+    overflow: visible;
+}
+
+.carousel .img {
+    flex: 1;
+    object-fit: cover;
+}
+
+/* CONTAINER DE LA CARD */
+.cardReview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* EL CUERPO DE LA CARD */
+.cardBodyReview {
+    width: 242px;
+    height: 385px;
+    font-size: 0.5rem;
+    display: flex;
+}
+
+/* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
+.mainCardReview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NOMBRE DEL PROYECTO */
+.ProjectNameReview {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 26px;
+    color: #E48F2A;
+}
+
+.imgContainerReview {
+    background-image: url("images/FotoRoma.avif");
+    background-size: cover;
+    background-position: center center;
+    width: 242px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+}
+
+.descExplainReview {
+    width: 241px;
+    height: 173px;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    color: #BCBCBC;
+}
+
+.titleContainerReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
+.mainDivReview {
+    width: 100%;
+    padding: 0px;
+}
+
+/* CONTIENE LOS TRES LOGOS DE LENGUAJE */
+.containerLogosReview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 9px;
+    margin-bottom: 40px;
+}
+
+/* LOGOS DE LENGUAJE */
+.imgLogosReview {
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px;
+}
+
+#person-img {
+    width: 240px;
+    height: 200px;
+}
+
+.cardHr {
+    border: none;
+    border-top: 1.5px solid rgba(68, 68, 68, 1);
+    margin: 0px;
+}
+
+.titleReview {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 0.35rem;
+    margin-bottom: 1.3rem;
+    padding-top: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.jobReview {
+    font-weight: 400;
+    margin-bottom: 0.35rem;
+    letter-spacing: 1.5px;
+}
+
+.authorReview {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    color: #444444;
+    margin: 0px;
+}
+
+.shadowCityName {
+    background: rgba(68, 68, 68, 0.4);
+    color: #EEEEEE;
+}
+
+.infoReview {
+    font-family: 'Montserrat';
+    width: 222px;
+    height: 96px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.NamePost {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: start;
+    margin-left: 70px;
+
+}
+
+.select-btn {
+    margin-top: 1rem;
+}
+
+.btnsReview {
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+}
+
+.btnsReview:hover {
+    color: white;
+}
+
+
+.prev-btn {
+    font-size: 18px;
+    margin-top: -230px;
+    margin-bottom: 310px;
+    color: white;
+}
+
+.next-btn {
+    font-size: 18px;
+    margin-top: -230px;
+    margin-bottom: 310px;
+    color: white;
+}
+
+.darkPrevNextBtn {
+    color: black;
+}
+
+.hideBtn {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* CONTAINER DE LOS BTNS < > */
+.divBtnsReview {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerScrollXReview {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.containerScrollXReview::-webkit-scrollbar {
+    width: 1%;
+    height: 5px;
+}
+
+.containerScrollXReview::-webkit-scrollbar-thumb {
+    background-color: #cc7f7f;
+    border-radius: 0px;
+}
+
+.containerScrollXReview::-webkit-scrollbar-track {
+    background-color: #6d1515;
+    border-radius: 0px;
+}
+
+.itemScrollXReview {
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+/* ------------------------------------------ RESTAURANT -------------------------------------------- */
+
+.mainTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainDivMenu {
+    margin: 0;
+    padding: 0;
+}
+
+.titleMenu {
+    margin-top: -120px;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0rem;
+    padding-top: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.titleContainerRestaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.underlineRestaurant {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    color: #E65100;
+}
+
+.filter-btn {
+    margin: 2px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: rgb(0, 116, 0);
+    border-radius: 5px;
+}
+
+.underlineRestaurant {
+    width: 60%;
+    height: 1px;
+    background-color: #268432;
+}
+
+.underlinePlato {
+    width: 60%;
+    height: 1px;
+    margin-bottom: 35px;
+    margin-top: -5px;
+    margin-left: 20px;
+    background-color: #268432;
+}
+
+.titlePlato {
+    display: flex;
+    justify-content: space-around;
+}
+
+.namePlato {
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 3.5px;
+}
+
+.textPlato {
+    margin-top: -25px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.imgPlato {
+    border-radius: 1rem;
+    margin: 10px;
+    margin-top: 20px;
+    width: 220px;
+    height: 220px;
+}
+
+.mainDivMenu {
+    padding-left: 0px;
+    margin-right: 25px;
+}
+
+/* ------------------------------------------ ACCORDION -------------------------------------------- */
+
+.cuarta {
+    padding-top: 2200px;
+}
+
+.logosImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.lenjDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.divBar {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.htmlBar {
+    width: 50px;
+    background-color: #E65100;
+}
+
+.cssBar {
+    width: 50px;
+    background-color: #039BE5;
+}
+
+.jsBar {
+    width: 50px;
+    background-color: #ffd600;
+}
+
+.imgLenj {
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+.lenjSpan {
+    margin-top: -5px;
+}
+
+.textAccordion {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.accordion {
+    width: 280px;
+    border: 1px black solid;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.containerAccordion {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.linkHide {
+    margin-top: 40px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.divBtnAgregar {
+    width: 300px;
+    margin-bottom: 1px;
+}
+
+.btnAgregar {
+    width: 75px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 10px;
+    background-color: #E65100;
+    color: white;
+}
+
+
+
+.titulo::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.content {
+    position: relative;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 690px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion hr {
+    width: 100%;
+    background-color: rgb(204, 203, 203);
+}
+
+/*------------------------------------- BTN AGREGAR JAVA SCRIPT ----------------------------------------*/
+
+
+
+
+/* ------------------------------------- ACCORDION / JAVA SCRIPT --------------------------------------- */
+
+/* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
+.containerAccordion.active .content {
+    height: 100px;
+}
+
+/* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
+/* .containerAccordion.active .titulo {
+    color: rgb(63, 245, 63);
+} */
+
+.containerAccordion.active .titulo::before {
+    content: '-';
+    font-size: 30px;
+}
+
+/* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
+.containerAccordion1.active .content {
+    height: 100px;
+}
+
+/* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
+/* .containerAccordion.active .titulo {
+    color: rgb(63, 245, 63);
+} */
+
+.containerAccordion1.active .titulo::before {
+    content: '-';
+    font-size: 30px;
+}
+
+/* --------------------------------------------- COUNTER ---------------------------------------------- */
+
+.mainDivCounter {
+    width: 100%;
+    font-size: 15px;
+}
+
+.titleDivCounter {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btnDivCounter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnDivCounterUno {
+    display: none;
+}
+
+.titleCounter {
+    margin-top: 1.5rem;
+}
+
+.subTitleAccordion {
+    font-size: 1.5rem;
+}
+
+.btnsCounter {
+    padding: 0rem 1rem;
+    border: 1px solid black;
+    background-color: #ffd600;
+}
+
+.work {
+    font-size: 12px;
+}
+
+/* -------------------------------------------- FOOTER ---------------------------------------------- */
+
+.mainFooter {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    background-color: #28145e;
+}
+
+.mainSectionFooter a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans';
+    font-size: 10px;
+    color: beige;
+}
+
+.companyFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.linkFooterDiv {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.logoPlusCompanyDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoFooter a {
+    margin-bottom: 5px;
+}
+
+.policyFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.redesFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logosRedesFooter {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 5px;
+}
+
+.imgLogoFooter {
+    width: 50px;
+    margin-bottom: 3px;
+}
+
+.companyFooter a {
+    font-size: 15px;
+}
+
+.titleRedes {
+    font-size: 15px;
+    margin-left: 4px;
+    color: beige;
+}
+
+.bi {
+    width: 18px;
+}
+
+.copyFooter {
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
+/* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
+/* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
+
+
+/* ACTUA CUANDO ES MAS GRANDE QUE 992px */
+@media (min-width: 992px) {
+
+    /* ---------------------------------------- NAVBAR ------------------------------------------- */
+
+    #mainNavbar {
+        height: 64px;
+    }
+
+    /* CONTAINER NAV LINKS */
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* margin-top: 37px; */
+    }
+
+    /* LINKS DEL NAVBAR */
+    #mainNavbar .nav-link {
+        margin-top: 0px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        padding: 8px 40px 8px 0px;
+        color: rgb(255, 255, 255);
+    }
+
+    /* CONTAINER INPUT + LUPA */
+    .formNavbar {
+        display: flex;
+    }
+
+    /* INPUT NAVBAR */
+    .inputNavbar {
+        box-sizing: border-box;
+        width: 183px;
+        height: 36px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 4px 0px 0px 4px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+
+    /* BTN LUPA NAVBAR */
+    .btnNavbar {
+        width: 45px;
+        height: 36px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 0px 4px 4px 0px;
+        color: white;
+        background-color: transparent;
+    }
+
+    /* COMPANY NAME */
+    #mainNavbar .navbar-brand {
+        font-size: 24px;
+        /* margin-top: 37px; */
+        margin-right: 50px;
+        margin-left: 55px;
+    }
+
+    /* ---------------------------------------- VIDEO ------------------------------------------- */
+
+
+    .sectionPrimera {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    /* CONTIENE LOS DOS PRIMEROS PARRAFOS */
+    .mainDivIntro {
+        width: 30%;
+        height: 96px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 27px;
+        padding-top: 105px;
+        padding-left: 75px;
+        color: white;
+    }
+
+    /* PRIMER PARRAFO */
+    .nameIntro {
+        margin-bottom: 15px;
+    }
+
+    /* VIDEO PROJECT + PARRAFO DESCRIPCIÓN PROYECTO */
+    .mainExplainVideo {
+        display: flex;
+        flex-direction: column;
+        width: 588px;
+        height: 320px;
+        margin-top: 400px;
+        margin-left: 820px;
+        background-blend-mode: multiply;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    /* TITULO DE LA CARD */
+    .videoProject {
+        width: 547px;
+        height: 39px;
+        text-align: right;
+        margin-top: 19px;
+        margin-bottom: 32px;
+        margin-right: 10px;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 39px;
+        color: white;
+    }
+
+    /* PARRAFO DESCRIPCIÓN DEL PROYECTO  */
+    .descExplain {
+        width: 547px;
+        height: 148px;
+        text-align: right;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 23px;
+        color: white;
+    }
+
+    /* PARA QUITAR EL SCROLL INTERNO */
+    .descExplain {
+        overflow-y: visible;
+    }
+
+    /* CONTAINER LOGOS DE LENGUAJES */
+    .logosDivExplainVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        height: 175px;
+        padding: 25px 10px 0px 0px;
+
+    }
+
+    /* LOGOS DE LENGUAJES */
+    .imgLenj {
+        width: 40px;
+        height: 40px;
+        margin: 0px 7px;
+    }
+
+    /* CONTAINER SECTION BTN PLAY/PAUSE  */
+    .mainPlayPauseSection {
+        margin-left: 75px;
+        margin-top: -40px;
+    }
+
+    /* FONDO DE LOS BOTONES */
+    .btnSwitchVideo {
+        position: absolute;
+        width: 310px;
+        height: 36px;
+        margin: 0px 0px 0px 0px;
+        border-radius: 4px;
+        border: none;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+
+    /* CONTIENE LOS BOTONES PLAY - PAUSE */
+    .PlayPauseDiv {
+        width: 310px;
+        height: 35px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+
+    /* CONTAINER PALABRA Y SIMBOLO PLAY/PAUSE */
+    .divPlay,
+    .divPause {
+        width: 75px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 3px;
+    }
+
+    .divPause {
+        width: 90px;
+        padding-left: 10px;
+    }
+
+    /* SIMBOLO PLAY Y PAUSE */
+    .btnPlayVideo,
+    .btnPauseVideo {
+        font-size: 25px;
+        color: white;
+
+    }
+
+    /* PALABRA PLAY Y PAUSE */
+    .spanPlayBtn,
+    .spanPauseBtn {
+        font-size: 19px;
+        color: white;
+    }
+
+    .btnNavbar {
+        margin-right: 30px;
+    }
+
+    /* ------------------------------------------ REVIEW --------------------------------------------- */
+    /* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
+    .mainDivReview {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+    /* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
+    .mainCardReview {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* NOMBRE DEL PROYECTO */
+    .ProjectNameReview {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 300px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+
+    /* CONTAINER DE LAS CARDS Y LOS DARKS BTNS */
+    .cardReview {
+        align-items: start;
+        margin-top: 110px;
+    }
+
+    /* EL CUERPO DE LA CARD */
+    .cardBodyReview {
+        width: 304px;
+    }
+
+    /* CONTAINER DE LA IMAGEN */
+    .imgContainerReview {
+        width: 304px;
+    }
+
+    /* SEGUNDA Y TERCERA CARD */
+    .secondReview {
+        margin-left: 65px;
+        overflow: visible;
+    }
+
+    .thirdReview {
+        overflow: hidden;
+    }
+
+    /* CONTAINER DE LOS DARKS BTNS Y SPANS */
+    .mainDivDarkMode {
+        width: 673px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(156, 156, 156);
+        margin-left: 375px;
+
+    }
+
+    /* CONTAINER DE LOS BTNS < > */
+    .divBtnsReview {
+        width: 780px;
+    }
+
+    /* CONTAINER DE NOMBRE PROYECTO - EXPLICACIÓN Y LOGOS */
+    .headDiv {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        margin-left: 100px;
+        margin-right: 250px;
+    }
+
+    /* DESCRIPCIÓN DEL PROYECTO */
+    .parrafoReview {
+        width: 360px;
+        height: 138px;
+        text-align: start;
+    }
+
+    /* IMAGEN LOGOS REVIEW */
+    .imgLogosReview {
+        width: 35px;
+        height: 30px;
+        margin: 0px 17px 50px -3px;
+    }
+
+    /* TEXTO DE LA REVIEW */
+    .infoReview {
+        margin-left: 40px;
+    }
+
+    /* MONBRE Y FECHA DE LA REVIEW */
+    .NamePost {
+        margin-left: 100px;
+    }
+
+    /* BOTON QUE CONTIENE LAS PALABRA DARK / LIGHT */
+    .darkBtn {
+        background-color: transparent;
+    }
+
+    /* PALABRA DARK  */
+    .spanDark {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+    }
+
+    /* PALABRA LIGHT */
+    .spanLigth {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+        padding: 0px;
+        display: inline;
+        margin-left: 20px;
+    }
+
+}
+
+/* ACTUA CUANDO ES MAS PEQUEÑO QUE 992px */
+@media (max-width: 992px) {
+    .formNavbar {
+        display: none;
+    }
+
+    /* LA PALABRA PLAY/PAUSE */
+    .spanPlayBtn,
+    .spanPauseBtn {
+        display: none;
+    }
+
+}
