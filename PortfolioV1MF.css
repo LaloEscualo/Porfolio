@@ -200,7 +200,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 17.70rem;
-    margin-top: 4.35rem;
+    /* margin-top: 4.35rem; */
     background-blend-mode: multiply;
     border-radius: 0.63rem;
     background: rgba(0, 0, 0, 0.1);
@@ -340,8 +340,9 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 105px;
-    margin-bottom: 15px;
+    /* margin-top: 105px; */
+    /* margin-bottom: 15px; */
+    padding-bottom: 5vh;
 }
 
 /* FONDO DE LOS BOTONES LA PARTE GRIS*/
@@ -1136,7 +1137,8 @@ html {
 }
 
 .mainIntroBox {
-    height: 100%;
+    height: 65%;
+
 }
 
 .mainExplainBox {
@@ -1145,9 +1147,16 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 3rem;
+    justify-content: space-between;
+    /* padding-bottom: 3rem; */
 }
+
+/* .pruebaYndi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+} */
 
 
 /* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
@@ -1233,6 +1242,7 @@ html {
 
     .mainIntroBox {
         width: 100%;
+
     }
 
     /* CONTIENE LOS DOS PRIMEROS PARRAFOS */
