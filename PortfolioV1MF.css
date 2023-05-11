@@ -2,21 +2,21 @@ body {
     font-family: 'Kodchasan', sans-serif;
 }
 
-/* .prueba {
-    background-color: #039BE5;
-} */
+html {
+    font-size: 16px;
+}
 
 #mainNavbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 47px;
-    padding: 5px 28px 5px 20px;
+    height: 2.96rem;
+    padding: 0.315rem 1.76rem 0.315rem 1.26rem;
 }
 
 .navbar-toggler {
     border: none;
-    padding: 0px;
+    padding: 0rem;
 }
 
 .navbar-toggler:focus {
@@ -25,10 +25,10 @@ body {
 }
 
 .navbar-toggler-icon {
-    width: 25px;
-    height: 25px;
-    margin-top: 2px;
-    padding: 0px 0px;
+    width: 1.575rem;
+    height: 1.575rem;
+    margin-top: 0.126rem;
+    padding: 0rem 0rem;
     /* Modifica la apariencia del toggle btn */
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -38,21 +38,23 @@ body {
 }
 
 #mainNavbar .nav-link {
-    margin-top: 17px;
+    margin-top: 1.07rem;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.13rem;
+    line-height: 1.45rem;
     color: rgba(228, 143, 42, 1);
 }
 
 /* COMPANY NAME */
 #mainNavbar .navbar-brand {
     font-family: 'Chivo Mono', monospace;
-    font-size: 18px;
+    font-size: 1.13rem;
     color: white;
 }
 
+
 /* -----------------------------------------CLASES EMERGENTES ------------------------------------------- */
+
 
 /* Afecta a .preloaderVideo */
 .hide-preloader {
@@ -60,13 +62,13 @@ body {
 }
 
 /* Afecta a .switchVideo */
-.slide .switchVideo {
+.slides .switchVideo {
     left: 50%;
 }
 
 /* Afecta a #mainNavbar */
 #mainNavbar.newPadding {
-    padding: 5px 28px 800px 20px;
+    padding: 0.315rem 1.76rem 50.4rem 1.26rem;
     backdrop-filter: blur(5px);
     transition: background 500ms;
     background-color: rgba(0, 0, 0, 0.4);
@@ -84,7 +86,7 @@ body {
     content: "";
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
@@ -93,15 +95,14 @@ body {
 
 /* Afecta a .textIntro */
 .linkHideTextIntro {
-    margin-top: 40px;
+    margin-top: 2.52rem;
     opacity: 0;
     transition: opacity 0.5s;
 }
 
-
 /* Afecta a .mainExplainVideo*/
 .linkHideCard {
-    margin-top: 70px;
+    margin-top: 4.41rem;
     opacity: 0;
     transition: opacity 0.5s;
 }
@@ -119,14 +120,14 @@ body {
     }
 
     100% {
-        transform: translateY(20px);
+        transform: translateY(1.26rem);
     }
 }
 
 .addMarginTop {
     position: absolute;
     left: 0%;
-    padding: 0px 30px;
+    padding: 0rem 1.89rem;
     animation-name: bajar-texto;
     animation-duration: 350ms;
     animation-timing-function: ease-out;
@@ -138,11 +139,11 @@ body {
 /* Afecta a .nameIntro */
 @keyframes subir-texto {
     100% {
-        transform: translateY(-0px);
+        transform: translateY(-0rem);
     }
 
     0% {
-        transform: translateY(20px);
+        transform: translateY(1.26rem);
     }
 }
 
@@ -157,10 +158,12 @@ body {
 
 /* Afecta a .mainPlayPauseSection */
 .addMargin {
-    margin-top: 1px;
+    margin-top: 0.063rem;
 }
 
+
 /* --------------------------------------------- SECTIONS ------------------------------------------- */
+
 
 .sectionPrimera {
     display: flex;
@@ -188,36 +191,24 @@ body {
     padding-top: 2rem;
 }
 
+
 /*------------------------------------------------- INTRO ------------------------------------------- */
 
-/* CONTIENE LOS DOS PRIMEROS PARRAFOS */
-.mainDivIntro {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 18px;
-    padding-top: 76px;
-    padding-left: 36px;
-    padding-right: 36px;
-    color: white;
-}
 
 /* CARD CON TITULO - EXPLICACION Y LOGOS */
 .mainExplainVideo {
     display: flex;
     flex-direction: column;
-    width: 281px;
-    margin-top: 69px;
+    width: 17.70rem;
+    margin-top: 4.35rem;
     background-blend-mode: multiply;
-    border-radius: 10px;
+    border-radius: 0.63rem;
     background: rgba(0, 0, 0, 0.1);
 }
 
 /* PRIMER PARRAFO */
 .nameIntro {
-    margin-bottom: 5px;
+    margin-bottom: 0.315rem;
 }
 
 /* SPAN JORGE S. */
@@ -228,51 +219,54 @@ body {
 /* TITULO DE LA CARD */
 .videoProject {
     font-weight: 700;
-    font-size: 20px;
-    margin-top: 14px;
-    margin-bottom: 12px;
+    font-size: 1.26rem;
+    margin-top: 0.882rem;
+    margin-bottom: 0.756rem;
     color: white;
 }
 
 /* PARRAFO DESCRIPCIÓN DEL PROYECTO  */
 .descExplain {
-    width: 237px;
-    height: 93px;
+    width: 14.93rem;
+    height: 5.86rem;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.882rem;
     text-align: center;
-    line-height: 18px;
+    line-height: 1.13rem;
     overflow-y: scroll;
     color: white;
 }
 
-
-
 /* SCROLL INTERNO */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 0.252rem;
 }
 
 /* PARA EL THUMB*/
 ::-webkit-scrollbar-thumb {
     background-color: white;
-    border-radius: 4px;
+    border-radius: 0.252rem;
 }
 
 /* PARA EL TRACK */
 ::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
+    border-radius: 0.252rem;
 }
+
 
 /*------------------------------------------------ EXPLAIN ------------------------------------------- */
 
-/* VIDEO PROJECT + PARRAFO DESCRIPCIÓN PROYECTO */
+
+/* CONATINER TITLE - EXPLAIN - LOGOS */
 .explainBody {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.headDiv {
+    padding-top: 3rem;
 }
 
 /* LOGOS DE LENGUAJES */
@@ -286,20 +280,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2px;
-    margin-bottom: 10px;
-}
-
-/* EN CUARENTENA --------------------------------- */
-.logosDivExplain {
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
+    margin-top: 0.126rem;
+    margin-bottom: 0.63rem;
 }
 
 /* ------------------------------------------------ */
 
 /*------------------------------------------------- VIDEO ------------------------------------------- */
+
 
 /* CONTENEDOR DEL VIDEO */
 .containerVideo {
@@ -312,6 +300,20 @@ body {
     /* El video cubre todo el fondo */
     object-fit: cover;
     z-index: -1;
+}
+
+/* CONTIENE LOS DOS PRIMEROS PARRAFOS */
+.mainDivIntro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.882rem;
+    line-height: 1.13rem;
+    padding-top: 5rem;
+    padding-left: 2.27rem;
+    padding-right: 2.27rem;
+    color: white;
 }
 
 /* FONDO DEL PRELOADER */
@@ -338,17 +340,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 105px;
+    margin-bottom: 15px;
 }
 
 /* FONDO DE LOS BOTONES LA PARTE GRIS*/
 .btnSwitchVideo {
     position: absolute;
-    width: 110px;
-    height: 36px;
-    margin-top: 48px;
-    border-radius: 4px;
+    width: 6.93rem;
+    height: 2.27rem;
+    margin-top: 3.02rem;
+    border-radius: 0.252rem;
     border: none;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ELEMENTO MOVIL SWITCH LA PARTE NARANJA */
@@ -358,7 +362,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    border-radius: 4px;
+    border-radius: 0.252rem;
     transition-duration: 0.5s;
     background-color: rgb(228, 143, 42);
 }
@@ -369,32 +373,32 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 110px;
-    height: 35px;
-    margin-top: 49.5px;
-    font-size: 25px;
+    width: 6.93rem;
+    height: 2.205rem;
+    margin-top: 3.12rem;
+    font-size: 1.575rem;
     color: white;
     z-index: 1;
 }
 
+
 /* ----------------------------------------------- REVIEW -------------------------------------------- */
 
-/* ---------------------------- CARACTERISTICAS DE DIV MAIN CHANGES MODES ------------------------ */
 
 /* CONTIENE EL BOTON ES LA MEDIDA MAIN */
 .mainDivDarkMode {
-    width: 242px;
-    height: 55px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    width: 15.25rem;
+    height: 3.465rem;
+    border-bottom-left-radius: 0.63rem;
+    border-bottom-right-radius: 0.63rem;
     background-color: #EEEEEE;
 }
 
 /* BOTON QUE CONTIENE LAS PALABRA DARK / LIGHT */
 .darkBtn {
-    margin-top: 13px;
+    margin-top: 0.819rem;
     border: none;
-    padding: 0px;
+    padding: 0rem;
     background-color: none;
     background-color: #EEEEEE;
 }
@@ -409,11 +413,13 @@ body {
 .spanLigth {
     color: white;
     text-decoration: underline;
-    padding: 0px;
+    padding: 0rem;
     display: none;
 }
 
+
 /* --------------------------------- CHANGES DARK/LIGTH MODE ------------------------------------- */
+
 
 /* OCULTA UNA DE LAS PALABRAS */
 .btnHide {
@@ -447,14 +453,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.63rem;
+    border-top-right-radius: 0.63rem;
     background-color: rgb(238, 238, 238);
 }
 
 .secondReview,
 .thirdReview {
-    margin-left: 65px;
     overflow: hidden;
 }
 
@@ -462,47 +467,12 @@ body {
     overflow: visible;
 }
 
-.carousel .img {
-    flex: 1;
-    object-fit: cover;
-}
-
-/* CONTAINER DE LA CARD */
-.cardReview {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* EL CUERPO DE LA CARD */
-.cardBodyReview {
-    width: 242px;
-    height: 385px;
-    font-size: 0.5rem;
-    display: flex;
-}
-
-/* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
-.mainCardReview {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.headDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* NOMBRE DEL PROYECTO */
 .ProjectNameReview {
     font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 20px;
-    line-height: 26px;
+    font-size: 1.575rem;
+    margin-bottom: 1.26rem;
+    line-height: 1.64rem;
     color: #E48F2A;
 }
 
@@ -510,21 +480,22 @@ body {
     background-image: url("images/FotoRoma.avif");
     background-size: cover;
     background-position: center center;
-    width: 242px;
-    height: 220px;
+    width: 15.25rem;
+    height: 13.86rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border-radius: 10px;
+    border-radius: 0.63rem;
+    background-color: #e31616ab;
 }
 
 .descExplainReview {
-    width: 241px;
-    height: 173px;
+    width: 15.25rem;
+    height: 10.90rem;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.882rem;
     text-align: center;
-    line-height: 18px;
+    line-height: 1.13rem;
     color: #BCBCBC;
 }
 
@@ -534,37 +505,31 @@ body {
     align-items: center;
 }
 
-/* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
-.mainDivReview {
-    width: 100%;
-    padding: 0px;
-}
-
 /* CONTIENE LOS TRES LOGOS DE LENGUAJE */
 .containerLogosReview {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 9px;
-    margin-bottom: 40px;
+    margin-top: 0.567rem;
+    margin-bottom: 2.52rem;
 }
 
 /* LOGOS DE LENGUAJE */
 .imgLogosReview {
-    width: 28px;
-    height: 28px;
-    margin: 0px 5px;
+    width: 1.76rem;
+    height: 1.76rem;
+    margin: 0rem 0.315rem;
 }
 
 #person-img {
-    width: 240px;
-    height: 200px;
+    width: 15.12rem;
+    height: 12.6rem;
 }
 
 .cardHr {
     border: none;
-    border-top: 1.5px solid rgba(68, 68, 68, 1);
-    margin: 0px;
+    border-top: 0.095rem solid rgba(68, 68, 68, 1);
+    margin: 0rem;
 }
 
 .titleReview {
@@ -573,23 +538,23 @@ body {
     margin-top: 0.35rem;
     margin-bottom: 1.3rem;
     padding-top: 1rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.095rem;
 }
 
 .jobReview {
     font-weight: 400;
     margin-bottom: 0.35rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.095rem;
 }
 
 .authorReview {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 1.89rem;
+    line-height: 2.39rem;
     color: #444444;
-    margin: 0px;
+    margin: 0rem;
 }
 
 .shadowCityName {
@@ -599,24 +564,23 @@ body {
 
 .infoReview {
     font-family: 'Montserrat';
-    width: 222px;
-    height: 96px;
+    width: 13.99rem;
+    height: 6.05rem;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    margin-left: 10px;
-    margin-top: 20px;
+    font-size: 0.819rem;
+    line-height: 1.008rem;
+    margin-left: 0.63rem;
+    margin-top: 1.26rem;
 }
 
 .NamePost {
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 0.63rem;
+    line-height: 0.756rem;
     text-align: start;
-    margin-left: 70px;
-
+    margin-left: 4.41rem;
 }
 
 .select-btn {
@@ -625,9 +589,9 @@ body {
 
 .btnsReview {
     text-decoration: none;
-    font-size: 13px;
-    border-radius: 5px;
-    margin: 5px;
+    font-size: 0.819rem;
+    border-radius: 0.315rem;
+    margin: 0.315rem;
     color: white;
 }
 
@@ -635,18 +599,17 @@ body {
     color: white;
 }
 
-
 .prev-btn {
-    font-size: 18px;
-    margin-top: -230px;
-    margin-bottom: 310px;
+    font-size: 1.13rem;
+    margin-top: -14.49rem;
+    margin-bottom: 19.53rem;
     color: white;
 }
 
 .next-btn {
-    font-size: 18px;
-    margin-top: -230px;
-    margin-bottom: 310px;
+    font-size: 1.13rem;
+    margin-top: -14.49rem;
+    margin-bottom: 19.53rem;
     color: white;
 }
 
@@ -660,7 +623,7 @@ body {
 
 /* CONTAINER DE LOS BTNS < > */
 .divBtnsReview {
-    width: 320px;
+    width: 20.16rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -672,21 +635,22 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     width: 100%;
+
 }
 
 .containerScrollXReview::-webkit-scrollbar {
-    width: 1%;
-    height: 5px;
+    /* width: 100%; */
+    height: 0.200rem;
 }
 
 .containerScrollXReview::-webkit-scrollbar-thumb {
-    background-color: #cc7f7f;
-    border-radius: 0px;
+    background-color: #fd7e14;
+    border-radius: 0rem;
 }
 
 .containerScrollXReview::-webkit-scrollbar-track {
-    background-color: #6d1515;
-    border-radius: 0px;
+    background-color: white;
+    border-radius: 0rem;
 }
 
 .itemScrollXReview {
@@ -696,7 +660,83 @@ body {
     text-align: center;
 }
 
+.mainCarrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridCarrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 244px;
+}
+
+.MainContainerCarrusel {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    width: 15.24rem;
+}
+
+.SlidesContainerCarrusel {
+    display: -moz-box;
+    display: -webkit-box;
+    transform: translateX(0);
+    transition: transform 0.8s ease-in-out;
+    width: 244px;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.slide2,
+.slide3 {
+    margin-left: 40px;
+}
+
+.disable-button {
+    opacity: 0.4;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.hero_-nav:not(.disable-button) {
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.newDivBtnsPrevNext {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+    bottom: 247px;
+}
+
+.prev,
+.next {
+    text-decoration: none;
+    color: white;
+}
+
+.prev:hover::before,
+.next:hover::before {
+    color: white;
+}
+
+
 /* ------------------------------------------ RESTAURANT -------------------------------------------- */
+
 
 .mainTitle {
     display: flex;
@@ -710,13 +750,13 @@ body {
 }
 
 .titleMenu {
-    margin-top: -120px;
+    margin-top: -7.56rem;
     font-weight: 200;
     font-size: 1rem;
     margin-top: 0.35rem;
     margin-bottom: 0rem;
     padding-top: 1rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.095rem;
 }
 
 .titleContainerRestaurant {
@@ -732,25 +772,25 @@ body {
 }
 
 .filter-btn {
-    margin: 2px;
-    margin-bottom: 5px;
+    margin: 0.126rem;
+    margin-bottom: 0.315rem;
     color: white;
     background-color: rgb(0, 116, 0);
-    border-radius: 5px;
+    border-radius: 0.315rem;
 }
 
 .underlineRestaurant {
     width: 60%;
-    height: 1px;
+    height: 0.063rem;
     background-color: #268432;
 }
 
 .underlinePlato {
     width: 60%;
-    height: 1px;
-    margin-bottom: 35px;
-    margin-top: -5px;
-    margin-left: 20px;
+    height: 0.063rem;
+    margin-bottom: 2.205rem;
+    margin-top: -0.315rem;
+    margin-left: 1.26rem;
     background-color: #268432;
 }
 
@@ -761,48 +801,48 @@ body {
 
 .namePlato {
     font-weight: 400;
-    font-size: 20px;
-    margin-left: 15px;
+    font-size: 1.26rem;
+    margin-left: 0.945rem;
 }
 
 .price {
     font-weight: 400;
     font-size: 1rem;
-    margin-top: 3.5px;
+    margin-top: 0.22rem;
 }
 
 .textPlato {
-    margin-top: -25px;
+    margin-top: -1.575rem;
     text-align: justify;
-    margin-left: 30px;
-    margin-bottom: 0px;
+    margin-left: 1.89rem;
+    margin-bottom: 0rem;
 }
 
 .imgPlato {
     border-radius: 1rem;
-    margin: 10px;
-    margin-top: 20px;
-    width: 220px;
-    height: 220px;
+    margin: 0.63rem;
+    margin-top: 1.26rem;
+    width: 13.86rem;
+    height: 13.86rem;
 }
 
 .mainDivMenu {
-    padding-left: 0px;
-    margin-right: 25px;
+    padding-left: 0rem;
+    margin-right: 1.575rem;
 }
 
 /* ------------------------------------------ ACCORDION -------------------------------------------- */
 
 .cuarta {
-    padding-top: 2200px;
+    padding-top: 138.6rem;
 }
 
 .logosImg {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2px;
-    margin-bottom: 10px;
+    margin-top: 0.126rem;
+    margin-bottom: 0.63rem;
 }
 
 .lenjDiv {
@@ -812,53 +852,53 @@ body {
 
 .divBar {
     width: 100%;
-    height: 1px;
+    height: 0.063rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .htmlBar {
-    width: 50px;
+    width: 3.15rem;
     background-color: #E65100;
 }
 
 .cssBar {
-    width: 50px;
+    width: 3.15rem;
     background-color: #039BE5;
 }
 
 .jsBar {
-    width: 50px;
+    width: 3.15rem;
     background-color: #ffd600;
 }
 
 .imgLenj {
-    width: 30px;
-    height: 30px;
-    margin: 0px 5px;
+    width: 1.89rem;
+    height: 1.89rem;
+    margin: 0rem 0.315rem;
 }
 
 .lenjSpan {
-    margin-top: -5px;
+    margin-top: -0.315rem;
 }
 
 .textAccordion {
     text-align: center;
-    font-size: 20px;
-    margin-top: 15px;
+    font-size: 1.26rem;
+    margin-top: 0.945rem;
 }
 
 .accordion {
-    width: 280px;
-    border: 1px black solid;
-    margin-bottom: 50px;
-    border-radius: 8px;
+    width: 17.64rem;
+    border: 0.063rem black solid;
+    margin-bottom: 3.15rem;
+    border-radius: 0.504rem;
 }
 
 .containerAccordion {
     position: relative;
-    margin: 10px 10px;
+    margin: 0.63rem 0.63rem;
 }
 
 .titulo {
@@ -866,27 +906,27 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    font-size: 17px;
+    font-size: 1.07rem;
     cursor: pointer;
     text-align: left;
 }
 
 .linkHide {
-    margin-top: 40px;
+    margin-top: 2.52rem;
     opacity: 0;
     transition: opacity 0.5s;
 }
 
 .divBtnAgregar {
-    width: 300px;
-    margin-bottom: 1px;
+    width: 18.9rem;
+    margin-bottom: 0.063rem;
 }
 
 .btnAgregar {
-    width: 75px;
-    border-radius: 5px;
+    width: 4.725rem;
+    border-radius: 0.315rem;
     background-color: white;
-    margin-right: 10px;
+    margin-right: 0.63rem;
     background-color: #E65100;
     color: white;
 }
@@ -897,17 +937,17 @@ body {
     content: '+';
     position: absolute;
     top: 50%;
-    right: -2px;
-    font-size: 20px;
+    right: -0.126rem;
+    font-size: 1.26rem;
     transform: translateY(-50%);
 }
 
 .content {
     position: relative;
     height: 0;
-    font-size: 20px;
+    font-size: 1.26rem;
     text-align: justify;
-    width: 690px;
+    width: 43.47rem;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -926,7 +966,7 @@ body {
 
 /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
 .containerAccordion.active .content {
-    height: 100px;
+    height: 6.3rem;
 }
 
 /* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
@@ -936,12 +976,12 @@ body {
 
 .containerAccordion.active .titulo::before {
     content: '-';
-    font-size: 30px;
+    font-size: 1.89rem;
 }
 
 /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
 .containerAccordion1.active .content {
-    height: 100px;
+    height: 6.3rem;
 }
 
 /* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
@@ -951,19 +991,21 @@ body {
 
 .containerAccordion1.active .titulo::before {
     content: '-';
-    font-size: 30px;
+    font-size: 1.89rem;
 }
+
 
 /* --------------------------------------------- COUNTER ---------------------------------------------- */
 
+
 .mainDivCounter {
     width: 100%;
-    font-size: 15px;
+    font-size: 0.945rem;
 }
 
 .titleDivCounter {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.575rem;
 }
 
 .btnDivCounter {
@@ -986,19 +1028,21 @@ body {
 
 .btnsCounter {
     padding: 0rem 1rem;
-    border: 1px solid black;
+    border: 0.063rem solid black;
     background-color: #ffd600;
 }
 
 .work {
-    font-size: 12px;
+    font-size: 0.756rem;
 }
+
 
 /* -------------------------------------------- FOOTER ---------------------------------------------- */
 
+
 .mainFooter {
     width: 100%;
-    height: 250px;
+    height: 15.75rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1010,7 +1054,7 @@ body {
     text-decoration: none;
     color: black;
     font-family: 'Lucida Sans';
-    font-size: 10px;
+    font-size: 0.63rem;
     color: beige;
 }
 
@@ -1018,15 +1062,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px;
+    margin: 0.945rem;
 }
 
 .linkFooterDiv {
-    height: 100px;
+    height: 6.3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px;
+    margin: 0.945rem;
 }
 
 .logoPlusCompanyDiv {
@@ -1041,7 +1085,7 @@ body {
 }
 
 .infoFooter a {
-    margin-bottom: 5px;
+    margin-bottom: 0.315rem;
 }
 
 .policyFooter {
@@ -1057,38 +1101,52 @@ body {
 }
 
 .logosRedesFooter {
-    width: 110px;
+    width: 6.93rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 5px;
+    margin-right: 0.315rem;
 }
 
 .imgLogoFooter {
-    width: 50px;
-    margin-bottom: 3px;
+    width: 3.15rem;
+    margin-bottom: 0.189rem;
 }
 
 .companyFooter a {
-    font-size: 15px;
+    font-size: 0.945rem;
 }
 
 .titleRedes {
-    font-size: 15px;
-    margin-left: 4px;
+    font-size: 0.945rem;
+    margin-left: 0.252rem;
     color: beige;
 }
 
 .bi {
-    width: 18px;
+    width: 1.13rem;
 }
 
 .copyFooter {
-    font-size: 8px;
-    letter-spacing: 1px;
+    font-size: 0.504rem;
+    letter-spacing: 0.063rem;
     color: white;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 0.315rem;
+}
+
+.mainIntroBox {
+    height: 100%;
+}
+
+.mainExplainBox {
+    /* width: 80%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
 }
 
 
@@ -1103,7 +1161,7 @@ body {
     /* ---------------------------------------- NAVBAR ------------------------------------------- */
 
     #mainNavbar {
-        height: 64px;
+        height: 4.03rem;
     }
 
     /* CONTAINER NAV LINKS */
@@ -1112,16 +1170,12 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        /* margin-top: 37px; */
     }
 
     /* LINKS DEL NAVBAR */
     #mainNavbar .nav-link {
-        margin-top: 0px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
-        padding: 8px 40px 8px 0px;
+        margin-top: 0rem;
+        padding: 0.504rem 2.52rem 0.504rem 0rem;
         color: rgb(255, 255, 255);
     }
 
@@ -1133,196 +1187,175 @@ body {
     /* INPUT NAVBAR */
     .inputNavbar {
         box-sizing: border-box;
-        width: 183px;
-        height: 36px;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 4px 0px 0px 4px;
+        width: 11.53rem;
+        height: 2.27rem;
+        border: 0.063rem solid rgb(255, 255, 255);
+        border-radius: 0.252rem 0rem 0rem 0.252rem;
         background-color: rgb(255, 255, 255, 0.5);
     }
 
     /* BTN LUPA NAVBAR */
     .btnNavbar {
-        width: 45px;
-        height: 36px;
-        margin: 0px;
-        padding: 0px;
-        font-size: 20px;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 0px 4px 4px 0px;
+        width: 2.835rem;
+        height: 2.27rem;
+        margin: 0rem 1.89rem 0rem 0rem;
+        padding: 0rem;
+        font-size: 1.26rem;
+        border: 0.063rem solid rgb(255, 255, 255);
+        border-radius: 0rem 0.252rem 0.252rem 0rem;
         color: white;
         background-color: transparent;
     }
 
     /* COMPANY NAME */
     #mainNavbar .navbar-brand {
-        font-size: 24px;
-        /* margin-top: 37px; */
-        margin-right: 50px;
-        margin-left: 55px;
+        font-size: 1.51rem;
+        margin-right: 3.15rem;
+        margin-left: 3.465rem;
     }
+
 
     /* ---------------------------------------- VIDEO ------------------------------------------- */
 
 
     .sectionPrimera {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 100%;
-        height: 100vh;
+        justify-content: space-between;
+        padding: 0px 100px;
+    }
 
+    .mainExplainBox {
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: end;
+        justify-content: space-between;
+        padding-bottom: 4.98rem;
+    }
+
+    .mainIntroBox {
+        width: 100%;
     }
 
     /* CONTIENE LOS DOS PRIMEROS PARRAFOS */
     .mainDivIntro {
         width: 30%;
-        height: 96px;
-        display: flex;
-        flex-direction: column;
+        height: 100%;
         text-align: start;
         font-weight: 200;
-        font-size: 18px;
-        line-height: 27px;
-        padding-top: 105px;
-        padding-left: 75px;
-        color: white;
+        font-size: 1.13rem;
+        line-height: 1.70rem;
+        padding-top: 6.615rem;
+        padding-left: 0rem;
+        margin-left: -1.575rem;
     }
 
     /* PRIMER PARRAFO */
     .nameIntro {
-        margin-bottom: 15px;
+        margin-bottom: 0.945rem;
     }
 
     /* VIDEO PROJECT + PARRAFO DESCRIPCIÓN PROYECTO */
     .mainExplainVideo {
-        display: flex;
-        flex-direction: column;
-        width: 588px;
-        height: 320px;
-        margin-top: 400px;
-        margin-left: 820px;
-        background-blend-mode: multiply;
-        border-radius: 10px;
-        background: rgba(0, 0, 0, 0.1);
+        width: 37.04rem;
+        height: 20.16rem;
+    }
+
+    .explainBody {
+        align-items: end;
     }
 
     /* TITULO DE LA CARD */
     .videoProject {
-        width: 547px;
-        height: 39px;
+        width: 34.46rem;
+        height: 2.46rem;
         text-align: right;
-        margin-top: 19px;
-        margin-bottom: 32px;
-        margin-right: 10px;
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 39px;
-        color: white;
+        margin-top: 1.20rem;
+        margin-bottom: 2.02rem;
+        margin-right: 20px;
+        font-size: 2.835rem;
+        line-height: 2.46rem;
     }
 
     /* PARRAFO DESCRIPCIÓN DEL PROYECTO  */
     .descExplain {
-        width: 547px;
-        height: 148px;
+        width: 34.46rem;
+        height: 9.32rem;
         text-align: right;
-        font-size: 18px;
+        font-size: 1.13rem;
         font-weight: 200;
-        line-height: 23px;
-        color: white;
-    }
-
-    /* PARA QUITAR EL SCROLL INTERNO */
-    .descExplain {
+        line-height: 1.45rem;
         overflow-y: visible;
+        margin-right: 20px;
     }
 
     /* CONTAINER LOGOS DE LENGUAJES */
     .logosDivExplainVideo {
-        display: flex;
-        flex-direction: column;
         align-items: end;
-        height: 175px;
-        padding: 25px 10px 0px 0px;
-
+        height: 11.02rem;
+        padding: 1.575rem 0.63rem 0rem 0rem;
     }
 
     /* LOGOS DE LENGUAJES */
     .imgLenj {
-        width: 40px;
-        height: 40px;
-        margin: 0px 7px;
+        width: 2.52rem;
+        height: 2.52rem;
+        margin: 0rem 0.441rem;
     }
 
     /* CONTAINER SECTION BTN PLAY/PAUSE  */
     .mainPlayPauseSection {
-        margin-left: 75px;
-        margin-top: -40px;
+        margin-left: -18px;
+        margin-top: -2.52rem;
+        border-radius: 0.252rem;
     }
 
     /* FONDO DE LOS BOTONES */
     .btnSwitchVideo {
-        position: absolute;
-        width: 310px;
-        height: 36px;
-        margin: 0px 0px 0px 0px;
-        border-radius: 4px;
-        border: none;
-        background-color: rgb(255, 255, 255, 0.5);
+        width: 19.53rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
 
     /* CONTIENE LOS BOTONES PLAY - PAUSE */
     .PlayPauseDiv {
-        width: 310px;
-        height: 35px;
+        width: 19.53rem;
+        height: 2.205rem;
         display: flex;
         flex-direction: row;
-        margin: 0px;
+        margin: 0rem;
     }
 
     /* CONTAINER PALABRA Y SIMBOLO PLAY/PAUSE */
     .divPlay,
     .divPause {
-        width: 75px;
+        width: 4.725rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-left: 3px;
+        padding-left: 0.189rem;
     }
 
     .divPause {
-        width: 90px;
-        padding-left: 10px;
+        width: 5.67rem;
+        padding-left: 0.63rem;
     }
 
     /* SIMBOLO PLAY Y PAUSE */
     .btnPlayVideo,
     .btnPauseVideo {
-        font-size: 25px;
+        font-size: 1.575rem;
         color: white;
-
     }
 
     /* PALABRA PLAY Y PAUSE */
     .spanPlayBtn,
     .spanPauseBtn {
-        font-size: 19px;
+        font-size: 1.20rem;
         color: white;
     }
 
-    .btnNavbar {
-        margin-right: 30px;
-    }
 
     /* ------------------------------------------ REVIEW --------------------------------------------- */
-    /* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
-    .mainDivReview {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        padding: 0px;
-    }
+
 
     /* CONTIENE TODOS LOS ELEMNETOS DE LA SECCIÓN */
     .mainCardReview {
@@ -1336,31 +1369,20 @@ body {
         display: flex;
         flex-direction: column;
         align-items: start;
-        width: 300px;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        font-size: 35px;
-    }
-
-    /* CONTAINER DE LAS CARDS Y LOS DARKS BTNS */
-    .cardReview {
-        align-items: start;
-        margin-top: 110px;
-    }
-
-    /* EL CUERPO DE LA CARD */
-    .cardBodyReview {
-        width: 304px;
+        width: 18.9rem;
+        margin-top: 2.52rem;
+        margin-bottom: 1.89rem;
+        font-size: 2.205rem;
     }
 
     /* CONTAINER DE LA IMAGEN */
     .imgContainerReview {
-        width: 304px;
+        width: 100rem;
     }
 
     /* SEGUNDA Y TERCERA CARD */
     .secondReview {
-        margin-left: 65px;
+        margin-left: 4.095rem;
         overflow: visible;
     }
 
@@ -1370,51 +1392,51 @@ body {
 
     /* CONTAINER DE LOS DARKS BTNS Y SPANS */
     .mainDivDarkMode {
-        width: 673px;
+        width: 42.40rem;
         background-color: transparent;
-        border-bottom: 1px solid rgba(156, 156, 156);
-        margin-left: 375px;
+        border-bottom: 0.063rem solid rgba(156, 156, 156);
+        margin-left: 23.62rem;
 
     }
 
     /* CONTAINER DE LOS BTNS < > */
     .divBtnsReview {
-        width: 780px;
+        width: 49.14rem;
     }
 
     /* CONTAINER DE NOMBRE PROYECTO - EXPLICACIÓN Y LOGOS */
     .headDiv {
-        height: 550px;
+        height: 34.65rem;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
-        margin-left: 100px;
-        margin-right: 250px;
+        margin-left: 6.3rem;
+        margin-right: 15.75rem;
     }
 
     /* DESCRIPCIÓN DEL PROYECTO */
     .parrafoReview {
-        width: 360px;
-        height: 138px;
+        width: 22.68rem;
+        height: 8.69rem;
         text-align: start;
     }
 
     /* IMAGEN LOGOS REVIEW */
     .imgLogosReview {
-        width: 35px;
-        height: 30px;
-        margin: 0px 17px 50px -3px;
+        width: 2.205rem;
+        height: 1.89rem;
+        margin: 0rem 1.07rem 3.15rem -0.189rem;
     }
 
     /* TEXTO DE LA REVIEW */
     .infoReview {
-        margin-left: 40px;
+        margin-left: 2.52rem;
     }
 
     /* MONBRE Y FECHA DE LA REVIEW */
     .NamePost {
-        margin-left: 100px;
+        margin-left: 6.3rem;
     }
 
     /* BOTON QUE CONTIENE LAS PALABRA DARK / LIGHT */
@@ -1432,9 +1454,9 @@ body {
     .spanLigth {
         color: rgb(255, 255, 255);
         text-decoration: underline;
-        padding: 0px;
+        padding: 0rem;
         display: inline;
-        margin-left: 20px;
+        margin-left: 1.26rem;
     }
 
 }
