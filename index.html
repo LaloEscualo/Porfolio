@@ -5,77 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Mobile First</title>
+    <title>Portfolio Mobile First Nvo Carrusel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&family=Kodchasan:wght@300;600&family=Lora&family=Montserrat:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&family=Kodchasan:wght@300;600&family=Lora&family=Montserrat:wght@400&family=Nunito+Sans&family=Prata&display=swap"
         rel="stylesheet">
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&family=Kodchasan:wght@100;200;300;600;700&display=swap"
-        rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="PortfolioV1MF.css">
 
 </head>
 
 <body>
     <!-------------------------------------------- NAVBAR ------------------------------------------->
-    <main>
-        <section>
-            <!-- COMPANY NAME - TOGGLE BTN - COLLAPSE NAV-LINK -->
-            <nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg">
-                <!-- COMPANY NAME -->
-                <a href="#"
-                    class="navbar-brand"><span>&#60;</span>LaloEscualoDev<span>&#47;</span><span>&#62;</span></a>
-                <!-- TOGGLE BTN -->
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- COLLAPSE NAV-LINK -->
-                <div class="collapse navbar-collapse" id="navLinks">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link navLinkVideo">Video</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#segunda" class="nav-link">Review</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#tercera" class="nav-link">Restaurant</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#cuarta" class="nav-link">Accordion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#cuarta" class="nav-link">Contact</a>
-                        </li>
-                        <form class="formNavbar">
-                            <input type="text" class="inputNavbar">
-                            <button class="btnNavbar fas fa-search fa-horizontal icono-lupa">
-                            </button>
-                        </form>
-                    </ul>
-                </div>
-            </nav>
-        </section>
-        <!------------------------------------- SECTION VIDEO --------------------------------------->
-        <section id="primera" class="sectionPrimera">
-            <!-- TWO FIRST PARAGRAF -->
+    <section class="sectionNavbar">
+        <!-- CONTAINER COMPANY NAME - TOGGLE BTN - COLLAPSE NAV-LINK -->
+        <nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg">
+            <!-- COMPANY NAME -->
+            <a href="#" class="navbar-brand"><span>&#60;</span>LaloEscualoDev<span>&#47;</span><span>&#62;</span></a>
+            <!-- TOGGLE BTN -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- CONTAINER COLLAPSE NAV-LINK -->
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link navLinkVideo">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#segunda" class="nav-link">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tercera" class="nav-link">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cuarta" class="nav-link">Accordion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cuarta" class="nav-link">Contact</a>
+                    </li>
+                    <form class="formNavbar">
+                        <input type="text" class="inputNavbar">
+                        <button class="btnNavbar fas fa-search fa-horizontal icono-lupa">
+                        </button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!----------------------------------------- SECTION VIDEO --------------------------------------->
+    <section id="primera" class="sectionPrimera">
+        <!-- CONTAINER TWO FIRST PARAGRAFHS -->
+        <div class="mainIntroBox">
             <div class="mainDivIntro">
                 <p class="nameIntro">Hi, I’m <span class="nameBold">Jorge Salmerón</span>, a junior frontend
                     developer.
                 </p>
                 <p class="textIntro">You’ll find next a showcase of a few of my personal projects.</p>
             </div>
-            <!-- CARD CENTRAL CON SCROLL Y LOGOS -->
+        </div>
+        <!-- CONTAINER CARD CENTRAL CON SCROLL - LOGOS - PLAYBTNS -->
+        <div class="mainExplainBox">
+            <!-- CONTAINER CARD CENTRAL CON SCROLL - LOGOS -->
             <div class="mainExplainVideo">
-                <!-- CARD: TITLE AND PARAGRAF -->
                 <div class="explainBody">
                     <h3 class="videoProject">Video Project</h3>
+                    <!-- CONTAINER DESCRIPTION PARAGRAFHS ON SCROLL -->
                     <div class="descExplain">
                         <p>For this project, I created a visually stunning background video with custom play/pause
                             controls in a website section, optimized for web speed.
@@ -84,46 +82,30 @@
                             animations to create a seamless user experience.
                         </p>
                     </div>
-                </div>
-                <!-- CARD: LOGOS -->
-                <div class="logosDivExplainVideo">
-                    <div class="logosImgVideo">
-                        <div class="lenjDiv">
-                            <a href="Lenguajes/Html.html">
-                                <img class="imgLenj" src="images/icons8-html-5 (1).svg">
-                            </a>
-                        </div>
-                        <div class="lenjDiv">
-                            <a href="Lenguajes/Css.html">
-                                <img id="logoCss" class="imgLenj" src="images/icons8-css3.svg">
-                            </a>
-                        </div>
-                        <div class="lenjDiv">
-                            <a href="Lenguajes/Js.html">
-                                <img class="imgLenj" src="images/icons8-javascript.svg">
-                            </a>
+                    <!-- CONTAINER LOGOS -->
+                    <div class="logosDivExplainVideo">
+                        <div class="logosImgVideo">
+                            <div class="lenjDiv">
+                                <a href="Lenguajes/Html.html">
+                                    <img class="imgLenj" src="images/icons8-html-5 (1).svg">
+                                </a>
+                            </div>
+                            <div class="lenjDiv">
+                                <a href="Lenguajes/Css.html">
+                                    <img id="logoCss" class="imgLenj" src="images/icons8-css3.svg">
+                                </a>
+                            </div>
+                            <div class="lenjDiv">
+                                <a href="Lenguajes/Js.html">
+                                    <img class="imgLenj" src="images/icons8-javascript.svg">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- PRELAODER - VIDEO CONTAINER - PLAY/PAUSE BTNS -->
-
-            <!-- PRELAODER -->
-            <div class="preloaderVideo">
-                <lottie-player class="gifPreloader" src="https://assets2.lottiefiles.com/packages/lf20_yx2u7eke.json"
-                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
-                    autoplay></lottie-player>
-            </div>
-            <!-- VIDEO Y BACKGROUND VIDEO -->
-            <div class="mainDivVideo">
-                <video class="containerVideo" muted autoplay loop>
-                    <source
-                        src="https://cdn.pixabay.com/vimeo/688648666/Patinar%20-%20110734.mp4?width=1280&hash=bf9af4859d50079ec338d1eb133887ebc7608607"
-                        type="video/mp4">
-                </video>
-            </div>
-            <!-- PLAY/PAUSE BTNS -->
-            <section class="mainPlayPauseSection">
+            <!-- CONTAINER PLAY PAUSE BTNS -->
+            <div class="mainPlayPauseSection">
                 <div class="mainBtnSwith">
                     <button class="btnSwitchVideo">
                         <span class="switchVideo"></span>
@@ -137,46 +119,60 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </section>
-        <!--------------------------------------- REVIEW -------------------------------------------->
-        <section id="segunda" class="sectionSegunda">
-            <div class="mainCardReview">
-                <!-- AQUI VA EL CONTENIDO DE LA SEGUNDA SECCCION -->
-                <div class="mainExplainReview">
-                    <div class="logosDivExplain">
+            </div>
+        </div>
+        <!-- </article> -->
+        <!-- CONTAINER PRELAODER -->
+        <div class="preloaderVideo">
+            <lottie-player class="gifPreloader" src="https://assets2.lottiefiles.com/packages/lf20_yx2u7eke.json"
+                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+        <!-- CONTAINER VIDEO Y BACKGROUND COLOR -->
+        <div class="mainDivVideo">
+            <video class="containerVideo" muted autoplay loop>
+                <source
+                    src="https://cdn.pixabay.com/vimeo/688648666/Patinar%20-%20110734.mp4?width=1280&hash=bf9af4859d50079ec338d1eb133887ebc7608607"
+                    type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!-------------------------------------------- REVIEW -------------------------------------------->
+    <section id="segunda" class="sectionSegunda">
+        <!-- CONTAINER OF ALL ELEMENTS  -->
+        <div class="mainCardReview">
+            <!-- CONTAINER TITLE - EXPLAIN - LOGOS -->
+            <div class="explainBody">
+                <div class="headDivReview">
+                    <h3 class="projectNameReview">Review Project</h3>
+                    <div class="descExplainReview">
+                        <p class="parrafoReview">I built a review slider project that allows users to view
+                            customer reviews in a
+                            dynamic and interactive way. Using HTML, CSS, and JavaScript, I created a front-end
+                            interface that displays reviews in a slider format, with each review transitioning
+                            seamlessly to the next one.
+                        </p>
                     </div>
-                    <div class="explainBody">
-                        <div class="headDiv">
-                            <h3 class="ProjectNameReview">Review Project</h3>
-                            <div class="descExplainReview">
-                                <p class="parrafoReview">I built a review slider project that allows users to view
-                                    customer reviews in a
-                                    dynamic and interactive way. Using HTML, CSS, and JavaScript, I created a front-end
-                                    interface that displays reviews in a slider format, with each review transitioning
-                                    seamlessly to the next one.
-
-                                </p>
-                            </div>
-                            <div class="containerLogosReview">
-                                <div class="lenjDiv">
-                                    <img class="imgLogosReview" src="images/icons8-html-5 (1).svg">
-                                </div>
-                                <div class="lenjDiv">
-                                    <img id="logoCss" class="imgLogosReview" src="images/icons8-css3.svg">
-                                </div>
-                                <div class="lenjDiv">
-                                    <img class="imgLogosReview" src="images/icons8-javascript.svg">
-                                </div>
-                            </div>
+                    <div class="containerLogosReview">
+                        <div class="lenjDiv">
+                            <img class="imgLogosReview" src="images/icons8-html-5 (1).svg">
+                        </div>
+                        <div class="lenjDiv">
+                            <img id="logoCss" class="imgLogosReview" src="images/icons8-css3.svg">
+                        </div>
+                        <div class="lenjDiv">
+                            <img class="imgLogosReview" src="images/icons8-javascript.svg">
                         </div>
                     </div>
                 </div>
-                <section class="row justify-content-center align-items-center">
-                    <div class="mainDivReview">
-                        <div class="cardReview carousel-container">
-                            <div class="cardBodyReview carousel">
-                                <!-- CARD REVIEW -->
+            </div>
+            <!-- MAIN CONTAINER OF CARRUSEL -->
+            <div class="mainCarrusel">
+                <div class="gridCarrusel">
+                    <div class="mainContainerCarrusel">
+                        <!-- CONTAINER OF ALL SLIDE -->
+                        <div class="slidesContainerCarrusel ">
+                            <!-- MAIN CONTAINER SLIDE ROMA -->
+                            <div class="slide slide1">
                                 <article class="mainReview img firstReview">
                                     <div class="imgContainerReview">
                                         <h2 id="author" class="authorReview">Rome</h2>
@@ -209,7 +205,10 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="mainReview img secondReview">
+                            </div>
+                            <!-- MAIN CONTAINER SLIDE NEW YORK -->
+                            <div class="slide slide2">
+                                <article class="mainReview img firstReview">
                                     <div class="imgContainerReview">
                                         <h2 id="author" class="authorReview">New York</h2>
                                     </div>
@@ -241,7 +240,10 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="mainReview img thirdReview">
+                            </div>
+                            <!-- MAIN CONTAINER SLIDE MADRID -->
+                            <div class="slide slide3">
+                                <article class="mainReview img firstReview">
                                     <div class="imgContainerReview">
                                         <h2 id="author" class="authorReview">Madrid</h2>
                                     </div>
@@ -274,79 +276,75 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="mainDivDarkMode">
-                                <button class="darkBtn"><span class="spanDark">Ligth</span><span
-                                        class="spanLigth">Dark</span></button>
-                            </div>
+                        </div>
+                        <!-- MAIN CONTAINER DARK/LIGTH MODE -->
+                        <div class="mainDivDarkMode">
+                            <button class="darkBtn"><span class="spanDark">Ligth</span><span
+                                    class="spanLigth">Dark</span></button>
                         </div>
                     </div>
-                    <div class="divBtnsReview carousel-buttons">
-                        <a class="btnsReview next-btn"><i class="fas fa-chevron-left next"></i></a>
-                        <a class="btnsReview prev-btn"><i class="fas fa-chevron-right prev"></i></a>
+                    <!-- MAIN CONTAINER <  > BTNS -->
+                    <div class="newDivBtnsPrevNext">
+                        <a onclick="PrevSlide(this)" class="prev disable-button fas fa-chevron-left"></a>
+                        <a onclick="NextSlide(this)" class="next fas fa-chevron-right"></a>
                     </div>
-                </section>
+                </div>
             </div>
-        </section>
-        <!-------------------------------------- RESTAURANT ----------------------------------------->
-        <section id="tercera" class="sectionTercera">
-            <div class="titleContainerRestaurant">
-                <!-- AQUI VA EL CONTENIDO DE LA TERCERA SECCCION -->
-                <div class="mainExplainRest">
-                    <div class="logosDivExplain">
-                        <div class="divBar">
-                            <div class="htmlBar"></div>
-                            <div class="cssBar"></div>
-                            <div class="jsBar"></div>
-                        </div>
-                        <div class="logosImg">
-                            <div class="lenjDiv">
-                                <img class="imgLenj" src="images/icons8-html-5 (1).svg"><span
-                                    class="lenjSpan number">25%</span>
-                            </div>
-                            <div class="lenjDiv">
-                                <img id="logoCss" class="imgLenj" src="images/icons8-css3.svg"><span
-                                    class="lenjSpan number">35%</span>
-                            </div>
-                            <div class="lenjDiv">
-                                <img class="imgLenj" src="images/icons8-javascript.svg"><span
-                                    class="lenjSpan number">40%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="explainBody">
-                        <div class="headDiv">
-                            <h3>Description</h3>
-                            <div class="descExplain">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-                                    maxime maiores natus facere, tempora architecto labore culpa eveniet quam doloribus
-                                </p>
-                            </div>
-                            <h3>Feature</h3>
-                            <div class="featExplain">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-                                    maxime maiores natus facere, tempora architecto labore culpa eveniet quam doloribus
-                                </p>
-                            </div>
+        </div>
+    </section>
+    <!-------------------------------------- RESTAURANT ----------------------------------------->
+    <section id="tercera" class="sectionTercera">
+        <div class="titleContainerRestaurant">
+            <!-- AQUI VA EL CONTENIDO DE LA TERCERA SECCCION -->
+            <div class="mainExplainRest">
+                <div class="explainBody">
+                    <div class="headDivRest">
+                        <h3 class="projectNameRest">Menu Project</h3>
+                        <div class="featExplainRest">
+                            <p>I built a review slider project that allows users to view customer reviews in a dynamic
+                                and interactive way. Using HTML, CSS, and JavaScript, I created a front-end interface
+                                that displays reviews in a slider format, with each review transitioning seamlessly to
+                                the next one.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <main class="container-fluid row align-items-center">
-                    <nav>
-                        <section class="text-center">
-                            <div class="mainTitle">
-                                <h1 class="titleMenu">Our Menu</h1>
-                                <hr class="underlineRestaurant">
-                            </div>
-                            <div class="btnsMenu">
-                                <!-- <button class="filter-btn" data-id="all">All</button>
+            </div>
+            <div class="logosDivExplainMenu">
+                <div class="logosImgRest">
+                    <div class="lenjDiv">
+                        <img class="imgLenjRest" src="images/icons8-html-5 (1).svg"><span
+                            class="lenjSpan number"></span>
+                    </div>
+                    <div class="lenjDiv">
+                        <img id="logoCss" class="imgLenjRest" src="images/icons8-css3.svg"><span
+                            class="lenjSpan number"></span>
+                    </div>
+                    <div class="lenjDiv">
+                        <img class="imgLenjRest" src="images/icons8-javascript.svg"><span
+                            class="lenjSpan number"></span>
+                    </div>
+                </div>
+            </div>
+            <main class="mainContainerMenu container-fluid">
+                <nav>
+                    <div class="divRestName">
+                        <button>Prego</button>
+                    </div>
+                    <section class="DivMenuBtnsMenu">
+                        <div class="divMenuWord">
+                            <h3>Menu</h3>
+                        </div>
+                        <div class="btnsMenu">
+                            <!-- <button class="filter-btn" data-id="all">All</button>
                             <button class="filter-btn" data-id="breakfast">Breakfast</button>
                             <button class="filter-btn" data-id="lunch">Lunch</button>
                             <button class="filter-btn" data-id="shakes">Shakes</button> -->
-                            </div>
-                        </section>
-                        <section class="sectionMenu container-fluid">
-                            <div class="div-central row align-items-center justify-content-evenly">
-                                <!-- <div class="">
+                        </div>
+                    </section>
+                    <section class="sectionMenu container-fluid col-md-8">
+                        <div class="divCentralMenu row">
+                            <!-- <div class="divImageMenu">
                                 <img class="imgPlato"
                                     src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taWRhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=200&q=60"
                                     alt="">
@@ -357,175 +355,175 @@
                                         <h4 class="namePlato">Primer Plato</h4>
                                         <h4 class="price">15.35$</h4>
                                     </div>
-                                    <hr class="underlinePlato">
                                     <p class="textPlato">Lorem ipsum dolor sit amet consect adipisicing elit. Provident, sed tenetur modi accusamus
                                         magni harum quo inventore. Nulla harum quia eveniet nobis.</p>
                                 </div>
                             </div> -->
-                        </section>
-                    </nav>
-                </main>
-            </div>
-        </section>
-        <!----------------------------------- ACCORDION + FOOTER ------------------------------------>
-        <section id="cuarta" class="sectionCuarta">
-            <div>
-                <!-- AQUI VA EL CONTENIDO DE LA CUARTA SECCCION -->
-                <div class="mainDivExplain">
-                    <div class="logosDivExplain">
-                        <div class="divBar">
-                            <div class="htmlBar"></div>
-                            <div class="cssBar"></div>
-                            <div class="jsBar"></div>
                         </div>
-                        <div class="logosImg">
-                            <div class="lenjDiv">
-                                <img class="imgLenj" src="images/icons8-html-5 (1).svg"><span
-                                    class="lenjSpan number">25%</span>
+                    </section>
+                </nav>
+            </main>
+        </div>
+    </section>
+    <!----------------------------------- ACCORDION + FOOTER ------------------------------------>
+    <section id="cuarta" class="sectionCuarta">
+        <div>
+            <!-- AQUI VA EL CONTENIDO DE LA CUARTA SECCCION -->
+            <div class="mainDivExplain">
+                <div class="logosDivExplain">
+                    <div class="divBar">
+                        <div class="htmlBar"></div>
+                        <div class="cssBar"></div>
+                        <div class="jsBar"></div>
+                    </div>
+                    <div class="logosImg">
+                        <div class="lenjDiv">
+                            <img class="imgLenj" src="images/icons8-html-5 (1).svg"><span
+                                class="lenjSpan number">25%</span>
+                        </div>
+                        <div class="lenjDiv">
+                            <img id="logoCss" class="imgLenj" src="images/icons8-css3.svg"><span
+                                class="lenjSpan number">35%</span>
+                        </div>
+                        <div class="lenjDiv">
+                            <img class="imgLenj" src="images/icons8-javascript.svg"><span
+                                class="lenjSpan number">40%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainDivAccordion">
+                    <!-- MAIN ACCORDION -->
+                    <div class="explainBody">
+                        <div class="headDiv">
+                            <h3>Description</h3>
+                            <!-- <div class="descExplain">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+                                    maxime maiores natus facere, tempora architecto labore culpa eveniet quam
+                                    doloribus
+                                </p>
+                            </div> -->
+                            <h3>Feature</h3>
+                            <div class="featExplain">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+                                    maxime maiores natus facere, tempora architecto labore culpa eveniet quam
+                                    doloribus
+                                </p>
                             </div>
-                            <div class="lenjDiv">
-                                <img id="logoCss" class="imgLenj" src="images/icons8-css3.svg"><span
-                                    class="lenjSpan number">35%</span>
+                        </div>
+                        <div class="divBtnAgregar">
+                            <button class="float-end btnAgregar">Add</button>
+                        </div>
+                        <div class="accordion">
+                            <h2 class="textAccordion">Magic Accordion</h2>
+                            <hr>
+                            <!-- PRIMER ACCORDION -->
+                            <div class="containerAccordion">
+                                <div class="titulo">Counter Color Change</div>
+                                <div class="mainDivCounter content">
+                                    <!-- AQUI VA EL CONTENIDO DEL PRIMER ACORDION -->
+                                    <!-- COUNTER INSIDE -->
+                                    <div class="titleDivCounter">
+                                        <h2 class="titleCounter">Counter</h2>
+                                        <h3 class="numberCounter">0</h3>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="lenjDiv">
-                                <img class="imgLenj" src="images/icons8-javascript.svg"><span
-                                    class="lenjSpan number">40%</span>
+                            <div class="btnDivCounter btnDivCounterUno">
+                                <button id="dec" class="btn btnsCounter decrease">Decrease</button>
+                                <button id="res" class="btn btnsCounter reset">Reset</button>
+                                <button id="inc" class="btn btnsCounter increase">Increase</button>
+                            </div>
+                            <hr>
+                            <!-- SEGUNDO ACCORDION -->
+                            <div class="linkHide">
+                                <div class="containerAccordion1">
+                                    <div class="titulo">New Section</div>
+                                    <div class="mainDivCounter content work">
+                                        Work In Progress...
+                                    </div>
+                                    <hr>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="mainDivAccordion">
-                        <!-- MAIN ACCORDION -->
-                        <div class="explainBody">
-                            <div class="headDiv">
-                                <h3>Description</h3>
-                                <div class="descExplain">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-                                        maxime maiores natus facere, tempora architecto labore culpa eveniet quam
-                                        doloribus
-                                    </p>
+                    <!--------------------------------- FOOTER ---------------------------------->
+                    <main class="mainFooter">
+                        <section class="mainSectionFooter">
+                            <div class="companyFooter">
+                                <div class="logoPlusCompanyDiv">
+                                    <img class="imgLogoFooter"
+                                        src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg">
+                                    <a href="">COMPANY</a>
                                 </div>
-                                <h3>Feature</h3>
-                                <div class="featExplain">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-                                        maxime maiores natus facere, tempora architecto labore culpa eveniet quam
-                                        doloribus
-                                    </p>
+                                <div class="redesFooter">
+                                    <h3 class="titleRedes">Síguenos</h3>
+                                    <div class="logosRedesFooter">
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                            </svg>
+                                        </a>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                            </svg>
+                                        </a>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                            </svg>
+                                        </a>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="divBtnAgregar">
-                                <button class="float-end btnAgregar">Add</button>
+                            <div class="linkFooterDiv">
+                                <div class="infoFooter">
+                                    <a href="">Show</a>
+                                    <a href="">Grupos</a>
+                                    <a href="">Contact</a>
+                                    <a href="">FAQ</a>
+                                </div>
+                                <div class="policyFooter">
+                                    <a href="">Condiciones Generales</a>
+                                    <a href="">Política Privacidad</a>
+                                    <a href="">Aviso Legal</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Devolución Segura</a>
+                                </div>
                             </div>
-                            <div class="accordion">
-                                <h2 class="textAccordion">Magic Accordion</h2>
-                                <hr>
-                                <!-- PRIMER ACCORDION -->
-                                <div class="containerAccordion">
-                                    <div class="titulo">Counter Color Change</div>
-                                    <div class="mainDivCounter content">
-                                        <!-- AQUI VA EL CONTENIDO DEL PRIMER ACORDION -->
-                                        <!-- COUNTER INSIDE -->
-                                        <div class="titleDivCounter">
-                                            <h2 class="titleCounter">Counter</h2>
-                                            <h3 class="numberCounter">0</h3>
-                                        </div>
+                        </section>
+                        <section class="copyFooter">
+                            <div>Copyright © 2023. All Rights Reserved</div>
+                        </section>
+                    </main>
+    </section>
+    <!---------------------------------------- SCRIPT ------------------------------------------->
+    <div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/01074329eb.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="PortfolioV1MF.js"></script>
+    </div>
 
-                                    </div>
-                                </div>
-                                <div class="btnDivCounter btnDivCounterUno">
-                                    <button id="dec" class="btn btnsCounter decrease">Decrease</button>
-                                    <button id="res" class="btn btnsCounter reset">Reset</button>
-                                    <button id="inc" class="btn btnsCounter increase">Increase</button>
-                                </div>
-                                <hr>
-                                <!-- SEGUNDO ACCORDION -->
-                                <div class="linkHide">
-                                    <div class="containerAccordion1">
-                                        <div class="titulo">New Section</div>
-                                        <div class="mainDivCounter content work">
-                                            Work In Progress...
-                                        </div>
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--------------------------------- FOOTER ---------------------------------->
-                        <main class="mainFooter">
-                            <section class="mainSectionFooter">
-                                <div class="companyFooter">
-                                    <div class="logoPlusCompanyDiv">
-                                        <img class="imgLogoFooter"
-                                            src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg">
-                                        <a href="">COMPANY</a>
-                                    </div>
-                                    <div class="redesFooter">
-                                        <h3 class="titleRedes">Síguenos</h3>
-                                        <div class="logosRedesFooter">
-                                            <a href="">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                    class="bi bi-facebook" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                </svg>
-                                            </a>
-                                            <a href="">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                    class="bi bi-instagram" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                                </svg>
-                                            </a>
-                                            <a href="">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                    class="bi bi-linkedin" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                                </svg>
-                                            </a>
-                                            <a href="">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                    class="bi bi-twitter" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="linkFooterDiv">
-                                    <div class="infoFooter">
-                                        <a href="">Show</a>
-                                        <a href="">Grupos</a>
-                                        <a href="">Contact</a>
-                                        <a href="">FAQ</a>
-                                    </div>
-                                    <div class="policyFooter">
-                                        <a href="">Condiciones Generales</a>
-                                        <a href="">Política Privacidad</a>
-                                        <a href="">Aviso Legal</a>
-                                        <a href="">Cookies</a>
-                                        <a href="">Devolución Segura</a>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="copyFooter">
-                                <div>Copyright © 2023. All Rights Reserved</div>
-                            </section>
-                        </main>
-        </section>
-        <!---------------------------------------- SCRIPT ------------------------------------------->
-        <div>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
-            <script src="https://kit.fontawesome.com/01074329eb.js" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <script src="PortfolioV1MF.js"></script>
-        </div>
-    </main>
 </body>
 
 </html>
