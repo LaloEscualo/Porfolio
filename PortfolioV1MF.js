@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 const inner = document.querySelector(".slidesContainerCarrusel");
 const b = 284;
 
 let cusId = 0;
 class Carrusel {
+=======
+const inner = document.querySelector(".SlidesContainerCarrusel");
+const b = 284;
+
+let cusId = 0;
+class calimatic__Custom__Carousl {
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
     slidePx = 0;
     currentPosition = 0;
 
@@ -44,7 +52,11 @@ function PrevSlide(that) {
     let slideWidth = that.parentElement.offsetWidth;
 
     if (!that.parentElement.hasAttribute('customIndex')) {
+<<<<<<< HEAD
         let allCarousel = document.getElementsByClassName('mainContainerCarrusel');
+=======
+        let allCarousel = document.getElementsByClassName('MainContainerCarrusel');
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
         for (let i = 0; i < allCarousel.length; i++) {
 
             cusId = cusId + 1
@@ -55,7 +67,11 @@ function PrevSlide(that) {
 
         let obj = that.parentElement.getAttribute('customIndex');
         carouselPipeLine.push(obj);
+<<<<<<< HEAD
         obj = new Carrusel()
+=======
+        obj = new calimatic__Custom__Carousl()
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
         carouselObjPipeLine.push(obj);
         obj.PrevSlide(that, slideWidth)
     }
@@ -71,7 +87,11 @@ function NextSlide(that) {
     let slideWidth = that.parentElement.offsetWidth;
 
     if (!that.parentElement.hasAttribute('customIndex')) {
+<<<<<<< HEAD
         let allCarousel = document.getElementsByClassName('mainContainerCarrusel');
+=======
+        let allCarousel = document.getElementsByClassName('MainContainerCarrusel');
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
         for (let i = 0; i < allCarousel.length; i++) {
             cusId = cusId + 1
             allCarousel[i].setAttribute('customIndex', `custom${i}${cusId}`)
@@ -80,7 +100,11 @@ function NextSlide(that) {
     if (!carouselPipeLine.includes(that.parentElement.getAttribute('customIndex'))) {
         let obj = that.parentElement.getAttribute('customIndex');
         carouselPipeLine.push(obj);
+<<<<<<< HEAD
         obj = new Carrusel()
+=======
+        obj = new calimatic__Custom__Carousl()
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
         carouselObjPipeLine.push(obj);
         obj.NextSlide(that, slideWidth)
 
@@ -94,6 +118,15 @@ function NextSlide(that) {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
 //-------------------------------------------- NAVBAR ---------------------------------------------
 
 // MODIFICA LINK NAVBAR CUANDO CLICK
@@ -192,11 +225,19 @@ const darkBtn = document.querySelector(".darkBtn");
 const sectionSegunda = document.querySelector(".sectionSegunda");
 const mainDivDarkMode = document.querySelector(".mainDivDarkMode");
 const descExplain = document.querySelector(".parrafoReview");
+<<<<<<< HEAD
 const projectName = document.querySelector(".projectNameReview");
 const spanDark = document.querySelector(".spanDark");
 const spanLigth = document.querySelector(".spanLigth");
 // const prevBtnDark = document.querySelector(".prev");
 // const nextBtnDark = document.querySelector(".next");
+=======
+const ProjectName = document.querySelector(".ProjectNameReview");
+const spanDark = document.querySelector(".spanDark");
+const spanLigth = document.querySelector(".spanLigth");
+const prevBtnDark = document.querySelector(".prev");
+const nextBtnDark = document.querySelector(".next");
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
 
 const scrollXReview = document.querySelectorAll(".itemScrollXReview");
 scrollXReview.forEach(function (review) {
@@ -217,7 +258,11 @@ darkBtn.addEventListener("click", function () {
     mainDivDarkMode.classList.toggle("darkBgCard");
     darkBtn.classList.toggle("darkBgCard");
     descExplain.classList.toggle("fontExplainProject");
+<<<<<<< HEAD
     projectName.classList.toggle("ligthFont");
+=======
+    ProjectName.classList.toggle("ligthFont");
+>>>>>>> 2b2c21f7fcd0b31c944b34718ac086c00fbd40b8
     if (window.innerWidth <= 992) {
         spanLigth.classList.toggle("btnShow");
         spanDark.classList.toggle("btnHide");
