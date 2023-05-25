@@ -1,1766 +1,1813 @@
-body {
-    font-family: 'Kodchasan', sans-serif;
-}
-
-html {
-    font-size: 16px;
-}
-
-#mainNavbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 2.96rem;
-    padding: 0.315rem 1.76rem 0.315rem 1.26rem;
-}
-
-.navbar-toggler {
-    border: none;
-    padding: 0rem;
-}
-
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.navbar-toggler-icon {
-    width: 1.575rem;
-    height: 1.575rem;
-    margin-top: 0.126rem;
-    padding: 0rem 0rem;
-    /* Modifica la apariencia del toggle btn */
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-nav {
-    text-align: end;
-}
-
-#mainNavbar .nav-link {
-    margin-top: 1.07rem;
-    font-weight: 700;
-    font-size: 1.13rem;
-    line-height: 1.45rem;
-    color: rgba(228, 143, 42, 1);
-}
-
-/* COMPANY NAME */
-#mainNavbar .navbar-brand {
-    font-family: 'Chivo Mono', monospace;
-    font-size: 1.13rem;
-    color: white;
-}
-
-
-/* -----------------------------------------CLASES EMERGENTES ------------------------------------------- */
-
-
-/* Afecta a .preloaderVideo */
-.hide-preloader {
-    visibility: hidden;
-}
-
-/* Afecta a .switchVideo */
-.slides .switchVideo {
-    left: 50%;
-}
-
-/* Afecta a #mainNavbar */
-#mainNavbar.newPadding {
-    padding: 0.315rem 1.76rem 50.4rem 1.26rem;
-    backdrop-filter: blur(5px);
-    transition: background 500ms;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* Afecta a .navbar */
-.navbar.scrolled {
-    backdrop-filter: blur(5px);
-    transition: background 500ms;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* Afecta a .mainDivVideo */
-.mainDivVideo::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-}
-
-/* Afecta a .textIntro */
-.linkHideTextIntro {
-    margin-top: 2.52rem;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-/* Afecta a .mainExplainVideo*/
-.linkHideCard {
-    margin-top: 4.41rem;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-/* Afecta a .textIntro y .mainExplainVideo */
-.linkShow {
-    opacity: 1;
-    transition: opacity 1s;
-}
-
-/* Afecta a .nameIntro */
-@keyframes bajar-texto {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(1.26rem);
-    }
-}
-
-.addMarginTop {
-    position: absolute;
-    left: 0%;
-    padding: 0rem 1.89rem;
-    animation-name: bajar-texto;
-    animation-duration: 350ms;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-}
-
-/* -------------------------- */
-
-/* Afecta a .nameIntro */
-@keyframes subir-texto {
-    100% {
-        transform: translateY(-0rem);
-    }
-
-    0% {
-        transform: translateY(1.26rem);
-    }
-}
-
-.removeMarginTop {
-    animation-name: subir-texto;
-    animation-duration: 350ms;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-}
-
-/* -------------------------- */
-
-/* Afecta a .mainPlayPauseSection */
-.addMargin {
-    margin-top: 0.063rem;
-}
-
-
-/* --------------------------------------------- SECTIONS ------------------------------------------- */
-
-
-.sectionPrimera {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    z-index: 2;
-}
-
-.sectionSegunda {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 2rem;
-    background-color: rgb(68, 68, 68);
-}
-
-.sectionTercera {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-.sectionCuarta {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 2rem;
-}
-
-
-/*------------------------------------------------- INTRO ------------------------------------------- */
-
-
-/* CARD CON TITULO - EXPLICACION Y LOGOS */
-.mainExplainVideo {
-    display: flex;
-    flex-direction: column;
-    width: 17.70rem;
-    background-blend-mode: multiply;
-    border-radius: 0.63rem;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-/* PRIMER PARRAFO */
-.nameIntro {
-    margin-bottom: 0.315rem;
-}
-
-/* SPAN JORGE S. */
-.nameBold {
-    font-weight: 600;
-}
-
-/* TITULO DE LA CARD */
-.videoProject {
-    font-weight: 700;
-    font-size: 1.26rem;
-    margin-top: 0.882rem;
-    margin-bottom: 0.756rem;
-    color: white;
-}
-
-/* PARRAFO DESCRIPCIÓN DEL PROYECTO  */
-.descExplain {
-    width: 14.93rem;
-    height: 5.86rem;
-    font-weight: 300;
-    font-size: 0.882rem;
-    text-align: center;
-    line-height: 1.13rem;
-    overflow-y: scroll;
-    color: white;
-}
-
-/* SCROLL INTERNO */
-::-webkit-scrollbar {
-    width: 0.252rem;
-}
-
-/* PARA EL THUMB*/
-::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 0.252rem;
-}
-
-/* PARA EL TRACK */
-::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 0.252rem;
-}
-
-
-/*------------------------------------------------ EXPLAIN ------------------------------------------- */
-
-
-/* CONATINER TITLE - EXPLAIN - LOGOS */
-.explainBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mainIntroBox {
-    height: 65%;
-}
-
-.mainExplainBox {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.headDivReview {
-    padding-top: 3rem;
-}
-
-/* LOGOS DE LENGUAJES */
-.logosDivExplainVideo {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-}
-
-.logosImgVideo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 0.126rem;
-    margin-bottom: 0.63rem;
-}
-
-/* ------------------------------------------------ */
-
-/*------------------------------------------------- VIDEO ------------------------------------------- */
-
-
-/* CONTENEDOR DEL VIDEO */
-.containerVideo {
-    position: absolute;
-    width: 100%;
-    /* Hace mas grande el height del video */
-    height: 100vh;
-    top: 0;
-    left: 0;
-    /* El video cubre todo el fondo */
-    object-fit: cover;
-    z-index: -1;
-}
-
-/* CONTIENE LOS DOS PRIMEROS PARRAFOS */
-.mainDivIntro {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: 100;
-    font-size: 0.882rem;
-    line-height: 1.13rem;
-    padding-top: 5rem;
-    padding-left: 2.27rem;
-    padding-right: 2.27rem;
-    color: white;
-}
-
-/* FONDO DEL PRELOADER */
-.preloaderVideo {
-    position: fixed;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: white;
-    z-index: 100;
-}
-
-.gifPreloader {
-    height: 100vh;
-    background-color: white;
-}
-
-/* CONTIENE EL SWITCH Y LOS BOTONES PLAY - PAUSE */
-.mainBtnSwith {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 6rem;
-}
-
-/* FONDO DE LOS BOTONES LA PARTE GRIS*/
-.btnSwitchVideo {
-    position: absolute;
-    width: 6.93rem;
-    height: 2.27rem;
-    margin-top: 3.02rem;
-    border-radius: 0.252rem;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* ELEMENTO MOVIL SWITCH LA PARTE NARANJA */
-.switchVideo {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 0.252rem;
-    transition-duration: 0.5s;
-    background-color: rgb(228, 143, 42);
-}
-
-/* CONTIENE LOS BOTONES PLAY-PAUSE LAS FIGURAS */
-.PlayPauseDiv {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 6.93rem;
-    height: 2.205rem;
-    margin-top: 3.12rem;
-    font-size: 1.575rem;
-    color: white;
-    z-index: 1;
-}
-
-
-/* ----------------------------------------------- REVIEW -------------------------------------------- */
-
-
-/* CONTIENE EL BOTON ES LA MEDIDA MAIN */
-.mainDivDarkMode {
-    width: 15.25rem;
-    height: 3.465rem;
-    border-bottom-left-radius: 0.63rem;
-    border-bottom-right-radius: 0.63rem;
-    background-color: #EEEEEE;
-}
-
-/* BOTON QUE CONTIENE LAS PALABRA DARK / LIGHT */
-.darkBtn {
-    margin-top: 0.819rem;
-    border: none;
-    padding: 0rem;
-    background-color: none;
-    background-color: #EEEEEE;
-}
-
-/* PALABRA DARK  */
-.spanDark {
-    color: black;
-    text-decoration: underline;
-}
-
-/* PALABRA LIGHT */
-.spanLigth {
-    color: white;
-    text-decoration: underline;
-    padding: 0rem;
-    display: none;
-}
-
-
-/* --------------------------------- CHANGES DARK/LIGTH MODE ------------------------------------- */
-
-
-/* OCULTA UNA DE LAS PALABRAS */
-.btnHide {
-    display: none;
-}
-
-.btnShow {
-    display: block;
-}
-
-/* BACKGROUND GENERAL DE LA SECTION REVIEW */
-.darkBackG {
-    background-color: rgba(238, 238, 238, 1);
-}
-
-.darkBgCard {
-    background-color: rgba(68, 68, 68, 1);
-}
-
-.fontReview {
-    color: rgba(238, 238, 238, 1);
-}
-
-.fontExplainProject {
-    color: rgba(68, 68, 68, 1);
-}
-
-/* --------------------------------------------------------------------- */
-
-.mainReview {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 0.63rem;
-    border-top-right-radius: 0.63rem;
-    background-color: rgb(238, 238, 238);
-}
-
-.secondReview,
-.thirdReview {
-    overflow: hidden;
-}
-
-.overVisible {
-    overflow: visible;
-}
-
-/* NOMBRE DEL PROYECTO */
-.projectNameReview {
-    font-weight: 700;
-    font-size: 1.575rem;
-    margin-bottom: 1.26rem;
-    line-height: 1.64rem;
-    color: #E48F2A;
-}
-
-.imgContainerReview {
-    background-image: url("images/FotoRoma.avif");
-    background-size: cover;
-    background-position: center center;
-    width: 15.25rem;
-    height: 13.86rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    border-radius: 0.63rem;
-    background-color: #e31616ab;
-}
-
-.descExplainReview {
-    width: 15.25rem;
-    height: 10.90rem;
-    font-weight: 300;
-    font-size: 0.882rem;
-    text-align: center;
-    line-height: 1.13rem;
-    color: #BCBCBC;
-}
-
-.titleContainerReview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* CONTIENE LOS TRES LOGOS DE LENGUAJE */
-.containerLogosReview {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 0.567rem;
-    margin-bottom: 2.52rem;
-}
-
-/* LOGOS DE LENGUAJE */
-.imgLogosReview {
-    width: 1.76rem;
-    height: 1.76rem;
-    margin: 0rem 0.315rem;
-}
-
-#person-img {
-    width: 15.12rem;
-    height: 12.6rem;
-}
-
-.cardHr {
-    border: none;
-    border-top: 0.095rem solid rgba(68, 68, 68, 1);
-    margin: 0rem;
-}
-
-.titleReview {
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-top: 0.35rem;
-    margin-bottom: 1.3rem;
-    padding-top: 1rem;
-    letter-spacing: 0.095rem;
-}
-
-.jobReview {
-    font-weight: 400;
-    margin-bottom: 0.35rem;
-    letter-spacing: 0.095rem;
-}
-
-.authorReview {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.89rem;
-    line-height: 2.39rem;
-    color: #444444;
-    margin: 0rem;
-}
-
-.shadowCityName {
-    background: rgba(68, 68, 68, 0.4);
-    color: #EEEEEE;
-}
-
-.infoReview {
-    font-family: 'Montserrat';
-    width: 13.99rem;
-    height: 6.05rem;
-    font-weight: 400;
-    font-size: 0.819rem;
-    line-height: 1.008rem;
-    margin-left: 0.63rem;
-    margin-top: 1.26rem;
-}
-
-.NamePost {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.63rem;
-    line-height: 0.756rem;
-    text-align: start;
-    margin-left: 4.41rem;
-}
-
-.select-btn {
-    margin-top: 1rem;
-}
-
-.btnsReview {
-    text-decoration: none;
-    font-size: 0.819rem;
-    border-radius: 0.315rem;
-    margin: 0.315rem;
-    color: white;
-}
-
-.btnsReview:hover {
-    color: white;
-}
-
-.prev-btn {
-    font-size: 1.13rem;
-    margin-top: -14.49rem;
-    margin-bottom: 19.53rem;
-    color: white;
-}
-
-.next-btn {
-    font-size: 1.13rem;
-    margin-top: -14.49rem;
-    margin-bottom: 19.53rem;
-    color: white;
-}
-
-.darkPrevNextBtn {
-    color: black;
-}
-
-.hideBtn {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-/* CONTAINER DE LOS BTNS < > */
-.divBtnsReview {
-    width: 20.16rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.containerScrollXReview {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    width: 100%;
-
-}
-
-.containerScrollXReview::-webkit-scrollbar {
-    height: 0.200rem;
-}
-
-.containerScrollXReview::-webkit-scrollbar-thumb {
-    background-color: #fd7e14;
-    border-radius: 0rem;
-}
-
-.containerScrollXReview::-webkit-scrollbar-track {
-    background-color: white;
-    border-radius: 0rem;
-}
-
-.itemScrollXReview {
-    flex-shrink: 0;
-    width: 100%;
-    scroll-snap-align: center;
-    text-align: center;
-}
-
-.mainCarrusel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gridCarrusel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 244px;
-}
-
-.mainContainerCarrusel {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    width: 15.24rem;
-}
-
-.slidesContainerCarrusel {
-    display: -moz-box;
-    display: -webkit-box;
-    transform: translateX(0);
-    transition: transform 0.8s ease-in-out;
-    width: 244px;
-}
-
-.slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.89rem;
-    width: 100%;
-    border-radius: 1.26rem;
-}
-
-.slide2,
-.slide3 {
-    margin-left: 2.52rem;
-}
-
-.disable-button {
-    opacity: 0.4;
-    pointer-events: none;
-    text-decoration: none;
-}
-
-.hero_-nav:not(.disable-button) {
-    opacity: 1;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.newDivBtnsPrevNext {
-    position: relative;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    width: 120%;
-    bottom: 15.56rem;
-}
-
-.prev,
-.next {
-    text-decoration: none;
-    color: white;
-}
-
-.prev:hover::before,
-.next:hover::before {
-    color: white;
-}
-
-
-/* ------------------------------------------ RESTAURANT -------------------------------------------- */
-
-
-/* MAIN CONTAINER ALL SECTION */
-.titleContainerRestaurant {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(238, 238, 238, 1);
-}
-
-.headDivRest {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 45px;
-}
-
-/* PROJECT NAME */
-.projectNameRest {
-    font-weight: 700;
-    font-size: 1.575rem;
-    margin-top: 30px;
-    margin-bottom: 1.26rem;
-    line-height: 1.64rem;
-    color: #E48F2A;
-}
-
-/* EXPLAINED TEXT */
-.featExplainRest {
-    width: 241px;
-    height: 126px;
-    font-family: 'Kodchasan';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    color: #444444;
-}
-
-/* MAIN CONTAINER OF LOGOS */
-.logosDivExplainMenu {
-    margin-top: 55px;
-    margin-bottom: 25px;
-}
-
-/* CONTAINER LOGOS */
-.logosImgRest {
-    display: flex;
-}
-
-/* DIV OF EACH LOGO */
-.imgLenjRest {
-    width: 2.2rem;
-    height: 2.2rem;
-    margin: 0rem 0.315rem;
-}
-
-/* CONTAINER OF MENU */
-.mainContainerMenu {
-    background: #1B1B1B;
-    border-radius: 8px;
-}
-
-/* NAME OF RESTAURANT -PREGO- */
-.divRestName {
-    margin: 30px 0px;
-}
-
-/* BUTTON NAME OF RESTAURANT -PREGO- */
-.divRestName button {
-    font-family: prata;
-    font-weight: 100;
-    font-size: 25px;
-    padding: 7px 18px;
-    color: #EEEEEE;
-    background-color: #1B1B1B;
-    border-radius: 7px;
-    border-top: 1.8px solid white;
-    border-left: none;
-    border-bottom: none;
-    border-right: 1.8px solid white;
-}
-
-/* CONTAINER OF WORD MENU  */
-.divMenuWord {
-    text-align: start;
-    height: 22px;
-    margin-bottom: -57px;
-}
-
-/* WORD MENU */
-.divMenuWord h3 {
-    width: 85px;
-    line-height: 22px;
-    font-size: 18px;
-    margin: 0px 0px 0px 25px;
-    padding-top: 5px;
-    color: rgba(105, 105, 105, 1);
-    font-family: nunito sans;
-}
-
-/* CONTAINER OF ALL BTNS */
-.btnsMenu {
-    margin: 20px 0px 20px 0px;
-}
-
-/* ALL BTNS */
-.filter-btn {
-    font-family: nunito sans;
-    margin-top: 15px;
-    margin-left: 10px;
-    color: rgba(200, 200, 200, 1);
-    width: 100px;
-    height: 30px;
-    background: #313131;
-    border-radius: 3px;
-    border: none;
-    font-size: 14px;
-}
-
-/* FIRST BTN -ALL- */
-.filter-btn:first-child {
-    margin-left: 110px;
-}
-
-.changeBorderBtn {
-    border-bottom: 2px solid #EEEEEE;
-}
-
-/* LAST BTN -WINES- */
-.filter-btn:last-child {
-    margin-right: 10px;
-}
-
-.divCentralMenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 45px;
-}
-
-.mainDivPlato {
-    width: 237px;
-    height: 145px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* IMAGE OF PLATE */
-.imgPlato {
-    width: 145px;
-    height: 145px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    margin-top: 20px;
-}
-
-/* MAIN CONTAINER TITLE - NAME - PRICE AND DESC OF THE PLATE */
-.mainDivMenu {
-    display: flex;
-    flex-direction: row;
-    background: rgba(49, 49, 49, 1);
-    padding: 0px;
-    margin-top: 20px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.divImageMenu {
-    padding: 0px;
-}
-
-/* CONTAINER NAME AND PRICE OF PLATE */
-.titlePlato {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 15px;
-}
-
-/* NAME OF PLATE */
-.namePlato {
-    font-family: nunito sans;
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-size: 14px;
-    color: rgba(200, 200, 200, 1);
-    margin-top: 5px;
-}
-
-/* PRICE OF PLATE */
-.price {
-    font-family: nunito sans;
-    font-weight: 700;
-    font-size: 14px;
-    margin-top: 5px;
-    color: rgba(200, 200, 200, 1);
-}
-
-.cents {
-    font-size: smaller;
-    line-height: 0.2;
-}
-
-/* DESCRIPTION OF PLATE */
-.textPlato {
-    text-align: start;
-    font-size: 10px;
-    color: rgba(200, 200, 200, 1);
-    padding: 0px 15px;
-    margin-top: 5px;
-}
-
-/* ------------------------------------------ ACCORDION -------------------------------------------- */
-
-.cuarta {
-    padding-top: 138.6rem;
-}
-
-.logosImg {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 0.126rem;
-    margin-bottom: 0.63rem;
-}
-
-.lenjDiv {
-    display: flex;
-    flex-direction: column;
-}
-
-.imgLenj {
-    width: 1.89rem;
-    height: 1.89rem;
-    margin: 0rem 0.315rem;
-}
-
-.lenjSpan {
-    margin-top: -0.315rem;
-}
-
-.textAccordion {
-    text-align: center;
-    font-size: 1.26rem;
-    margin-top: 0.945rem;
-}
-
-.accordion {
-    width: 17.64rem;
-    border: 0.063rem black solid;
-    margin-bottom: 3.15rem;
-    border-radius: 0.504rem;
-}
-
-.containerAccordion {
-    position: relative;
-    margin: 0.63rem 0.63rem;
-}
-
-.titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    font-size: 1.07rem;
-    cursor: pointer;
-    text-align: left;
-}
-
-.linkHide {
-    margin-top: 2.52rem;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.divBtnAgregar {
-    width: 18.9rem;
-    margin-bottom: 0.063rem;
-}
-
-.btnAgregar {
-    width: 4.725rem;
-    border-radius: 0.315rem;
-    background-color: white;
-    margin-right: 0.63rem;
-    background-color: #E65100;
-    color: white;
-}
-
-
-
-.titulo::before {
-    content: '+';
-    position: absolute;
-    top: 50%;
-    right: -0.126rem;
-    font-size: 1.26rem;
-    transform: translateY(-50%);
-}
-
-.content {
-    position: relative;
-    height: 0;
-    font-size: 1.26rem;
-    text-align: justify;
-    width: 43.47rem;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.accordion hr {
-    width: 100%;
-    background-color: rgb(204, 203, 203);
-}
-
-/*------------------------------------- BTN AGREGAR JAVA SCRIPT ----------------------------------------*/
-
-
-
-
-/* ------------------------------------- ACCORDION / JAVA SCRIPT --------------------------------------- */
-
-/* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
-.containerAccordion.active .content {
-    height: 6.3rem;
-}
-
-/* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
-/* .containerAccordion.active .titulo {
+ body {
+     font-family: 'Kodchasan', sans-serif;
+ }
+
+ html {
+     font-size: 16px;
+ }
+
+ #mainNavbar {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     height: 2.96rem;
+     padding: 0.315rem 1.76rem 0.315rem 1.26rem;
+ }
+
+ .navbar-toggler {
+     border: none;
+     padding: 0rem;
+ }
+
+ .navbar-toggler:focus {
+     outline: none;
+     box-shadow: none;
+ }
+
+ .navbar-toggler-icon {
+     width: 1.575rem;
+     height: 1.575rem;
+     margin-top: 0.126rem;
+     padding: 0rem 0rem;
+     /* Modifica la apariencia del toggle btn */
+     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ }
+
+ .navbar-nav {
+     text-align: end;
+ }
+
+ #mainNavbar .nav-link {
+     margin-top: 1.07rem;
+     font-weight: 700;
+     font-size: 1.13rem;
+     line-height: 1.45rem;
+     color: rgba(228, 143, 42, 1);
+ }
+
+ /* COMPANY NAME */
+ #mainNavbar .navbar-brand {
+     font-family: 'Chivo Mono', monospace;
+     font-size: 1.13rem;
+     color: white;
+ }
+
+
+ /* -----------------------------------------CLASES EMERGENTES ------------------------------------------- */
+
+
+ /* Afecta a .preloaderVideo */
+ .hide-preloader {
+     visibility: hidden;
+ }
+
+ /* Afecta a .switchVideo */
+ .slides .switchVideo {
+     left: 50%;
+ }
+
+ /* Afecta a #mainNavbar */
+ #mainNavbar.newPadding {
+     padding: 0.315rem 1.76rem 50.4rem 1.26rem;
+     backdrop-filter: blur(5px);
+     transition: background 500ms;
+     background-color: rgba(0, 0, 0, 0.4);
+ }
+
+ /* Afecta a .navbar */
+ .navbar.scrolled {
+     backdrop-filter: blur(5px);
+     transition: background 500ms;
+     background-color: rgba(0, 0, 0, 0.4);
+ }
+
+ /* Afecta a .mainDivVideo */
+ .mainDivVideo::after {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.4);
+     z-index: -1;
+ }
+
+ /* Afecta a .textIntro */
+ .linkHideTextIntro {
+     margin-top: 2.52rem;
+     opacity: 0;
+     transition: opacity 0.5s;
+ }
+
+ /* Afecta a .mainExplainVideo*/
+ .linkHideCard {
+     /* margin-top: 4.41rem; */
+     opacity: 0;
+     transition: opacity 0.5s;
+ }
+
+ /* Afecta a .textIntro y .mainExplainVideo */
+ .linkShow {
+     opacity: 1;
+     transition: opacity 1s;
+ }
+
+ /* Afecta a .nameIntro */
+ @keyframes bajar-texto {
+     0% {
+         transform: translateY(0);
+     }
+
+     100% {
+         transform: translateY(1.26rem);
+     }
+ }
+
+ .addMarginTop {
+     position: absolute;
+     left: 0%;
+     padding: 0rem 1.89rem;
+     animation-name: bajar-texto;
+     animation-duration: 350ms;
+     animation-timing-function: ease-out;
+     animation-fill-mode: forwards;
+ }
+
+ /* -------------------------- */
+
+ /* Afecta a .nameIntro */
+ @keyframes subir-texto {
+     100% {
+         transform: translateY(-0rem);
+     }
+
+     0% {
+         transform: translateY(1.26rem);
+     }
+ }
+
+ .removeMarginTop {
+     animation-name: subir-texto;
+     animation-duration: 350ms;
+     animation-timing-function: ease-out;
+     animation-fill-mode: forwards;
+ }
+
+ /* -------------------------- */
+
+ /* Afecta a .mainPlayPauseSection */
+ .addMargin {
+     margin-top: 0.063rem;
+ }
+
+
+ /* --------------------------------------------- SECTIONS ------------------------------------------- */
+
+
+ .sectionPrimera {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 100vh;
+     text-align: center;
+     z-index: 2;
+ }
+
+ .sectionSegunda {
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     padding-top: 2rem;
+     background-color: rgb(68, 68, 68);
+ }
+
+ .sectionTercera {
+     width: 100%;
+     height: 100%;
+     text-align: center;
+ }
+
+ .sectionCuarta {
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     padding-top: 2rem;
+ }
+
+
+ /*------------------------------------------------- INTRO ------------------------------------------- */
+
+
+ /* CARD CON TITULO - EXPLICACION Y LOGOS */
+ .mainExplainVideo {
+     display: flex;
+     flex-direction: column;
+     width: 17.70rem;
+     background-blend-mode: multiply;
+     border-radius: 0.63rem;
+     background: rgba(0, 0, 0, 0.1);
+ }
+
+ /* PRIMER PARRAFO */
+ .nameIntro {
+     margin-bottom: 0.315rem;
+ }
+
+ /* SPAN JORGE S. */
+ .nameBold {
+     font-weight: 600;
+ }
+
+ /* TITULO DE LA CARD */
+ .videoProject {
+     font-weight: 700;
+     font-size: 1.26rem;
+     margin-top: 0.882rem;
+     margin-bottom: 0.756rem;
+     color: white;
+ }
+
+ /* PARRAFO DESCRIPCIÓN DEL PROYECTO  */
+ .descExplain {
+     width: 14.93rem;
+     height: 5.86rem;
+     font-weight: 300;
+     font-size: 0.882rem;
+     text-align: center;
+     line-height: 1.13rem;
+     overflow-y: scroll;
+     color: white;
+ }
+
+ .firstParagraph {
+     margin-bottom: 7px;
+ }
+
+ .textLinks {
+     text-decoration: none;
+     color: #E48F2A;
+ }
+
+ .textLinks:hover {
+     color: #b16a12;
+ }
+
+ /* SCROLL INTERNO */
+ ::-webkit-scrollbar {
+     width: 0.252rem;
+ }
+
+ /* PARA EL THUMB*/
+ ::-webkit-scrollbar-thumb {
+     background-color: white;
+     border-radius: 0.252rem;
+ }
+
+ /* PARA EL TRACK */
+ ::-webkit-scrollbar-track {
+     background: rgba(255, 255, 255, 0.5);
+     border-radius: 0.252rem;
+ }
+
+
+ /*------------------------------------------------ EXPLAIN ------------------------------------------- */
+
+
+ /* CONATINER TITLE - EXPLAIN - LOGOS */
+ .explainBody {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .mainIntroBox {
+     height: 65%;
+ }
+
+ .mainExplainBox {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .headDivReview {
+     padding-top: 3rem;
+ }
+
+ /* LOGOS DE LENGUAJES */
+ .logosDivExplainVideo {
+     display: flex;
+     flex-direction: column;
+     padding-top: 1rem;
+ }
+
+ .logosImgVideo {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 0.126rem;
+     margin-bottom: 0.63rem;
+ }
+
+ /* ------------------------------------------------ */
+
+ /*------------------------------------------------- VIDEO ------------------------------------------- */
+
+
+ /* CONTENEDOR DEL VIDEO */
+ .containerVideo {
+     position: absolute;
+     width: 100%;
+     /* Hace mas grande el height del video */
+     height: 100vh;
+     top: 0;
+     left: 0;
+     /* El video cubre todo el fondo */
+     object-fit: cover;
+     z-index: -1;
+ }
+
+ /* CONTIENE LOS DOS PRIMEROS PARRAFOS */
+ .mainDivIntro {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     font-weight: 100;
+     font-size: 0.882rem;
+     line-height: 1.13rem;
+     padding-top: 5rem;
+     padding-left: 2.27rem;
+     padding-right: 2.27rem;
+     color: white;
+ }
+
+ /* FONDO DEL PRELOADER */
+ .preloaderVideo {
+     position: fixed;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background-color: white;
+     z-index: 100;
+ }
+
+ .gifPreloader {
+     height: 100vh;
+     background-color: white;
+ }
+
+ /* CONTIENE EL SWITCH Y LOS BOTONES PLAY - PAUSE */
+ .mainBtnSwith {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 6rem;
+ }
+
+ /* FONDO DE LOS BOTONES LA PARTE GRIS*/
+ .btnSwitchVideo {
+     position: absolute;
+     width: 6.93rem;
+     height: 2.27rem;
+     margin-top: 3.02rem;
+     border-radius: 0.252rem;
+     border: none;
+     background-color: rgba(255, 255, 255, 0.5);
+ }
+
+ /* ELEMENTO MOVIL SWITCH LA PARTE NARANJA */
+ .switchVideo {
+     position: absolute;
+     width: 50%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     border-radius: 0.252rem;
+     transition-duration: 0.5s;
+     background-color: rgb(228, 143, 42);
+ }
+
+ /* CONTIENE LOS BOTONES PLAY-PAUSE LAS FIGURAS */
+ .PlayPauseDiv {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     width: 6.93rem;
+     height: 2.205rem;
+     margin-top: 3.12rem;
+     font-size: 1.575rem;
+     color: white;
+     z-index: 1;
+ }
+
+
+ /* ----------------------------------------------- REVIEW -------------------------------------------- */
+
+
+ /* CONTIENE EL BOTON ES LA MEDIDA MAIN */
+ .mainDivDarkMode {
+     width: 15.25rem;
+     height: 3.465rem;
+     border-bottom-left-radius: 0.63rem;
+     border-bottom-right-radius: 0.63rem;
+     background-color: #EEEEEE;
+ }
+
+ /* BOTON QUE CONTIENE LAS PALABRA DARK / LIGHT */
+ .darkBtn {
+     margin-top: 0.819rem;
+     border: none;
+     padding: 0rem;
+     background-color: none;
+     background-color: #EEEEEE;
+ }
+
+ /* PALABRA DARK  */
+ .spanDark {
+     color: black;
+     text-decoration: underline;
+ }
+
+ /* PALABRA LIGHT */
+ .spanLigth {
+     color: white;
+     text-decoration: underline;
+     padding: 0rem;
+     display: none;
+ }
+
+
+ /* --------------------------------- CHANGES DARK/LIGTH MODE ------------------------------------- */
+
+
+ /* OCULTA UNA DE LAS PALABRAS */
+ .btnHide {
+     display: none;
+ }
+
+ .btnShow {
+     display: block;
+ }
+
+ /* BACKGROUND GENERAL DE LA SECTION REVIEW */
+ .darkBackG {
+     background-color: rgba(238, 238, 238, 1);
+ }
+
+ .darkBgCard {
+     background-color: rgba(68, 68, 68, 1);
+ }
+
+ .fontReview {
+     color: rgba(238, 238, 238, 1);
+ }
+
+ .fontExplainProject {
+     color: rgba(68, 68, 68, 1);
+ }
+
+ /* --------------------------------------------------------------------- */
+
+ .mainReview {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-top-left-radius: 0.63rem;
+     border-top-right-radius: 0.63rem;
+     background-color: rgb(238, 238, 238);
+ }
+
+ .secondReview,
+ .thirdReview {
+     overflow: hidden;
+ }
+
+ .overVisible {
+     overflow: visible;
+ }
+
+ /* NOMBRE DEL PROYECTO */
+ .projectNameReview {
+     font-weight: 700;
+     font-size: 1.575rem;
+     margin-bottom: 1.26rem;
+     line-height: 1.64rem;
+     color: #E48F2A;
+ }
+
+ .imgContainerRoma {
+     background-image: url("images/FotoRoma2.avif");
+     background-size: cover;
+     background-position: center center;
+     width: 15.25rem;
+     height: 13.86rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     /* border-radius: 0.63rem; */
+     border-top-left-radius: 0.63rem;
+     border-top-right-radius: 0.63rem;
+ }
+
+ .imgContainerNewYork {
+     background-image: url("images/FotoNewYork.avif");
+     background-size: cover;
+     background-position: center center;
+     width: 15.25rem;
+     height: 13.86rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     /* border-radius: 0.63rem; */
+     border-top-left-radius: 0.63rem;
+     border-top-right-radius: 0.63rem;
+ }
+
+ .imgContainerMadrid {
+     background-image: url("images/FotoMadrid.avif");
+     background-size: cover;
+     background-position: center center;
+     width: 15.25rem;
+     height: 13.86rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     /* border-radius: 0.63rem; */
+     border-top-left-radius: 0.63rem;
+     border-top-right-radius: 0.63rem;
+ }
+
+ .descExplainReview {
+     width: 15.25rem;
+     height: 10.90rem;
+     font-weight: 300;
+     font-size: 0.882rem;
+     text-align: center;
+     line-height: 1.13rem;
+     color: #BCBCBC;
+ }
+
+ .titleContainerReview {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ /* CONTIENE LOS TRES LOGOS DE LENGUAJE */
+ .containerLogosReview {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 0.567rem;
+     margin-bottom: 2.52rem;
+ }
+
+ /* LOGOS DE LENGUAJE */
+ .imgLogosReview {
+     width: 1.76rem;
+     height: 1.76rem;
+     margin: 0rem 0.315rem;
+ }
+
+ #person-img {
+     width: 15.12rem;
+     height: 12.6rem;
+ }
+
+ .cardHr {
+     border: none;
+     border-top: 0.095rem solid rgba(68, 68, 68, 1);
+     margin: 0rem;
+ }
+
+ .titleReview {
+     font-weight: 400;
+     font-size: 1.2rem;
+     margin-top: 0.35rem;
+     margin-bottom: 1.3rem;
+     padding-top: 1rem;
+     letter-spacing: 0.095rem;
+ }
+
+ .jobReview {
+     font-weight: 400;
+     margin-bottom: 0.35rem;
+     letter-spacing: 0.095rem;
+ }
+
+ .authorReview {
+     font-family: 'Lora';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 1.89rem;
+     line-height: 2.39rem;
+     color: #444444;
+     margin: 0rem;
+     background-color: rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(5px);
+
+
+ }
+
+ .shadowCityName {
+     background: rgba(68, 68, 68, 0.6);
+     color: #EEEEEE;
+ }
+
+ .infoReview {
+     font-family: 'Montserrat';
+     width: 13.99rem;
+     height: 6.05rem;
+     font-weight: 400;
+     font-size: 0.819rem;
+     line-height: 1.008rem;
+     margin-left: 0.63rem;
+     margin-top: 1.26rem;
+ }
+
+ .NamePost {
+     font-family: 'Montserrat';
+     font-style: italic;
+     font-weight: 400;
+     font-size: 0.63rem;
+     line-height: 0.756rem;
+     text-align: start;
+     margin-left: 4.41rem;
+ }
+
+ .select-btn {
+     margin-top: 1rem;
+ }
+
+ .btnsReview {
+     text-decoration: none;
+     font-size: 0.819rem;
+     border-radius: 0.315rem;
+     margin: 0.315rem;
+     color: white;
+ }
+
+ .btnsReview:hover {
+     color: white;
+ }
+
+ .prev-btn {
+     font-size: 1.13rem;
+     margin-top: -14.49rem;
+     margin-bottom: 19.53rem;
+     color: white;
+ }
+
+ .next-btn {
+     font-size: 1.13rem;
+     margin-top: -14.49rem;
+     margin-bottom: 19.53rem;
+     color: white;
+ }
+
+ /* .darkPrevNextBtn {
+     color: black;
+ } */
+
+ .hideBtn {
+     color: rgba(255, 255, 255, 0.5);
+ }
+
+ /* CONTAINER DE LOS BTNS < > */
+ .divBtnsReview {
+     width: 20.16rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .containerScrollXReview {
+     display: flex;
+     overflow-x: scroll;
+     scroll-snap-type: x mandatory;
+     scroll-behavior: smooth;
+     width: 100%;
+
+ }
+
+ .containerScrollXReview::-webkit-scrollbar {
+     height: 0.200rem;
+ }
+
+ .containerScrollXReview::-webkit-scrollbar-thumb {
+     background-color: #fd7e14;
+     border-radius: 0rem;
+ }
+
+ .containerScrollXReview::-webkit-scrollbar-track {
+     background-color: white;
+     border-radius: 0rem;
+ }
+
+ .itemScrollXReview {
+     flex-shrink: 0;
+     width: 100%;
+     scroll-snap-align: center;
+     text-align: center;
+ }
+
+ .mainCarrusel {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .gridCarrusel {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 244px;
+ }
+
+ .mainContainerCarrusel {
+     position: relative;
+     overflow: hidden;
+     margin-bottom: 1rem;
+     width: 15.24rem;
+ }
+
+ .slidesContainerCarrusel {
+     display: -moz-box;
+     display: -webkit-box;
+     transform: translateX(0);
+     transition: transform 0.8s ease-in-out;
+     width: 244px;
+ }
+
+ .slide {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.89rem;
+     width: 100%;
+     border-radius: 1.26rem;
+ }
+
+ .slide2,
+ .slide3 {
+     margin-left: 2.52rem;
+ }
+
+ .disable-button {
+     opacity: 0.4;
+     pointer-events: none;
+     text-decoration: none;
+ }
+
+ .hero_-nav:not(.disable-button) {
+     opacity: 1;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ .newDivBtnsPrevNext {
+     position: relative;
+     flex-direction: row;
+     display: flex;
+     justify-content: space-between;
+     width: 120%;
+     bottom: 15.56rem;
+ }
+
+ .prev,
+ .next {
+     text-decoration: none;
+     color: white;
+ }
+
+ .prev:hover::before,
+ .next:hover::before {
+     color: white;
+ }
+
+
+ /* ------------------------------------------ RESTAURANT -------------------------------------------- */
+
+
+ /* MAIN CONTAINER ALL SECTION */
+ .titleContainerRestaurant {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background: rgba(238, 238, 238, 1);
+ }
+
+ .headDivRest {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     padding-top: 45px;
+ }
+
+ /* PROJECT NAME */
+ .projectNameRest {
+     font-weight: 700;
+     font-size: 1.575rem;
+     margin-top: 30px;
+     margin-bottom: 1.26rem;
+     line-height: 1.64rem;
+     color: #E48F2A;
+ }
+
+ /* EXPLAINED TEXT */
+ .featExplainRest {
+     width: 241px;
+     height: 126px;
+     font-family: 'Kodchasan';
+     font-style: normal;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 18px;
+     color: #444444;
+ }
+
+ /* MAIN CONTAINER OF LOGOS */
+ .logosDivExplainMenu {
+     margin-top: 75px;
+     margin-bottom: 35px;
+ }
+
+ /* CONTAINER LOGOS */
+ .logosImgRest {
+     display: flex;
+ }
+
+ /* DIV OF EACH LOGO */
+ .imgLenjRest {
+     width: 2.2rem;
+     height: 2.2rem;
+     margin: 0rem 0.315rem;
+ }
+
+ /* CONTAINER OF MENU */
+ .mainContainerMenu {
+     background: #1B1B1B;
+     border-radius: 8px;
+ }
+
+ /* NAME OF RESTAURANT -PREGO- */
+ .divRestName {
+     margin: 30px 0px;
+ }
+
+ /* BUTTON NAME OF RESTAURANT -PREGO- */
+ .divRestName button {
+     font-family: prata;
+     font-weight: 100;
+     font-size: 25px;
+     padding: 7px 18px;
+     color: #EEEEEE;
+     background-color: #1B1B1B;
+     border-radius: 7px;
+     border-top: 1.8px solid white;
+     border-left: none;
+     border-bottom: none;
+     border-right: 1.8px solid white;
+ }
+
+ /* CONTAINER OF WORD MENU  */
+ .divMenuWord {
+     text-align: start;
+     height: 22px;
+     margin-bottom: -57px;
+ }
+
+ /* WORD MENU */
+ .divMenuWord h3 {
+     width: 85px;
+     line-height: 22px;
+     font-size: 18px;
+     margin: 0px 0px 0px 25px;
+     padding-top: 5px;
+     color: rgba(105, 105, 105, 1);
+     font-family: nunito sans;
+ }
+
+ /* CONTAINER OF ALL BTNS */
+ .btnsMenu {
+     margin: 20px 0px 20px 0px;
+ }
+
+ /* ALL BTNS */
+ .filter-btn {
+     font-family: nunito sans;
+     margin-top: 15px;
+     margin-left: 10px;
+     color: rgba(200, 200, 200, 1);
+     width: 100px;
+     height: 30px;
+     background: #313131;
+     border-radius: 3px;
+     border: none;
+     font-size: 14px;
+ }
+
+ /* FIRST BTN -ALL- */
+ .filter-btn:first-child {
+     margin-left: 110px;
+ }
+
+ .changeBorderBtn {
+     border-bottom: 2px solid #EEEEEE;
+ }
+
+ /* LAST BTN -WINES- */
+ .filter-btn:last-child {
+     margin-right: 10px;
+ }
+
+ .divCentralMenu {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 45px;
+ }
+
+ .mainDivPlato {
+     width: 237px;
+     height: 145px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ /* IMAGE OF PLATE */
+ .imgPlato {
+     width: 145px;
+     height: 145px;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+     margin-top: 20px;
+     object-fit: cover;
+ }
+
+ /* MAIN CONTAINER TITLE - NAME - PRICE AND DESC OF THE PLATE */
+ .mainDivMenu {
+     display: flex;
+     flex-direction: row;
+     background: rgba(49, 49, 49, 1);
+     padding: 0px;
+     margin-top: 20px;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+ }
+
+ .divImageMenu {
+     padding: 0px;
+ }
+
+ /* CONTAINER NAME AND PRICE OF PLATE */
+ .titlePlato {
+     display: flex;
+     justify-content: space-between;
+     padding: 8px 15px;
+ }
+
+ /* NAME OF PLATE */
+ .namePlato {
+     font-family: nunito sans;
+     letter-spacing: 1px;
+     font-weight: 700;
+     font-size: 14px;
+     color: rgba(200, 200, 200, 1);
+     margin-top: 5px;
+ }
+
+ /* PRICE OF PLATE */
+ .price {
+     font-family: nunito sans;
+     font-weight: 700;
+     font-size: 14px;
+     margin-top: 5px;
+     color: rgba(200, 200, 200, 1);
+ }
+
+ .cents {
+     font-size: smaller;
+     line-height: 0.2;
+ }
+
+ /* DESCRIPTION OF PLATE */
+ .textPlato {
+     text-align: start;
+     font-size: 10px;
+     color: rgba(200, 200, 200, 1);
+     padding: 0px 15px;
+     margin-top: 5px;
+ }
+
+ /* ------------------------------------------ ACCORDION -------------------------------------------- */
+
+ .cuarta {
+     padding-top: 138.6rem;
+ }
+
+ .logosImg {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 0.126rem;
+     margin-bottom: 0.63rem;
+ }
+
+ .lenjDiv {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .imgLenj {
+     width: 1.89rem;
+     height: 1.89rem;
+     margin: 0rem 0.315rem;
+ }
+
+ .lenjSpan {
+     margin-top: -0.315rem;
+ }
+
+ .textAccordion {
+     text-align: center;
+     font-size: 1.26rem;
+     margin-top: 0.945rem;
+ }
+
+ .accordion {
+     width: 17.64rem;
+     border: 0.063rem black solid;
+     margin-bottom: 3.15rem;
+     border-radius: 0.504rem;
+ }
+
+ .containerAccordion {
+     position: relative;
+     margin: 0.63rem 0.63rem;
+ }
+
+ .titulo {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     font-size: 1.07rem;
+     cursor: pointer;
+     text-align: left;
+ }
+
+ .linkHide {
+     margin-top: 2.52rem;
+     opacity: 0;
+     transition: opacity 0.5s;
+ }
+
+ .divBtnAgregar {
+     width: 18.9rem;
+     margin-bottom: 0.063rem;
+ }
+
+ .btnAgregar {
+     width: 4.725rem;
+     border-radius: 0.315rem;
+     background-color: white;
+     margin-right: 0.63rem;
+     background-color: #E65100;
+     color: white;
+ }
+
+
+
+ .titulo::before {
+     content: '+';
+     position: absolute;
+     top: 50%;
+     right: -0.126rem;
+     font-size: 1.26rem;
+     transform: translateY(-50%);
+ }
+
+ .content {
+     position: relative;
+     height: 0;
+     font-size: 1.26rem;
+     text-align: justify;
+     width: 43.47rem;
+     overflow: hidden;
+     transition: 0.5s;
+ }
+
+ .accordion hr {
+     width: 100%;
+     background-color: rgb(204, 203, 203);
+ }
+
+ /*------------------------------------- BTN AGREGAR JAVA SCRIPT ----------------------------------------*/
+
+
+
+
+ /* ------------------------------------- ACCORDION / JAVA SCRIPT --------------------------------------- */
+
+ /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
+ .containerAccordion.active .content {
+     height: 6.3rem;
+ }
+
+ /* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
+ /* .containerAccordion.active .titulo {
     color: rgb(63, 245, 63);
 } */
 
-.containerAccordion.active .titulo::before {
-    content: '-';
-    font-size: 1.89rem;
-}
+ .containerAccordion.active .titulo::before {
+     content: '-';
+     font-size: 1.89rem;
+ }
 
-/* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
-.containerAccordion1.active .content {
-    height: 6.3rem;
-}
+ /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
+ .containerAccordion1.active .content {
+     height: 6.3rem;
+ }
 
-/* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
-/* .containerAccordion.active .titulo {
+ /* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
+ /* .containerAccordion.active .titulo {
     color: rgb(63, 245, 63);
 } */
 
-.containerAccordion1.active .titulo::before {
-    content: '-';
-    font-size: 1.89rem;
-}
-
-
-/* --------------------------------------------- COUNTER ---------------------------------------------- */
-
-
-.mainDivCounter {
-    width: 100%;
-    font-size: 0.945rem;
-}
-
-.titleDivCounter {
-    text-align: center;
-    margin-bottom: 1.575rem;
-}
-
-.btnDivCounter {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.btnDivCounterUno {
-    display: none;
-}
-
-.titleCounter {
-    margin-top: 1.5rem;
-}
-
-.subTitleAccordion {
-    font-size: 1.5rem;
-}
-
-.btnsCounter {
-    padding: 0rem 1rem;
-    border: 0.063rem solid black;
-    background-color: #ffd600;
-}
-
-.work {
-    font-size: 0.756rem;
-}
-
-
-/* -------------------------------------------- FOOTER ---------------------------------------------- */
-
-
-.mainFooter {
-    width: 100%;
-    height: 15.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: start;
-    background-color: #28145e;
-}
-
-.mainSectionFooter a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Lucida Sans';
-    font-size: 0.63rem;
-    color: beige;
-}
-
-.companyFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0.945rem;
-}
-
-.linkFooterDiv {
-    height: 6.3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0.945rem;
-}
-
-.logoPlusCompanyDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.infoFooter {
-    display: flex;
-    flex-direction: column;
-}
-
-.infoFooter a {
-    margin-bottom: 0.315rem;
-}
-
-.policyFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.redesFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.logosRedesFooter {
-    width: 6.93rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 0.315rem;
-}
-
-.imgLogoFooter {
-    width: 3.15rem;
-    margin-bottom: 0.189rem;
-}
-
-.companyFooter a {
-    font-size: 0.945rem;
-}
-
-.titleRedes {
-    font-size: 0.945rem;
-    margin-left: 0.252rem;
-    color: beige;
-}
-
-.bi {
-    width: 1.13rem;
-}
-
-.copyFooter {
-    font-size: 0.504rem;
-    letter-spacing: 0.063rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 0.315rem;
-}
-
-
-
-
-/* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
-/* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
-/* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
-
-
-/* ACTUA CUANDO ES MAS GRANDE QUE 992px */
-@media (min-width: 992px) {
-
-    /* ---------------------------------------- NAVBAR ------------------------------------------- */
-
-    #mainNavbar {
-        height: 4.03rem;
-    }
-
-    /* CONTAINER NAV LINKS */
-    .navbar-nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    /* LINKS DEL NAVBAR */
-    #mainNavbar .nav-link {
-        margin-top: 0rem;
-        padding: 0.504rem 2.52rem 0.504rem 0rem;
-        color: rgb(255, 255, 255);
-    }
-
-    /* CONTAINER INPUT + LUPA */
-    .formNavbar {
-        display: flex;
-    }
-
-    /* INPUT NAVBAR */
-    .inputNavbar {
-        box-sizing: border-box;
-        width: 11.53rem;
-        height: 2.27rem;
-        border: 0.063rem solid rgb(255, 255, 255);
-        border-radius: 0.252rem 0rem 0rem 0.252rem;
-        background-color: rgb(255, 255, 255, 0.5);
-    }
-
-    /* BTN LUPA NAVBAR */
-    .btnNavbar {
-        width: 2.835rem;
-        height: 2.27rem;
-        margin: 0rem 1.89rem 0rem 0rem;
-        padding: 0rem;
-        font-size: 1.26rem;
-        border: 0.063rem solid rgb(255, 255, 255);
-        border-radius: 0rem 0.252rem 0.252rem 0rem;
-        color: white;
-        background-color: transparent;
-    }
-
-    /* COMPANY NAME */
-    #mainNavbar .navbar-brand {
-        font-size: 1.51rem;
-        margin-right: 3.15rem;
-        margin-left: 3.465rem;
-    }
-
-
-    /* ---------------------------------------- VIDEO ------------------------------------------- */
-
-    /* CONTAINER ALL SECTION */
-    .sectionPrimera {
-        justify-content: space-between;
-        padding: 0rem 6.3rem;
-    }
-
-    /* CONTAINER TWO FIRST PARAGRAFHS VIDEO */
-    .mainIntroBox {
-        width: 100%;
-    }
-
-    /* CONTAINER CARD CENTRAL CON SCROLL - LOGOS - PLAYBTNS */
-    .mainExplainBox {
-        width: 100%;
-        flex-direction: row-reverse;
-        align-items: end;
-        justify-content: space-between;
-        padding-bottom: 4.98rem;
-    }
-
-    /* CONTAINER TWO FIRST PARAGRAFHS VIDEO */
-    .mainDivIntro {
-        width: 30%;
-        height: 100%;
-        text-align: start;
-        font-weight: 200;
-        font-size: 1.13rem;
-        line-height: 1.70rem;
-        padding-top: 6.615rem;
-        padding-left: 0rem;
-        margin-left: -1.575rem;
-    }
-
-    /* PRIMER PARRAFO */
-    .nameIntro {
-        margin-bottom: 0.945rem;
-    }
-
-    /* CONTAINER CARD CENTRAL CON SCROLL - LOGOS */
-    .mainExplainVideo {
-        width: 37.04rem;
-        height: 20.16rem;
-    }
-
-    /* CONTAINER CARD CENTRAL CON SCROLL - LOGOS */
-    .explainBody {
-        align-items: end;
-    }
-
-    /* CARDS VIDEO TITLE */
-    .videoProject {
-        width: 34.46rem;
-        height: 2.46rem;
-        text-align: right;
-        margin-top: 1.20rem;
-        margin-bottom: 2.02rem;
-        margin-right: 1.26rem;
-        font-size: 2.835rem;
-        line-height: 2.46rem;
-    }
-
-    /* CONTAINER DESCRIPTION PARAGRAFHS ON SCROLL */
-    .descExplain {
-        width: 34.46rem;
-        height: 9.32rem;
-        text-align: right;
-        font-size: 1.13rem;
-        font-weight: 200;
-        line-height: 1.45rem;
-        overflow-y: visible;
-        margin-right: 1.26rem;
-    }
-
-    /* CONTAINER LOGOS */
-    .logosDivExplainVideo {
-        align-items: end;
-        height: 11.02rem;
-        padding: 1.575rem 0.63rem 0rem 0rem;
-    }
-
-    /* LOGOS */
-    .imgLenj {
-        width: 2.52rem;
-        height: 2.52rem;
-        margin: 0rem 0.441rem;
-    }
-
-    /* CONTAINER SECTION BTN PLAY/PAUSE  */
-    .mainPlayPauseSection {
-        margin-left: -1.13rem;
-        margin-top: -2.52rem;
-        border-radius: 0.252rem;
-    }
-
-    .mainBtnSwith {
-        padding-bottom: 0.2rem;
-    }
-
-    /* FONDO DE LOS BOTONES */
-    .btnSwitchVideo {
-        width: 19.53rem;
-        margin: 0rem 0rem 0rem 0rem;
-    }
-
-    /* CONTAINER BTNS PLAY - PAUSE */
-    .PlayPauseDiv {
-        width: 19.53rem;
-        height: 2.205rem;
-        display: flex;
-        flex-direction: row;
-        margin: 0rem;
-    }
-
-    /* CONTAINER WORD - SYMBOL PLAY/PAUSE */
-    .divPlay,
-    .divPause {
-        width: 4.725rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 0.189rem;
-    }
-
-    .divPause {
-        width: 5.67rem;
-        padding-left: 0.63rem;
-    }
-
-    /* SYMBOL PLAY Y PAUSE */
-    .btnPlayVideo,
-    .btnPauseVideo {
-        font-size: 1.575rem;
-        color: white;
-    }
-
-    /* WORDS PLAY Y PAUSE */
-    .spanPlayBtn,
-    .spanPauseBtn {
-        font-size: 1.20rem;
-        color: white;
-    }
-
-
-    /* ------------------------------------------ REVIEW --------------------------------------------- */
-
-
-    /* CONTAINER ALL SECTION */
-    .sectionSegunda {
-        height: 100vh;
-        padding: 8rem 7rem 0rem 7rem;
-    }
-
-    /* CONTIENE TODOS LOS ELEMENTOS DE LA SECCIÓN */
-    .mainCardReview {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    /* NOMBRE DEL PROYECTO */
-    .projectNameReview {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 18.9rem;
-        margin-bottom: 1.89rem;
-        font-size: 2.205rem;
-    }
-
-    .mainContainerCarrusel {
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 1rem;
-        width: 35rem;
-        padding-top: 4rem;
-        margin-right: 20rem;
-    }
-
-    /* SEGUNDA Y TERCERA CARD */
-    .secondReview {
-        margin-left: 4.095rem;
-        overflow: visible;
-    }
-
-    .thirdReview {
-        overflow: hidden;
-    }
-
-    /* CONTAINER DE LOS DARKS BTNS Y SPANS */
-    .mainDivDarkMode {
-        width: 33.4rem;
-        background-color: transparent;
-        border-bottom: 0.063rem solid rgba(156, 156, 156);
-    }
-
-    /* CONTAINER BTNS < > */
-    .divBtnsReview {
-        width: 49.14rem;
-    }
-
-    /* CONTAINER PROJECT NAME - EXPLAIN Y LOGOS */
-    .headDivReview {
-        height: 34.65rem;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-between;
-        padding-top: 4rem;
-    }
-
-    /* PROJECT DESCRIPTION */
-    .parrafoReview {
-        width: 22.68rem;
-        height: 8.69rem;
-        text-align: start;
-    }
-
-    /* IMAGE LOGOS REVIEW */
-    .imgLogosReview {
-        width: 2.205rem;
-        height: 1.89rem;
-        margin: 0rem 1.07rem 3.15rem -0.189rem;
-    }
-
-    .newDivBtnsPrevNext {
-        width: 250%;
-        right: 10.9rem;
-    }
-
-    /* BTN WIHT WORDS DARK / LIGHT */
-    .darkBtn {
-        background-color: transparent;
-    }
-
-    /* WORD DARK  */
-    .spanDark {
-        color: rgb(255, 255, 255);
-        text-decoration: underline;
-    }
-
-    /* WORD LIGHT */
-    .spanLigth {
-        color: rgb(255, 255, 255);
-        text-decoration: underline;
-        padding: 0rem;
-        display: inline;
-        margin-left: 1.26rem;
-    }
-
-
-    /* ---------------------------------------- RESTAURANT ------------------------------------------- */
-
-    /* CONTAINER PROJECT NAME - EXPLAIN */
-    .mainExplainRest {
-        width: 100%;
-    }
-
-    /* CONTAINER PROJECT NAME - EXPLAIN */
-    .headDivRest {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 120px;
-    }
-
-    /* CONTAINER LOGOS */
-    .logosDivExplainMenu {
-        width: 100%;
-        margin: 0px;
-    }
-
-    /* CONTAINER LOGOS */
-    .logosImgRest {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        margin-left: 68px;
-        margin-bottom: 90px;
-    }
-
-    /* DIV OF EACH LOGO */
-    .imgLenjRest {
-        width: 2.8rem;
-        height: 2.8rem;
-        margin: 0rem 0.315rem;
-    }
-
-    /* CONTAINER OF MENU */
-    .mainContainerMenu {
-        width: 91%;
-        border-radius: 30px;
-    }
-
-    /* PROJECT NAME */
-    .projectNameRest {
-        font-size: 3rem;
-        margin-left: 75px;
-
-    }
-
-    /* EXPLAINED TEXT */
-    .featExplainRest {
-        width: 550px;
-        height: 138px;
-        font-family: 'Kodchasan';
-        font-size: 18px;
-        text-align: right;
-        line-height: 23px;
-    }
-
-    /* EXPLAINED TEXT P */
-    .featExplainRest p {
-        margin-top: 30px;
-        margin-right: 80px;
-    }
-
-    /* NAME OF RESTAURANT -PREGO- */
-    .divRestName {
-        margin: 40px 0px;
-    }
-
-    /* BUTTON NAME OF RESTAURANT -PREGO- */
-    .divRestName button {
-        font-weight: 400;
-        font-size: 52px;
-        padding: 10px 30px;
-        color: rgb(255, 255, 255);
-        background-color: #1B1B1B;
-        border-radius: 7px;
-        border-top: 2.2px solid white;
-        border-left: none;
-        border-bottom: none;
-        border-right: 2.2px solid white;
-    }
-
-    /* CONTAINER OF WORD MENU  */
-    .divMenuWord {
-        height: 22px;
-    }
-
-    /* WORD MENU */
-    .divMenuWord h3 {
-        width: 100%;
-        font-family: nunito sans;
-        line-height: 22px;
-        font-size: 22px;
-        margin-left: 270px;
-        padding-top: 5px;
-        color: rgba(105, 105, 105, 1);
-    }
-
-    /* FIRST BTN -ALL- */
-    .filter-btn:first-child {
-        margin-left: 165px;
-    }
-
-    .filter-btn {
-        width: 125px;
-        font-size: 18px;
-        margin-left: 30px;
-    }
-
-    .divCentralMenu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-
-    /* MAIN CONTAINER TITLE - NAME - PRICE AND DESC OF THE PLATE */
-    .mainDivMenu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 237px;
-        height: 153px;
-        background: rgba(49, 49, 49, 1);
-        padding: 0px 10px;
-        margin-bottom: 25px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        margin-top: 0px;
-    }
-
-    /* IMAGE OF PLATE */
-    .imgPlato {
-        margin-top: 0px;
-        margin-bottom: 25px;
-        margin-left: 25px;
-        width: 178px;
-        height: 153px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
-
-    /* CONTAINER OF ALL BTNS */
-    .btnsMenu {
-        margin: 20px 0px 50px -20px;
-    }
-
-    /* NAME OF PLATE */
-    .namePlato {
-        font-size: 18px;
-    }
-
-    /* PRICE OF PLATE */
-    .price {
-        font-size: 18px;
-    }
-
-    .mainDivPlato {
-        width: 237px;
-        height: 153px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .titlePlato {
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 3px;
-    }
-
-    .textPlato {
-        padding: 0px 3px;
-        font-size: 13px;
-    }
-
-    .cents {
-        font-size: smaller;
-        line-height: 0.2;
-    }
-}
-
-
-/* ACTUA CUANDO ES MAS PEQUEÑO QUE 992px */
-@media (max-width: 992px) {
-    .formNavbar {
-        display: none;
-    }
-
-    /* WORD PLAY/PAUSE */
-    .spanPlayBtn,
-    .spanPauseBtn {
-        display: none;
-    }
-
-}
+ .containerAccordion1.active .titulo::before {
+     content: '-';
+     font-size: 1.89rem;
+ }
+
+
+ /* --------------------------------------------- COUNTER ---------------------------------------------- */
+
+
+ .mainDivCounter {
+     width: 100%;
+     font-size: 0.945rem;
+ }
+
+ .titleDivCounter {
+     text-align: center;
+     margin-bottom: 1.575rem;
+ }
+
+ .btnDivCounter {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .btnDivCounterUno {
+     display: none;
+ }
+
+ .titleCounter {
+     margin-top: 1.5rem;
+ }
+
+ .subTitleAccordion {
+     font-size: 1.5rem;
+ }
+
+ .btnsCounter {
+     padding: 0rem 1rem;
+     border: 0.063rem solid black;
+     background-color: #ffd600;
+ }
+
+ .work {
+     font-size: 0.756rem;
+ }
+
+
+ /* -------------------------------------------- FOOTER ---------------------------------------------- */
+
+
+ .mainFooter {
+     width: 100%;
+     height: 15.75rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     text-align: start;
+     background-color: #28145e;
+ }
+
+ .mainSectionFooter a {
+     text-decoration: none;
+     color: black;
+     font-family: 'Lucida Sans';
+     font-size: 0.63rem;
+     color: beige;
+ }
+
+ .companyFooter {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 0.945rem;
+ }
+
+ .linkFooterDiv {
+     height: 6.3rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 0.945rem;
+ }
+
+ .logoPlusCompanyDiv {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .infoFooter {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .infoFooter a {
+     margin-bottom: 0.315rem;
+ }
+
+ .policyFooter {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+
+ .redesFooter {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+ }
+
+ .logosRedesFooter {
+     width: 6.93rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-right: 0.315rem;
+ }
+
+ .imgLogoFooter {
+     width: 3.15rem;
+     margin-bottom: 0.189rem;
+ }
+
+ .companyFooter a {
+     font-size: 0.945rem;
+ }
+
+ .titleRedes {
+     font-size: 0.945rem;
+     margin-left: 0.252rem;
+     color: beige;
+ }
+
+ .bi {
+     width: 1.13rem;
+ }
+
+ .copyFooter {
+     font-size: 0.504rem;
+     letter-spacing: 0.063rem;
+     color: white;
+     text-align: center;
+     margin-bottom: 0.315rem;
+ }
+
+
+
+
+ /* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
+ /* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
+ /* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
+
+
+ /* ACTUA CUANDO ES MAS GRANDE QUE 992px */
+ @media (min-width: 992px) {
+
+     /* ---------------------------------------- NAVBAR ------------------------------------------- */
+
+     #mainNavbar {
+         height: 4.03rem;
+     }
+
+     /* CONTAINER NAV LINKS */
+     .navbar-nav {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+     }
+
+     /* LINKS DEL NAVBAR */
+     #mainNavbar .nav-link {
+         margin-top: 0rem;
+         padding: 0.504rem 2.52rem 0.504rem 0rem;
+         color: rgb(255, 255, 255);
+     }
+
+     /* CONTAINER INPUT + LUPA */
+     .formNavbar {
+         display: flex;
+     }
+
+     /* INPUT NAVBAR */
+     .inputNavbar {
+         box-sizing: border-box;
+         width: 11.53rem;
+         height: 2.27rem;
+         border: 0.063rem solid rgb(255, 255, 255);
+         border-radius: 0.252rem 0rem 0rem 0.252rem;
+         background-color: rgb(255, 255, 255, 0.5);
+     }
+
+     /* BTN LUPA NAVBAR */
+     .btnNavbar {
+         width: 2.835rem;
+         height: 2.27rem;
+         margin: 0rem 1.89rem 0rem 0rem;
+         padding: 0rem;
+         font-size: 1.26rem;
+         border: 0.063rem solid rgb(255, 255, 255);
+         border-radius: 0rem 0.252rem 0.252rem 0rem;
+         color: white;
+         background-color: transparent;
+     }
+
+     /* COMPANY NAME */
+     #mainNavbar .navbar-brand {
+         font-size: 1.51rem;
+         margin-right: 3.15rem;
+         margin-left: 3.465rem;
+     }
+
+
+     /* ---------------------------------------- VIDEO ------------------------------------------- */
+
+     /* CONTAINER ALL SECTION */
+     .sectionPrimera {
+         justify-content: space-between;
+         padding: 0rem 6.3rem;
+     }
+
+     /* CONTAINER TWO FIRST PARAGRAFHS VIDEO */
+     .mainIntroBox {
+         width: 100%;
+     }
+
+     /* CONTAINER CARD CENTRAL CON SCROLL - LOGOS - PLAYBTNS */
+     .mainExplainBox {
+         width: 100%;
+         flex-direction: row-reverse;
+         align-items: end;
+         justify-content: space-between;
+         padding-bottom: 4.98rem;
+     }
+
+     /* CONTAINER TWO FIRST PARAGRAFHS VIDEO */
+     .mainDivIntro {
+         width: 30%;
+         height: 100%;
+         text-align: start;
+         font-weight: 200;
+         font-size: 1.13rem;
+         line-height: 1.70rem;
+         padding-top: 6.615rem;
+         padding-left: 0rem;
+         margin-left: -1.575rem;
+     }
+
+     /* PRIMER PARRAFO */
+     .nameIntro {
+         margin-bottom: 0.945rem;
+     }
+
+     /* CONTAINER CARD CENTRAL CON SCROLL - LOGOS */
+     .mainExplainVideo {
+         width: 37.04rem;
+         height: 20.16rem;
+     }
+
+     /* CONTAINER CARD CENTRAL CON SCROLL - LOGOS */
+     .explainBody {
+         align-items: end;
+     }
+
+     /* CARDS VIDEO TITLE */
+     .videoProject {
+         width: 34.46rem;
+         height: 2.46rem;
+         text-align: right;
+         margin-top: 1.20rem;
+         margin-bottom: 2.02rem;
+         margin-right: 1.26rem;
+         font-size: 2.835rem;
+         line-height: 2.46rem;
+     }
+
+     /* CONTAINER DESCRIPTION PARAGRAFHS ON SCROLL */
+     .descExplain {
+         width: 34.46rem;
+         height: 9.32rem;
+         text-align: right;
+         font-size: 1.13rem;
+         font-weight: 200;
+         line-height: 1.45rem;
+         overflow-y: visible;
+         margin-right: 1.26rem;
+     }
+
+     /* CONTAINER LOGOS */
+     .logosDivExplainVideo {
+         align-items: end;
+         height: 11.02rem;
+         padding: 1.575rem 0.63rem 0rem 0rem;
+     }
+
+     /* LOGOS */
+     .imgLenj {
+         width: 2.52rem;
+         height: 2.52rem;
+         margin: 0rem 0.441rem;
+     }
+
+     /* CONTAINER SECTION BTN PLAY/PAUSE  */
+     .mainPlayPauseSection {
+         margin-left: -1.13rem;
+         margin-top: -2.52rem;
+         border-radius: 0.252rem;
+     }
+
+     .mainBtnSwith {
+         padding-bottom: 0.2rem;
+     }
+
+     /* FONDO DE LOS BOTONES */
+     .btnSwitchVideo {
+         width: 19.53rem;
+         margin: 0rem 0rem 0rem 0rem;
+     }
+
+     /* CONTAINER BTNS PLAY - PAUSE */
+     .PlayPauseDiv {
+         width: 19.53rem;
+         height: 2.205rem;
+         display: flex;
+         flex-direction: row;
+         margin: 0rem;
+     }
+
+     /* CONTAINER WORD - SYMBOL PLAY/PAUSE */
+     .divPlay,
+     .divPause {
+         width: 4.725rem;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+         padding-left: 0.189rem;
+     }
+
+     .divPause {
+         width: 5.67rem;
+         padding-left: 0.63rem;
+     }
+
+     /* SYMBOL PLAY Y PAUSE */
+     .btnPlayVideo,
+     .btnPauseVideo {
+         font-size: 1.575rem;
+         color: white;
+     }
+
+     /* WORDS PLAY Y PAUSE */
+     .spanPlayBtn,
+     .spanPauseBtn {
+         font-size: 1.20rem;
+         color: white;
+     }
+
+
+     /* ------------------------------------------ REVIEW --------------------------------------------- */
+
+
+     /* CONTAINER ALL SECTION */
+     .sectionSegunda {
+         height: 100vh;
+         padding: 8rem 7rem 0rem 7rem;
+     }
+
+     /* CONTIENE TODOS LOS ELEMENTOS DE LA SECCIÓN */
+     .mainCardReview {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+
+     /* NOMBRE DEL PROYECTO */
+     .projectNameReview {
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+         width: 18.9rem;
+         margin-bottom: 1.89rem;
+         font-size: 2.205rem;
+     }
+
+     .mainContainerCarrusel {
+         position: relative;
+         overflow: hidden;
+         margin-bottom: 1rem;
+         width: 35rem;
+         padding-top: 4rem;
+         margin-right: 20rem;
+     }
+
+     /* SEGUNDA Y TERCERA CARD */
+     .secondReview {
+         margin-left: 4.095rem;
+         overflow: visible;
+     }
+
+     .thirdReview {
+         overflow: hidden;
+     }
+
+     /* CONTAINER DE LOS DARKS BTNS Y SPANS */
+     .mainDivDarkMode {
+         width: 33.4rem;
+         background-color: transparent;
+         border-bottom: 0.063rem solid rgba(156, 156, 156);
+     }
+
+     /* CONTAINER BTNS < > */
+     .divBtnsReview {
+         width: 49.14rem;
+     }
+
+     /* CONTAINER PROJECT NAME - EXPLAIN Y LOGOS */
+     .headDivReview {
+         height: 34.65rem;
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+         justify-content: space-between;
+         padding-top: 4rem;
+     }
+
+     /* PROJECT DESCRIPTION */
+     .parrafoReview {
+         width: 22.68rem;
+         height: 8.69rem;
+         text-align: start;
+     }
+
+     /* IMAGE LOGOS REVIEW */
+     .imgLogosReview {
+         width: 2.205rem;
+         height: 1.89rem;
+         margin: 0rem 1.07rem 3.15rem -0.189rem;
+     }
+
+     .newDivBtnsPrevNext {
+         width: 250%;
+         right: 10.9rem;
+     }
+
+     /* BTN WIHT WORDS DARK / LIGHT */
+     .darkBtn {
+         background-color: transparent;
+     }
+
+     /* WORD LIGHT  */
+     .spanDark {
+         color: rgb(255, 255, 255);
+         text-decoration: underline;
+     }
+
+     /* WORD DARK */
+     .spanLigth {
+         color: rgb(39, 37, 37);
+         text-decoration: underline;
+         padding: 0rem;
+         display: inline;
+         margin-left: 1.26rem;
+     }
+
+
+     /* ---------------------------------------- RESTAURANT ------------------------------------------- */
+
+     /* CONTAINER PROJECT NAME - EXPLAIN */
+     .mainExplainRest {
+         width: 100%;
+     }
+
+     /* CONTAINER PROJECT NAME - EXPLAIN */
+     .headDivRest {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding-top: 120px;
+     }
+
+     /* CONTAINER LOGOS */
+     .logosDivExplainMenu {
+         width: 100%;
+         margin: 0px;
+     }
+
+     /* CONTAINER LOGOS */
+     .logosImgRest {
+         display: flex;
+         flex-direction: row;
+         justify-content: start;
+         margin-left: 68px;
+         margin-bottom: 90px;
+     }
+
+     /* DIV OF EACH LOGO */
+     .imgLenjRest {
+         width: 2.8rem;
+         height: 2.8rem;
+         margin: 0rem 0.315rem;
+     }
+
+     /* CONTAINER OF MENU */
+     .mainContainerMenu {
+         width: 91%;
+         border-radius: 30px;
+     }
+
+     /* PROJECT NAME */
+     .projectNameRest {
+         font-size: 3rem;
+         margin-left: 75px;
+
+     }
+
+     /* EXPLAINED TEXT */
+     .featExplainRest {
+         width: 550px;
+         height: 138px;
+         font-family: 'Kodchasan';
+         font-size: 18px;
+         text-align: right;
+         line-height: 23px;
+     }
+
+     /* EXPLAINED TEXT P */
+     .featExplainRest p {
+         margin-top: 30px;
+         margin-right: 80px;
+     }
+
+     /* NAME OF RESTAURANT -PREGO- */
+     .divRestName {
+         margin: 40px 0px;
+     }
+
+     /* BUTTON NAME OF RESTAURANT -PREGO- */
+     .divRestName button {
+         font-weight: 400;
+         font-size: 52px;
+         padding: 10px 30px;
+         color: rgb(255, 255, 255);
+         background-color: #1B1B1B;
+         border-radius: 7px;
+         border-top: 2.2px solid white;
+         border-left: none;
+         border-bottom: none;
+         border-right: 2.2px solid white;
+     }
+
+     /* CONTAINER OF WORD MENU  */
+     .divMenuWord {
+         height: 22px;
+     }
+
+     /* WORD MENU */
+     .divMenuWord h3 {
+         width: 100%;
+         font-family: nunito sans;
+         line-height: 22px;
+         font-size: 22px;
+         margin-left: 270px;
+         padding-top: 5px;
+         color: rgba(105, 105, 105, 1);
+     }
+
+     /* FIRST BTN -ALL- */
+     .filter-btn:first-child {
+         margin-left: 165px;
+     }
+
+     .filter-btn {
+         width: 125px;
+         font-size: 18px;
+         margin-left: 30px;
+     }
+
+     .divCentralMenu {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 50px;
+     }
+
+     /* MAIN CONTAINER TITLE - NAME - PRICE AND DESC OF THE PLATE */
+     .mainDivMenu {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         width: 237px;
+         height: 153px;
+         background: rgba(49, 49, 49, 1);
+         padding: 0px 10px;
+         margin-bottom: 25px;
+         border-top-right-radius: 5px;
+         border-bottom-right-radius: 5px;
+         margin-top: 0px;
+     }
+
+     /* IMAGE OF PLATE */
+     .imgPlato {
+         margin-top: 0px;
+         margin-bottom: 25px;
+         margin-left: 25px;
+         width: 178px;
+         height: 153px;
+         border-top-left-radius: 5px;
+         border-bottom-left-radius: 5px;
+     }
+
+     /* CONTAINER OF ALL BTNS */
+     .btnsMenu {
+         margin: 20px 0px 50px -20px;
+     }
+
+     /* NAME OF PLATE */
+     .namePlato {
+         font-size: 18px;
+     }
+
+     /* PRICE OF PLATE */
+     .price {
+         font-size: 18px;
+     }
+
+     .mainDivPlato {
+         width: 237px;
+         height: 153px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+     }
+
+     .titlePlato {
+         display: flex;
+         justify-content: space-between;
+         padding: 0px 3px;
+     }
+
+     .textPlato {
+         padding: 0px 3px;
+         font-size: 13px;
+     }
+
+     .cents {
+         font-size: smaller;
+         line-height: 0.2;
+     }
+ }
+
+
+ /* ACTUA CUANDO ES MAS PEQUEÑO QUE 992px */
+ @media (max-width: 992px) {
+     .formNavbar {
+         display: none;
+     }
+
+     /* WORD PLAY/PAUSE */
+     .spanPlayBtn,
+     .spanPauseBtn {
+         display: none;
+     }
+
+ }

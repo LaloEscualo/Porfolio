@@ -2,7 +2,7 @@ const inner = document.querySelector(".slidesContainerCarrusel");
 const b = 284;
 
 let cusId = 0;
-class calimatic__Custom__Carousl {
+class Carrusel {
     slidePx = 0;
     currentPosition = 0;
 
@@ -11,7 +11,6 @@ class calimatic__Custom__Carousl {
         if (this.currentPosition < inner.childElementCount - 1) {
             this.slidePx += (b * -1)
             inner.style.transform = `translateX(${this.slidePx}px)`
-            console.log(inner.style.transform);
             this.currentPosition++
             this.currentPosition == inner.childElementCount - 1 ? that.classList.add('disable-button') : that.classList.remove('disable-button');
             this.currentPosition != 0 ? that.previousElementSibling.classList.remove('disable-button') : that.classList.remove('disable-button');
@@ -56,7 +55,7 @@ function PrevSlide(that) {
 
         let obj = that.parentElement.getAttribute('customIndex');
         carouselPipeLine.push(obj);
-        obj = new calimatic__Custom__Carousl()
+        obj = new Carrusel()
         carouselObjPipeLine.push(obj);
         obj.PrevSlide(that, slideWidth)
     }
@@ -81,7 +80,7 @@ function NextSlide(that) {
     if (!carouselPipeLine.includes(that.parentElement.getAttribute('customIndex'))) {
         let obj = that.parentElement.getAttribute('customIndex');
         carouselPipeLine.push(obj);
-        obj = new calimatic__Custom__Carousl()
+        obj = new Carrusel()
         carouselObjPipeLine.push(obj);
         obj.NextSlide(that, slideWidth)
 
@@ -196,8 +195,8 @@ const descExplain = document.querySelector(".parrafoReview");
 const projectName = document.querySelector(".projectNameReview");
 const spanDark = document.querySelector(".spanDark");
 const spanLigth = document.querySelector(".spanLigth");
-const prevBtnDark = document.querySelector(".prev");
-const nextBtnDark = document.querySelector(".next");
+// const prevBtnDark = document.querySelector(".prev");
+// const nextBtnDark = document.querySelector(".next");
 
 const scrollXReview = document.querySelectorAll(".itemScrollXReview");
 scrollXReview.forEach(function (review) {
@@ -223,8 +222,8 @@ darkBtn.addEventListener("click", function () {
         spanLigth.classList.toggle("btnShow");
         spanDark.classList.toggle("btnHide");
     }
-    prevBtnDark.classList.toggle("darkPrevNextBtn");
-    nextBtnDark.classList.toggle("darkPrevNextBtn");
+    // prevBtnDark.classList.toggle("darkPrevNextBtn");
+    // nextBtnDark.classList.toggle("darkPrevNextBtn");
 })
 
 // CARRUSEL -----------------------------------------------------------------------------
@@ -365,9 +364,9 @@ const menuArray =
             name: "Lasagna",
             title: "Lunch",
             category: "Lunch",
-            price: 15,
+            price: 12,
             cent: 35,
-            img: "images/lasaña.avif",
+            img: "images/FotoLasaña.avif",
             desc: "Thin layers of pasta dough, filled with ricotta cheese, spinach, and then baked in a tomato sauce with melted mozzarella."
         },
         {
@@ -375,9 +374,9 @@ const menuArray =
             name: "Pastas",
             title: "Lunch",
             category: "Lunch",
-            price: 10,
+            price: 12,
             cent: 35,
-            img: "images/pastaMarinara1.avif",
+            img: "images/FotoPasta.avif",
             desc: "Dish of spaghetti pasta cooked with a tomato sauce, garlic, olive oil, and basil."
         },
         {
@@ -385,9 +384,9 @@ const menuArray =
             name: "Pizzas",
             title: "Lunch",
             category: "Lunch",
-            price: 25,
+            price: 10,
             cent: 35,
-            img: "images/PizzaMargarita.avif",
+            img: "images/FotoPizza.avif",
             desc: "Classic Italian pizza made with thin crust, tomato sauce, mozzarella cheese, and fresh basil."
         },
         {
@@ -395,9 +394,9 @@ const menuArray =
             name: "Minestrone",
             title: "Lunch",
             category: "Lunch",
-            price: 5,
+            price: 8,
             cent: 35,
-            img: "images/Minestrone.avif",
+            img: "images/FotoMinestrone.avif",
             desc: "Traditional Italian soup made with tomatoes, onions, garlic, basil, and beef broth."
         },
         {
@@ -405,9 +404,9 @@ const menuArray =
             name: "Risotto",
             title: "Dinner",
             category: "Dinner",
-            price: 12,
+            price: 14,
             cent: 35,
-            img: "images/Rissoto.avif",
+            img: "images/FotoRissoto.avif",
             desc: "Creamy Italian risotto dish made with Arborio rice, mushrooms, and parmesan cheese."
         },
         {
@@ -415,30 +414,30 @@ const menuArray =
             name: "Tiramisu",
             title: "Desserts",
             category: "Desserts",
-            price: 12,
+            price: 5,
             cent: 35,
-            img: "images/Tiramisu.avif",
-            desc: "Italian dessert made with ladyfingers soaked in a liqueur coffee mixture, layered with a sweetened mascarpone cheese."
+            img: "images/FotoTiramisu.avif",
+            desc: "Made with ladyfingers soaked in a liqueur coffee mixture, layered with a sweetened mascarpone cheese."
         },
         {
             id: 7,
-            name: "House Wine",
+            name: "Red Wine",
             title: "Wines",
             category: "Wines",
-            price: 5,
+            price: 3,
             cent: 35,
-            img: "images/Minestrone.avif",
+            img: "images/FotoRedWine.avif",
             desc: "Rich, full-bodied red with notes of blackberry, leather, and vanilla on the finish."
         },
         {
             id: 8,
-            name: "House Wine",
+            name: "White Wine",
             title: "Wines",
             category: "Wines",
-            price: 5,
+            price: 3,
             cent: 35,
-            img: "images/Minestrone.avif",
-            desc: "Rich, full-bodied red with notes of blackberry, leather, and vanilla on the finish."
+            img: "images/FotoWhiteWine.avif",
+            desc: "Rich, full-bodied white with notes of blackberry, leather, and vanilla on the finish."
         },
     ];
 
