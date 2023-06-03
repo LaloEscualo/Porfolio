@@ -15,8 +15,8 @@
  }
 
  .navbar-toggler {
-     border: none;
      padding: 0rem;
+     border: none;
  }
 
  .navbar-toggler:focus {
@@ -50,6 +50,38 @@
      font-family: 'Chivo Mono', monospace;
      font-size: 1.13rem;
      color: white;
+ }
+
+ .divIdiomaBtns {
+     position: fixed;
+     display: flex;
+     flex-direction: row;
+     top: 50%;
+     right: 84%;
+     transform: rotate(-90deg);
+ }
+
+ .btnEsp {
+     margin-right: 0px;
+     padding: 0px 5px;
+     font-size: 10px;
+     letter-spacing: 0.5px;
+     background-color: transparent;
+     color: #BCBCBC;
+ }
+
+ .btnIng {
+     margin-right: 0px;
+     padding: 0px 5px;
+     font-size: 10px;
+     letter-spacing: 0.5px;
+     background-color: transparent;
+     color: #BCBCBC;
+ }
+
+ .btnIng:hover,
+ .btnEsp:hover {
+     color: black;
  }
 
 
@@ -102,7 +134,6 @@
 
  /* Afecta a .mainExplainVideo*/
  .linkHideCard {
-     /* margin-top: 4.41rem; */
      opacity: 0;
      transition: opacity 0.5s;
  }
@@ -247,11 +278,11 @@
 
  .textLinks {
      text-decoration: none;
-     color: #E48F2A;
+     color: #f3ca98;
  }
 
  .textLinks:hover {
-     color: #b16a12;
+     color: #ff8c00;
  }
 
  /* SCROLL INTERNO */
@@ -261,14 +292,14 @@
 
  /* PARA EL THUMB*/
  ::-webkit-scrollbar-thumb {
-     background-color: white;
      border-radius: 0.252rem;
+     background-color: white;
  }
 
  /* PARA EL TRACK */
  ::-webkit-scrollbar-track {
-     background: rgba(255, 255, 255, 0.5);
      border-radius: 0.252rem;
+     background: rgba(255, 255, 255, 0.5);
  }
 
 
@@ -277,6 +308,12 @@
 
  /* CONATINER TITLE - EXPLAIN - LOGOS */
  .explainBody {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .explainBodyAccordion {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -313,7 +350,6 @@
      margin-bottom: 0.63rem;
  }
 
- /* ------------------------------------------------ */
 
  /*------------------------------------------------- VIDEO ------------------------------------------- */
 
@@ -433,16 +469,17 @@
 
  /* PALABRA DARK  */
  .spanDark {
-     color: black;
+     font-family: "Montserrat";
      text-decoration: underline;
+     color: black;
  }
 
  /* PALABRA LIGHT */
  .spanLigth {
-     color: white;
-     text-decoration: underline;
-     padding: 0rem;
      display: none;
+     padding: 0rem;
+     text-decoration: underline;
+     color: white;
  }
 
 
@@ -505,43 +542,40 @@
  }
 
  .imgContainerRoma {
-     background-image: url("images/FotoRoma2.avif");
-     background-size: cover;
-     background-position: center center;
      width: 15.25rem;
      height: 13.86rem;
      display: flex;
      flex-direction: column;
      justify-content: end;
-     /* border-radius: 0.63rem; */
+     background-image: url("images/FotoRoma2.avif");
+     background-size: cover;
+     background-position: center center;
      border-top-left-radius: 0.63rem;
      border-top-right-radius: 0.63rem;
  }
 
  .imgContainerNewYork {
-     background-image: url("images/FotoNewYork.avif");
-     background-size: cover;
-     background-position: center center;
      width: 15.25rem;
      height: 13.86rem;
      display: flex;
      flex-direction: column;
      justify-content: end;
-     /* border-radius: 0.63rem; */
+     background-image: url("images/FotoNewYork.avif");
+     background-size: cover;
+     background-position: center center;
      border-top-left-radius: 0.63rem;
      border-top-right-radius: 0.63rem;
  }
 
  .imgContainerMadrid {
-     background-image: url("images/FotoMadrid.avif");
-     background-size: cover;
-     background-position: center center;
      width: 15.25rem;
      height: 13.86rem;
      display: flex;
      flex-direction: column;
      justify-content: end;
-     /* border-radius: 0.63rem; */
+     background-image: url("images/FotoMadrid.avif");
+     background-size: cover;
+     background-position: center center;
      border-top-left-radius: 0.63rem;
      border-top-right-radius: 0.63rem;
  }
@@ -549,9 +583,9 @@
  .descExplainReview {
      width: 15.25rem;
      height: 10.90rem;
+     text-align: center;
      font-weight: 300;
      font-size: 0.882rem;
-     text-align: center;
      line-height: 1.13rem;
      color: #BCBCBC;
  }
@@ -584,9 +618,9 @@
  }
 
  .cardHr {
+     margin: 0rem;
      border: none;
      border-top: 0.095rem solid rgba(68, 68, 68, 1);
-     margin: 0rem;
  }
 
  .titleReview {
@@ -609,13 +643,11 @@
      font-style: normal;
      font-weight: 400;
      font-size: 1.89rem;
-     line-height: 2.39rem;
-     color: #444444;
      margin: 0rem;
-     background-color: rgba(255, 255, 255, 0.5);
+     line-height: 2.39rem;
      backdrop-filter: blur(5px);
-
-
+     background-color: rgba(255, 255, 255, 0.5);
+     color: #444444;
  }
 
  .shadowCityName {
@@ -636,12 +668,12 @@
 
  .NamePost {
      font-family: 'Montserrat';
+     text-align: start;
      font-style: italic;
      font-weight: 400;
      font-size: 0.63rem;
-     line-height: 0.756rem;
-     text-align: start;
      margin-left: 4.41rem;
+     line-height: 12px;
  }
 
  .select-btn {
@@ -649,10 +681,10 @@
  }
 
  .btnsReview {
-     text-decoration: none;
      font-size: 0.819rem;
-     border-radius: 0.315rem;
      margin: 0.315rem;
+     border-radius: 0.315rem;
+     text-decoration: none;
      color: white;
  }
 
@@ -674,10 +706,6 @@
      color: white;
  }
 
- /* .darkPrevNextBtn {
-     color: black;
- } */
-
  .hideBtn {
      color: rgba(255, 255, 255, 0.5);
  }
@@ -691,12 +719,11 @@
  }
 
  .containerScrollXReview {
+     width: 100%;
      display: flex;
      overflow-x: scroll;
      scroll-snap-type: x mandatory;
      scroll-behavior: smooth;
-     width: 100%;
-
  }
 
  .containerScrollXReview::-webkit-scrollbar {
@@ -704,20 +731,20 @@
  }
 
  .containerScrollXReview::-webkit-scrollbar-thumb {
-     background-color: #fd7e14;
      border-radius: 0rem;
+     background-color: #fd7e14;
  }
 
  .containerScrollXReview::-webkit-scrollbar-track {
-     background-color: white;
      border-radius: 0rem;
+     background-color: white;
  }
 
  .itemScrollXReview {
-     flex-shrink: 0;
      width: 100%;
-     scroll-snap-align: center;
      text-align: center;
+     flex-shrink: 0;
+     scroll-snap-align: center;
  }
 
  .mainCarrusel {
@@ -736,8 +763,8 @@
  .mainContainerCarrusel {
      position: relative;
      overflow: hidden;
-     margin-bottom: 1rem;
      width: 15.24rem;
+     margin-bottom: 1rem;
  }
 
  .slidesContainerCarrusel {
@@ -749,11 +776,11 @@
  }
 
  .slide {
+     width: 100%;
      display: flex;
      align-items: center;
      justify-content: center;
      font-size: 1.89rem;
-     width: 100%;
      border-radius: 1.26rem;
  }
 
@@ -870,13 +897,13 @@
      font-weight: 100;
      font-size: 25px;
      padding: 7px 18px;
-     color: #EEEEEE;
-     background-color: #1B1B1B;
      border-radius: 7px;
      border-top: 1.8px solid white;
      border-left: none;
      border-bottom: none;
      border-right: 1.8px solid white;
+     background-color: #1B1B1B;
+     color: #EEEEEE;
  }
 
  /* CONTAINER OF WORD MENU  */
@@ -889,12 +916,12 @@
  /* WORD MENU */
  .divMenuWord h3 {
      width: 85px;
-     line-height: 22px;
+     font-family: nunito sans;
      font-size: 18px;
      margin: 0px 0px 0px 25px;
      padding-top: 5px;
+     line-height: 22px;
      color: rgba(105, 105, 105, 1);
-     font-family: nunito sans;
  }
 
  /* CONTAINER OF ALL BTNS */
@@ -904,16 +931,15 @@
 
  /* ALL BTNS */
  .filter-btn {
-     font-family: nunito sans;
-     margin-top: 15px;
-     margin-left: 10px;
-     color: rgba(200, 200, 200, 1);
      width: 100px;
      height: 30px;
-     background: #313131;
+     font-size: 14px;
+     margin-top: 15px;
+     margin-left: 10px;
      border-radius: 3px;
      border: none;
-     font-size: 14px;
+     background: #313131;
+     color: rgba(200, 200, 200, 1);
  }
 
  /* FIRST BTN -ALL- */
@@ -948,9 +974,9 @@
  .imgPlato {
      width: 145px;
      height: 145px;
+     margin-top: 20px;
      border-top-left-radius: 5px;
      border-bottom-left-radius: 5px;
-     margin-top: 20px;
      object-fit: cover;
  }
 
@@ -958,11 +984,11 @@
  .mainDivMenu {
      display: flex;
      flex-direction: row;
-     background: rgba(49, 49, 49, 1);
-     padding: 0px;
      margin-top: 20px;
+     padding: 0px;
      border-top-right-radius: 5px;
      border-bottom-right-radius: 5px;
+     background: rgba(49, 49, 49, 1);
  }
 
  .divImageMenu {
@@ -973,25 +999,25 @@
  .titlePlato {
      display: flex;
      justify-content: space-between;
-     padding: 8px 15px;
+     padding: 6px 15px;
  }
 
  /* NAME OF PLATE */
  .namePlato {
      font-family: nunito sans;
+     font-size: 14px;
+     margin-top: 5px;
      letter-spacing: 1px;
      font-weight: 700;
-     font-size: 14px;
      color: rgba(200, 200, 200, 1);
-     margin-top: 5px;
  }
 
  /* PRICE OF PLATE */
  .price {
      font-family: nunito sans;
-     font-weight: 700;
      font-size: 14px;
      margin-top: 5px;
+     font-weight: 700;
      color: rgba(200, 200, 200, 1);
  }
 
@@ -1002,30 +1028,67 @@
 
  /* DESCRIPTION OF PLATE */
  .textPlato {
+     font-family: nunito sans;
      text-align: start;
-     font-size: 10px;
-     color: rgba(200, 200, 200, 1);
+     font-size: 11.5px;
+     margin-top: 0px;
      padding: 0px 15px;
-     margin-top: 5px;
+     color: rgba(200, 200, 200, 1);
  }
 
+
  /* ------------------------------------------ ACCORDION -------------------------------------------- */
+
+
+ .divNewBtns {
+     height: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-bottom: 25px;
+ }
 
  .cuarta {
      padding-top: 138.6rem;
  }
 
- .logosImg {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     margin-top: 0.126rem;
-     margin-bottom: 0.63rem;
+ .descExplainAccordion {
+     width: 15.25rem;
+     height: 7.2rem;
+     text-align: center;
+     font-weight: 300;
+     font-size: 0.882rem;
+     line-height: 1.13rem;
+     color: #444444;
  }
 
- .lenjDiv {
+ /* PROJECT NAME */
+ .projectNameAccordion {
+     font-size: 1.575rem;
+     margin-top: 45px;
+     margin-bottom: 1.26rem;
+     font-weight: 700;
+     line-height: 1.64rem;
+     color: #E48F2A;
+ }
+
+ .logosImgAccordion {
+     display: flex;
+     justify-content: center;
+ }
+
+ /* DIV OF EACH LOGO */
+ .imgLenjAccordion {
+     width: 1.8rem;
+     height: 1.8rem;
+     margin: 0rem 0.315rem;
+ }
+
+ .lenjDivAccordion {
      display: flex;
      flex-direction: column;
+     margin-top: 20px;
+     margin-bottom: 35px;
  }
 
  .imgLenj {
@@ -1038,17 +1101,105 @@
      margin-top: -0.315rem;
  }
 
+ .divTitleAccordion {
+     width: 100%;
+     height: 54px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     background-color: #502176;
+ }
+
+ .containerAccordion {
+     pointer-events: none;
+ }
+
+ .simboloChevron {
+     pointer-events: fill;
+ }
+
+ .divSubTitleAccordion {
+     width: 100%;
+     height: 54px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     border-radius: 5px;
+ }
+
+ .simboloMas {
+     padding-top: 4.1px;
+     color: white;
+ }
+
+ .simboloChevron {
+     margin-right: 4px;
+     transform: rotate(0deg);
+     transition: transform 0.3s ease;
+     color: rgb(0, 0, 0);
+ }
+
+ .simboloChevron.down {
+     transform: rotate(180deg);
+ }
+
  .textAccordion {
-     text-align: center;
-     font-size: 1.26rem;
-     margin-top: 0.945rem;
+     font-family: "Philosopher";
+     font-size: 20px;
+     margin: 0px;
+     color: white;
+ }
+
+ .btnAgregar {
+     margin-right: -5px;
+     border: 2px solid white;
+     border-radius: 50px;
+     padding-top: 1.5px;
+     background-color: #502176;
+ }
+
+ .btnIncDes {
+     padding-top: 1.75px;
+     border: 2px solid #502176;
+     border-radius: 50%;
+     background-color: white;
+ }
+
+ .simboloMinus {
+     color: #502176;
+ }
+
+ .simboloPlus {
+     color: #502176;
+ }
+
+ .reset {
+     font-family: "Montserrat";
+     background-color: white;
+     margin: 0px 15px;
+     border: 2px solid #502176;
+     border-radius: 8px;
+     font-weight: 600;
+     color: #502176;
+ }
+
+ .hrColorChange {
+     width: 249px;
+     margin-left: 5px;
+     margin-top: -3px;
+     margin-bottom: 7px;
  }
 
  .accordion {
-     width: 17.64rem;
-     border: 0.063rem black solid;
+     width: 280px;
+     border: 0.063rem;
      margin-bottom: 3.15rem;
      border-radius: 0.504rem;
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
  }
 
  .containerAccordion {
@@ -1056,14 +1207,32 @@
      margin: 0.63rem 0.63rem;
  }
 
+ .mainDivCounter p {
+     font-family: "Montserrat";
+     text-align: center;
+     font-size: 13px;
+     line-height: 18px;
+ }
+
  .titulo {
+     font-family: "Montserrat";
+     width: 100%;
      display: flex;
-     flex-direction: column;
-     align-items: center;
-     position: relative;
-     font-size: 1.07rem;
      cursor: pointer;
-     text-align: left;
+     font-size: 13px;
+     margin-left: 20px;
+     margin-bottom: 0px;
+     font-weight: 500;
+ }
+
+ .btnOpen {
+     margin-right: 4px;
+     border: none;
+ }
+
+ .hrNewSection {
+     margin-bottom: 0px;
+     margin-top: 10px;
  }
 
  .linkHide {
@@ -1072,81 +1241,38 @@
      transition: opacity 0.5s;
  }
 
- .divBtnAgregar {
-     width: 18.9rem;
-     margin-bottom: 0.063rem;
- }
-
- .btnAgregar {
-     width: 4.725rem;
-     border-radius: 0.315rem;
-     background-color: white;
-     margin-right: 0.63rem;
-     background-color: #E65100;
-     color: white;
- }
-
-
-
- .titulo::before {
-     content: '+';
-     position: absolute;
-     top: 50%;
-     right: -0.126rem;
-     font-size: 1.26rem;
-     transform: translateY(-50%);
+ .numberCounter {
+     font-family: 'Montserrat';
+     font-size: 95px;
+     margin: 0px;
+     line-height: 111px;
+     font-weight: 600;
+     color: rgba(80, 33, 118, 1);
  }
 
  .content {
      position: relative;
-     height: 0;
-     font-size: 1.26rem;
-     text-align: justify;
      width: 43.47rem;
+     height: 0;
+     text-align: justify;
+     font-size: 1.26rem;
      overflow: hidden;
      transition: 0.5s;
+     outline: none;
  }
-
- .accordion hr {
-     width: 100%;
-     background-color: rgb(204, 203, 203);
- }
-
- /*------------------------------------- BTN AGREGAR JAVA SCRIPT ----------------------------------------*/
-
-
 
 
  /* ------------------------------------- ACCORDION / JAVA SCRIPT --------------------------------------- */
 
+
  /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
  .containerAccordion.active .content {
-     height: 6.3rem;
- }
-
- /* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
- /* .containerAccordion.active .titulo {
-    color: rgb(63, 245, 63);
-} */
-
- .containerAccordion.active .titulo::before {
-     content: '-';
-     font-size: 1.89rem;
+     height: 3.5rem;
  }
 
  /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
  .containerAccordion1.active .content {
-     height: 6.3rem;
- }
-
- /* Cuando el container tiene la clase "active" al .titulo le pasa lo siguiente */
- /* .containerAccordion.active .titulo {
-    color: rgb(63, 245, 63);
-} */
-
- .containerAccordion1.active .titulo::before {
-     content: '-';
-     font-size: 1.89rem;
+     height: 2.5rem;
  }
 
 
@@ -1159,8 +1285,13 @@
  }
 
  .titleDivCounter {
+     width: 100%;
+     height: 100px;
      text-align: center;
-     margin-bottom: 1.575rem;
+ }
+
+ .titleDivCounter p {
+     margin: 0px;
  }
 
  .btnDivCounter {
@@ -1181,36 +1312,31 @@
      font-size: 1.5rem;
  }
 
- .btnsCounter {
-     padding: 0rem 1rem;
-     border: 0.063rem solid black;
-     background-color: #ffd600;
- }
-
- .work {
-     font-size: 0.756rem;
- }
-
 
  /* -------------------------------------------- FOOTER ---------------------------------------------- */
 
 
  .mainFooter {
      width: 100%;
-     height: 15.75rem;
+     height: 176px;
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
      text-align: start;
-     background-color: #28145e;
+     background-color: #444444;
  }
 
  .mainSectionFooter a {
      text-decoration: none;
-     color: black;
-     font-family: 'Lucida Sans';
-     font-size: 0.63rem;
-     color: beige;
+     color: rgb(255, 255, 255);
+ }
+
+ .mainSectionFooter {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
  }
 
  .companyFooter {
@@ -1228,53 +1354,50 @@
      margin: 0.945rem;
  }
 
- .logoPlusCompanyDiv {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
-
  .infoFooter {
-     display: flex;
-     flex-direction: column;
- }
-
- .infoFooter a {
-     margin-bottom: 0.315rem;
- }
-
- .policyFooter {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
- }
-
- .redesFooter {
      display: flex;
      flex-direction: column;
      align-items: start;
  }
 
- .logosRedesFooter {
-     width: 6.93rem;
+ .redesFooter {
+     width: 350px;
+     height: 80px;
      display: flex;
      flex-direction: row;
-     justify-content: space-around;
-     margin-right: 0.315rem;
+     justify-content: space-between;
  }
 
- .imgLogoFooter {
-     width: 3.15rem;
-     margin-bottom: 0.189rem;
+ .iconRedes {
+     width: 65px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .sizeLink {
+     font-size: 25px;
+ }
+
+ .sizeMail {
+     font-size: 25px;
+     margin-top: 1.5px;
+ }
+
+ .logosRedesFooter {
+     display: flex;
+     flex-direction: column;
+     margin-top: -10px;
+     margin-right: 8px;
  }
 
  .companyFooter a {
-     font-size: 0.945rem;
+     font-size: 10px;
  }
 
  .titleRedes {
-     font-size: 0.945rem;
-     margin-left: 0.252rem;
+     text-align: end;
+     font-size: 10px;
+     margin-top: 18px;
      color: beige;
  }
 
@@ -1283,14 +1406,45 @@
  }
 
  .copyFooter {
+     text-align: center;
      font-size: 0.504rem;
+     margin-bottom: 15px;
+     margin-top: -20px;
      letter-spacing: 0.063rem;
      color: white;
-     text-align: center;
-     margin-bottom: 0.315rem;
  }
 
+ .divBrand {
+     font-family: 'Chivo Mono', monospace;
+     width: 100%;
+     text-align: start;
+     font-size: 13.5px;
+     margin-top: 20px;
+     color: white;
+ }
 
+ .brand {
+     margin-left: 26px;
+ }
+
+ .firstDivFooter {
+     margin-top: -10px;
+     margin-bottom: 5px;
+ }
+
+ .videoFooter {
+     font-size: 3px;
+     margin-right: 32px;
+ }
+
+ .reviewFooter {
+     font-size: 3px;
+     margin-right: 25px;
+ }
+
+ .copyright {
+     color: rgba(179, 179, 179, 1);
+ }
 
 
  /* ---------------------------------- MEDIA QUERY (992)1440/900 ---------------------------------------- */
@@ -1318,36 +1472,8 @@
      /* LINKS DEL NAVBAR */
      #mainNavbar .nav-link {
          margin-top: 0rem;
-         padding: 0.504rem 2.52rem 0.504rem 0rem;
+         padding: 0.504rem 1rem 0.504rem 0rem;
          color: rgb(255, 255, 255);
-     }
-
-     /* CONTAINER INPUT + LUPA */
-     .formNavbar {
-         display: flex;
-     }
-
-     /* INPUT NAVBAR */
-     .inputNavbar {
-         box-sizing: border-box;
-         width: 11.53rem;
-         height: 2.27rem;
-         border: 0.063rem solid rgb(255, 255, 255);
-         border-radius: 0.252rem 0rem 0rem 0.252rem;
-         background-color: rgb(255, 255, 255, 0.5);
-     }
-
-     /* BTN LUPA NAVBAR */
-     .btnNavbar {
-         width: 2.835rem;
-         height: 2.27rem;
-         margin: 0rem 1.89rem 0rem 0rem;
-         padding: 0rem;
-         font-size: 1.26rem;
-         border: 0.063rem solid rgb(255, 255, 255);
-         border-radius: 0rem 0.252rem 0.252rem 0rem;
-         color: white;
-         background-color: transparent;
      }
 
      /* COMPANY NAME */
@@ -1357,8 +1483,19 @@
          margin-left: 3.465rem;
      }
 
+     .divIdiomaBtns {
+         position: inherit;
+         transform: rotate(0deg);
+         color: #EEEEEE;
+     }
+
+     .underline {
+         text-decoration: underline;
+     }
+
 
      /* ---------------------------------------- VIDEO ------------------------------------------- */
+
 
      /* CONTAINER ALL SECTION */
      .sectionPrimera {
@@ -1385,12 +1522,12 @@
          width: 30%;
          height: 100%;
          text-align: start;
-         font-weight: 200;
          font-size: 1.13rem;
-         line-height: 1.70rem;
+         margin-left: -1.575rem;
          padding-top: 6.615rem;
          padding-left: 0rem;
-         margin-left: -1.575rem;
+         line-height: 1.70rem;
+         font-weight: 200;
      }
 
      /* PRIMER PARRAFO */
@@ -1414,10 +1551,10 @@
          width: 34.46rem;
          height: 2.46rem;
          text-align: right;
+         font-size: 2.835rem;
          margin-top: 1.20rem;
          margin-bottom: 2.02rem;
          margin-right: 1.26rem;
-         font-size: 2.835rem;
          line-height: 2.46rem;
      }
 
@@ -1427,10 +1564,10 @@
          height: 9.32rem;
          text-align: right;
          font-size: 1.13rem;
+         margin-right: 1.26rem;
          font-weight: 200;
          line-height: 1.45rem;
          overflow-y: visible;
-         margin-right: 1.26rem;
      }
 
      /* CONTAINER LOGOS */
@@ -1445,6 +1582,10 @@
          width: 2.52rem;
          height: 2.52rem;
          margin: 0rem 0.441rem;
+     }
+
+     .imgLenj:hover {
+         opacity: 0.3;
      }
 
      /* CONTAINER SECTION BTN PLAY/PAUSE  */
@@ -1523,27 +1664,27 @@
 
      /* NOMBRE DEL PROYECTO */
      .projectNameReview {
+         width: 19.50rem;
          display: flex;
          flex-direction: column;
          align-items: start;
-         width: 18.9rem;
-         margin-bottom: 1.89rem;
          font-size: 2.205rem;
+         margin-bottom: 1.89rem;
      }
 
      .mainContainerCarrusel {
          position: relative;
          overflow: hidden;
-         margin-bottom: 1rem;
          width: 35rem;
-         padding-top: 4rem;
+         margin-bottom: 1rem;
          margin-right: 20rem;
+         padding-top: 4rem;
      }
 
      /* SEGUNDA Y TERCERA CARD */
      .secondReview {
-         margin-left: 4.095rem;
          overflow: visible;
+         margin-left: 4.095rem;
      }
 
      .thirdReview {
@@ -1553,8 +1694,8 @@
      /* CONTAINER DE LOS DARKS BTNS Y SPANS */
      .mainDivDarkMode {
          width: 33.4rem;
-         background-color: transparent;
          border-bottom: 0.063rem solid rgba(156, 156, 156);
+         background-color: transparent;
      }
 
      /* CONTAINER BTNS < > */
@@ -1577,6 +1718,16 @@
          width: 22.68rem;
          height: 8.69rem;
          text-align: start;
+         font-size: 18px;
+         line-height: 23px;
+     }
+
+     .parrafoReview1 {
+         width: 22.68rem;
+         height: 8.69rem;
+         text-align: start;
+         font-size: 18px;
+         line-height: 23px;
      }
 
      /* IMAGE LOGOS REVIEW */
@@ -1598,21 +1749,22 @@
 
      /* WORD LIGHT  */
      .spanDark {
-         color: rgb(255, 255, 255);
          text-decoration: underline;
+         color: rgb(255, 255, 255);
      }
 
      /* WORD DARK */
      .spanLigth {
-         color: rgb(39, 37, 37);
-         text-decoration: underline;
-         padding: 0rem;
          display: inline;
          margin-left: 1.26rem;
+         padding: 0rem;
+         text-decoration: underline;
+         color: rgb(39, 37, 37);
      }
 
 
      /* ---------------------------------------- RESTAURANT ------------------------------------------- */
+
 
      /* CONTAINER PROJECT NAME - EXPLAIN */
      .mainExplainRest {
@@ -1652,6 +1804,7 @@
      /* CONTAINER OF MENU */
      .mainContainerMenu {
          width: 91%;
+         margin-bottom: 50px;
          border-radius: 30px;
      }
 
@@ -1659,16 +1812,15 @@
      .projectNameRest {
          font-size: 3rem;
          margin-left: 75px;
-
      }
 
      /* EXPLAINED TEXT */
      .featExplainRest {
+         font-family: 'Kodchasan';
          width: 550px;
          height: 138px;
-         font-family: 'Kodchasan';
-         font-size: 18px;
          text-align: right;
+         font-size: 18px;
          line-height: 23px;
      }
 
@@ -1685,16 +1837,16 @@
 
      /* BUTTON NAME OF RESTAURANT -PREGO- */
      .divRestName button {
-         font-weight: 400;
          font-size: 52px;
          padding: 10px 30px;
-         color: rgb(255, 255, 255);
-         background-color: #1B1B1B;
          border-radius: 7px;
          border-top: 2.2px solid white;
          border-left: none;
          border-bottom: none;
          border-right: 2.2px solid white;
+         font-weight: 400;
+         background-color: #1B1B1B;
+         color: rgb(255, 255, 255);
      }
 
      /* CONTAINER OF WORD MENU  */
@@ -1704,62 +1856,77 @@
 
      /* WORD MENU */
      .divMenuWord h3 {
-         width: 100%;
          font-family: nunito sans;
-         line-height: 22px;
+         width: 0%;
          font-size: 22px;
-         margin-left: 270px;
-         padding-top: 5px;
+         margin: -33px 25px 0px 0px;
+         padding-left: 200px;
+         line-height: 22px;
          color: rgba(105, 105, 105, 1);
      }
 
      /* FIRST BTN -ALL- */
      .filter-btn:first-child {
-         margin-left: 165px;
+         margin-left: 0px;
+     }
+
+     .filter-btn:last-child {
+         margin-right: 0px;
      }
 
      .filter-btn {
          width: 125px;
          font-size: 18px;
-         margin-left: 30px;
+         margin: 0px 0px 0px 20px;
+     }
+
+     .DivMenuBtnsMenu {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         margin-bottom: 25px;
+         padding-left: 60px;
      }
 
      .divCentralMenu {
+         width: 100%;
          display: flex;
-         align-items: center;
-         justify-content: center;
          margin-bottom: 50px;
      }
 
      /* MAIN CONTAINER TITLE - NAME - PRICE AND DESC OF THE PLATE */
      .mainDivMenu {
+         width: 237px;
+         height: 153px;
          display: flex;
          flex-direction: row;
          align-items: center;
-         width: 237px;
-         height: 153px;
-         background: rgba(49, 49, 49, 1);
-         padding: 0px 10px;
+         margin-top: 0px;
          margin-bottom: 25px;
+         padding: 0px 10px;
          border-top-right-radius: 5px;
          border-bottom-right-radius: 5px;
-         margin-top: 0px;
+         background: rgba(49, 49, 49, 1);
      }
 
      /* IMAGE OF PLATE */
      .imgPlato {
+         width: 178px;
+         height: 153px;
          margin-top: 0px;
          margin-bottom: 25px;
          margin-left: 25px;
-         width: 178px;
-         height: 153px;
          border-top-left-radius: 5px;
          border-bottom-left-radius: 5px;
      }
 
      /* CONTAINER OF ALL BTNS */
      .btnsMenu {
-         margin: 20px 0px 50px -20px;
+         width: 60%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
      }
 
      /* NAME OF PLATE */
@@ -1787,26 +1954,293 @@
      }
 
      .textPlato {
-         padding: 0px 3px;
          font-size: 13px;
+         padding: 0px 3px;
      }
 
      .cents {
          font-size: smaller;
          line-height: 0.2;
      }
+
+
+     /* -------------------------------------------- ACCORDION -------------------------------------------- */
+
+
+     /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
+     .containerAccordion.active .content {
+         height: 5.2rem;
+     }
+
+     /* Cuando el container tiene la clase "active" al .content le pasa lo siguiente */
+     .containerAccordion1.active .content {
+         height: 5rem;
+     }
+
+     .containerAccordion {
+         pointer-events: none;
+     }
+
+     .mainDivCounter p {
+         font-size: 16px;
+         margin-top: 9px;
+     }
+
+     .numberCounter {
+         font-family: "arial";
+         font-size: 90px;
+         font-weight: 800;
+     }
+
+     .divSubTitleAccordion {
+         margin-bottom: 30px;
+     }
+
+     .hrColorChange {
+         width: 95%;
+         margin-top: 5px;
+         margin-left: 15px;
+     }
+
+     .btnIncDes {
+         padding-top: 2px;
+     }
+
+     .divNewPrueba {
+         margin-top: -120px;
+         margin-left: 280px;
+     }
+
+     .divNewBtns {
+         height: 40px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+     }
+
+     .reset {
+         margin: 0px 18px;
+         padding: 0px 20px;
+         border: 1.6px #502176 solid;
+     }
+
+     .simboloMinus,
+     .simboloPlus {
+         font-size: 30px;
+         padding-top: 2.5px;
+     }
+
+     .titleDivCounter {
+         width: 270px;
+         margin: 0px;
+     }
+
+     .titleDivCounter p {
+         text-align: start;
+         margin-top: 10px;
+         margin-left: 25px;
+         font-size: 16px;
+         line-height: 20px;
+     }
+
+     .accordion {
+         width: 610px;
+         border-radius: 20px;
+     }
+
+     .headDivAccordion {
+         width: 550px;
+         display: flex;
+         flex-direction: column;
+         align-items: end;
+     }
+
+     .explainBodyAccordion {
+         display: flex;
+         align-items: start;
+         flex-direction: row-reverse;
+         justify-content: space-around;
+         margin-top: 150px;
+         margin-bottom: 100px;
+     }
+
+     .projectNameAccordion {
+         font-size: 45px;
+         margin-top: 20px;
+         margin-bottom: 60px;
+     }
+
+     .descExplainAccordion {
+         width: 464px;
+         height: 138px;
+         text-align: end;
+         font-size: 18px;
+         line-height: 23px;
+     }
+
+     .imgLenjAccordion {
+         width: 40px;
+         height: 40px;
+     }
+
+     .textAccordion {
+         font-size: 40px;
+         margin-left: -30px;
+     }
+
+     .divTitleAccordion {
+         height: 83px;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+     }
+
+     .btnAgregar {
+         display: flex;
+         align-items: center;
+         margin-right: -20px;
+         padding: 5px 18px;
+         border-radius: 10px;
+         border: 1px solid white;
+         background-color: #502176;
+     }
+
+     .simboloMas {
+         font-size: 25px;
+         padding-bottom: 4px;
+         color: white;
+     }
+
+     .spanAcoordion {
+         font-family: 'Montserrat';
+         font-weight: 500;
+         font-size: 16px;
+         margin-left: 8px;
+         color: white;
+     }
+
+     .titulo {
+         font-size: 16px;
+         margin-left: 25px;
+         margin-top: 30px;
+     }
+
+     .btnOpen {
+         margin-right: 10px;
+         pointer-events: fill;
+     }
+
+     .simboloChevron {
+         font-size: 25px;
+         margin-top: 30px;
+     }
+
+
+     /* ----------------------------------------------- FOOTER ----------------------------------------------- */
+
+
+     .mainFooter {
+         height: 130px;
+     }
+
+     .mainSectionFooter {
+         align-items: start;
+         margin-top: 10px;
+     }
+
+     .redesFooter {
+         width: 750px;
+         align-items: end;
+         margin-left: 530px;
+     }
+
+     .divBrand {
+         width: 100px;
+         margin-left: 110px;
+         margin-bottom: -5px;
+         font-size: 18px;
+     }
+
+     .infoFooter {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .firstDivFooter {
+         margin: 0px;
+     }
+
+     .secondDivFooter a,
+     .firstDivFooter a {
+         font-size: 14px;
+     }
+
+     .spanFooter {
+         margin: 0px 20px;
+     }
+
+     .logosRedesFooter {
+         height: 112px;
+         flex-direction: row;
+         margin: 0px -45px 0px 0px;
+     }
+
+     .titleRedes {
+         font-size: 14px;
+         margin: 0px;
+     }
+
+     .videoFooter {
+         margin: 0px;
+     }
+
+     .reviewFooter {
+         margin: 0px;
+     }
+
+     .iconRedes {
+         width: 75px;
+         justify-content: space-around;
+         margin-left: 15px;
+     }
+
+     .sizeLink {
+         font-size: 22px;
+         margin-top: -3px;
+     }
+
+     .sizeMail {
+         font-size: 22px;
+         margin-top: -2px;
+     }
+
+     .copyFooter {
+         font-size: 10px;
+     }
+
+     .copyright {
+         margin-top: -20px;
+     }
+
+     .HideBtnIdioma {
+         display: none;
+     }
+
+
  }
 
 
  /* ACTUA CUANDO ES MAS PEQUEÑO QUE 992px */
  @media (max-width: 992px) {
-     .formNavbar {
-         display: none;
-     }
 
      /* WORD PLAY/PAUSE */
      .spanPlayBtn,
      .spanPauseBtn {
+         display: none;
+     }
+
+     .navbarIdioma,
+     .spanFooter,
+     .spanAcoordion {
          display: none;
      }
 
