@@ -931,6 +931,7 @@
 
  /* ALL BTNS */
  .filter-btn {
+     font-family: "Nunito sans";
      width: 100px;
      height: 30px;
      font-size: 14px;
@@ -1030,9 +1031,10 @@
  .textPlato {
      font-family: nunito sans;
      text-align: start;
-     font-size: 11.5px;
+     font-size: 13px;
      margin-top: 0px;
      padding: 0px 15px;
+     line-height: 15px;
      color: rgba(200, 200, 200, 1);
  }
 
