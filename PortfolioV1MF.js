@@ -119,6 +119,7 @@ navLinks.addEventListener("click", function () {
 
 //-----------------------------CAMBIOS PLAY/PAUSE SECCIÓN VIDEO ---------------------------------------------
 
+
 const btn = document.querySelector(".mainPlayPauseSection");
 const mainExplainVideo = document.querySelector(".mainExplainVideo");
 const textIntro = document.querySelector(".textIntro");
@@ -192,8 +193,12 @@ const descExplain1 = document.querySelector(".parrafoReview1");
 const projectName = document.querySelector(".projectNameReview");
 const spanDark = document.querySelector(".spanDark");
 const spanLigth = document.querySelector(".spanLigth");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
 
 const scrollXReview = document.querySelectorAll(".itemScrollXReview");
+
+let isColored = false;
 
 
 scrollXReview.forEach(function (review) {
@@ -202,6 +207,7 @@ scrollXReview.forEach(function (review) {
         review.classList.toggle("darkBgCard");
     });
 });
+
 
 const authorReview = document.querySelectorAll(".authorReview");
 
@@ -220,6 +226,8 @@ darkBtn.addEventListener("click", function () {
     descExplain.classList.toggle("fontExplainProject");
     descExplain1.classList.toggle("fontExplainProject");
     projectName.classList.toggle("ligthFont");
+    next.classList.toggle("fontExplainProject");
+    prev.classList.toggle("fontExplainProject");
     if (window.innerWidth <= 992) {
         spanLigth.classList.toggle("btnShow");
         spanDark.classList.toggle("btnHide");
