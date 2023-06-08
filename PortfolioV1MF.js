@@ -99,8 +99,7 @@ function NextSlide(that) {
 
 const btnToggler = document.querySelector(".navbar-toggler");
 const formNavbar = document.querySelector(".formNavbar");
-
-const navLinks = document.querySelector("#navLinks");
+const mainNavbar = document.querySelector("#mainNavbar");
 
 
 window.addEventListener("scroll", function () {
@@ -109,11 +108,6 @@ window.addEventListener("scroll", function () {
 
 btnToggler.addEventListener("click", function () {
     mainNavbar.classList.toggle("newPadding");
-});
-
-navLinks.addEventListener("click", function () {
-    navLinks.classList.remove("show");
-    mainNavbar.classList.remove("newPadding");
 });
 
 

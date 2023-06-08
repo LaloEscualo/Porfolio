@@ -107,7 +107,7 @@
  }
 
  /* Afecta a .navbar */
- .navbar.scrolled {
+ .scrolled {
      backdrop-filter: blur(5px);
      transition: background 500ms;
      background-color: rgba(0, 0, 0, 0.4);
